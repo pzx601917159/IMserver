@@ -1,0 +1,101 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCEPT	server/connection.h	/^        ACCEPT,$/;"	e	enum:Connection::ConnType
+AvailableSize	buffer/circularbuffer.cpp	/^size_t CircularBuffer::AvailableSize()$/;"	f	class:CircularBuffer
+Bind	server/server.cpp	/^void Server::Bind()$/;"	f	class:Server
+CC	client/Makefile	/^CC=g++$/;"	m
+CC	server/Makefile	/^CC = g++$/;"	m
+CFLAGS	client/Makefile	/^CFLAGS=-g$/;"	m
+CFLAGS	server/Makefile	/^CFLAGS = -g$/;"	m
+CONNECT	server/connection.h	/^        CONNECT$/;"	e	enum:Connection::ConnType
+Capacity	buffer/circularbuffer.h	/^    size_t Capacity() const { return capacity_; }$/;"	f	class:CircularBuffer
+CircularBuffer	buffer/circularbuffer.cpp	/^CircularBuffer::CircularBuffer(size_t capacity)$/;"	f	class:CircularBuffer
+CircularBuffer	buffer/circularbuffer.h	/^class CircularBuffer$/;"	c
+Clear	buffer/circularbuffer.cpp	/^void CircularBuffer::Clear(bool rmdata)$/;"	f	class:CircularBuffer
+ConnType	server/connection.h	/^    enum ConnType{$/;"	g	class:Connection
+Connection	server/connection.cpp	/^Connection::Connection()$/;"	f	class:Connection
+Connection	server/connection.h	/^class Connection$/;"	c
+DEBUG	log/log.h	12;"	d
+Daemon	daemon/daemon.h	/^    Daemon()$/;"	f	class:Daemon
+Daemon	daemon/daemon.h	/^class Daemon$/;"	c
+EPOLLMAX	server/server.h	15;"	d
+HANDLEMAX	server/server.h	17;"	d
+HandleEvents	server/connection.cpp	/^void Connection::HandleEvents(epoll_event* ev)$/;"	f	class:Connection
+HandleInputEvents	server/connection.cpp	/^void Connection::HandleInputEvents()$/;"	f	class:Connection
+HandleOutputEvents	server/connection.cpp	/^void Connection::HandleOutputEvents()$/;"	f	class:Connection
+HandleServerEvents	server/server.cpp	/^void Server::HandleServerEvents()$/;"	f	class:Server
+IncreaseCapacity	buffer/circularbuffer.cpp	/^bool CircularBuffer::IncreaseCapacity(size_t n)$/;"	f	class:CircularBuffer
+Init	buffer/circularbuffer.cpp	/^bool CircularBuffer::Init()$/;"	f	class:CircularBuffer
+Init	server/server.cpp	/^void Server::Init()$/;"	f	class:Server
+InitSockfd	server/server.cpp	/^void Server::InitSockfd()$/;"	f	class:Server
+LIBS	client/Makefile	/^LIBS=$/;"	m
+LIBS	server/Makefile	/^LIBS = $/;"	m
+LISTENQ	server/server.h	16;"	d
+LOG_ERR	log/log.h	18;"	d
+LOG_ERR	log/log.h	24;"	d
+LOG_INFO	log/log.h	19;"	d
+LOG_INFO	log/log.h	25;"	d
+LOG_LINE	log/log.h	17;"	d
+LOG_LINE	log/log.h	23;"	d
+Listen	server/server.cpp	/^void Server::Listen()$/;"	f	class:Server
+MAXLINE	client/client.cpp	13;"	d	file:
+OBJ	client/Makefile	/^OBJ=$(SRC:.cpp=.o)$/;"	m
+OBJ	server/Makefile	/^OBJ=$(SRC:.cpp=.o)$/;"	m
+OnClose	server/connection.cpp	/^void Connection::OnClose()$/;"	f	class:Connection
+PRJ	client/Makefile	/^PRJ=client$/;"	m
+PRJ	server/Makefile	/^PRJ = server$/;"	m
+PROGRAM_VERSION	server/main.cpp	17;"	d	file:
+Read	buffer/circularbuffer.cpp	/^size_t CircularBuffer::Read(char *data, size_t bytes)$/;"	f	class:CircularBuffer
+RecvData	server/connection.cpp	/^size_t Connection::RecvData()$/;"	f	class:Connection
+RecvSize	buffer/circularbuffer.cpp	/^size_t CircularBuffer::RecvSize()$/;"	f	class:CircularBuffer
+SRC	client/Makefile	/^SRC=client.cpp$/;"	m
+SRC	server/Makefile	/^SRC = 	server.cpp \\$/;"	m
+SUBDIR	Makefile	/^SUBDIR = server client$/;"	m
+SendData	server/connection.cpp	/^size_t Connection::SendData()$/;"	f	class:Connection
+Server	server/server.cpp	/^Server::Server(uint16_t port)$/;"	f	class:Server
+Server	server/server.h	/^class Server$/;"	c
+SetNonblock	server/server.cpp	/^void Server::SetNonblock(int sockfd)$/;"	f	class:Server
+Singleton	singleton/singleton.h	/^T* Singleton()$/;"	f
+Size	buffer/circularbuffer.h	/^    size_t Size() const { return size_; }$/;"	f	class:CircularBuffer
+Start	server/server.cpp	/^void Server::Start()$/;"	f	class:Server
+Tail	buffer/circularbuffer.h	/^    char *Tail(){return data_ + end_index_;}$/;"	f	class:CircularBuffer
+Write	buffer/circularbuffer.cpp	/^size_t CircularBuffer::Write(const char *data, size_t bytes)$/;"	f	class:CircularBuffer
+_CIRCLEULARBUFFER_H	buffer/circularbuffer.h	2;"	d
+_DAEMON_H	daemon/daemon.h	9;"	d
+_LOG_H	log/log.h	9;"	d
+_SIGLETION_H	singleton/singleton.h	9;"	d
+beg_index_	buffer/circularbuffer.h	/^    size_t beg_index_;  $/;"	m	class:CircularBuffer
+cType	server/connection.h	/^    ConnType cType;$/;"	m	class:Connection
+capacity_	buffer/circularbuffer.h	/^    size_t capacity_;   $/;"	m	class:CircularBuffer
+checkOptions	server/main.cpp	/^bool checkOptions(int argc,char** argv)$/;"	f
+data_	buffer/circularbuffer.h	/^    char *data_;    $/;"	m	class:CircularBuffer
+end_index_	buffer/circularbuffer.h	/^    size_t end_index_;  $/;"	m	class:CircularBuffer
+g_daemon	server/main.cpp	/^bool g_daemon = false;$/;"	v
+g_port	server/main.cpp	/^int g_port = 2222;$/;"	v
+long_options	server/main.cpp	/^static const struct option long_options[] = $/;"	v	typeref:struct:option	file:
+m_addr	server/connection.h	/^    struct sockaddr_in m_addr;$/;"	m	class:Connection	typeref:struct:Connection::sockaddr_in
+m_addr	server/server.h	/^    struct sockaddr_in m_addr;         $/;"	m	class:Server	typeref:struct:Server::sockaddr_in
+m_connections	server/server.h	/^    std::map<uint64_t,Connection*> m_connections; $/;"	m	class:Server
+m_epollfd	server/server.h	/^    int m_epollfd;                  $/;"	m	class:Server
+m_ev	server/server.h	/^    epoll_event m_ev;               $/;"	m	class:Server
+m_events	server/server.h	/^    epoll_event m_events[HANDLEMAX];$/;"	m	class:Server
+m_eventsCount	server/server.h	/^    int m_eventsCount;                $/;"	m	class:Server
+m_inputbuffer	server/connection.h	/^    CircularBuffer* m_inputbuffer;$/;"	m	class:Connection
+m_outputbuffer	server/connection.h	/^    CircularBuffer* m_outputbuffer;$/;"	m	class:Connection
+m_serverState	server/server.h	/^    bool m_serverState;             $/;"	m	class:Server
+m_sockfd	server/connection.h	/^    int m_sockfd;$/;"	m	class:Connection
+m_sockfd	server/server.h	/^    int m_sockfd;$/;"	m	class:Server
+main	client/client.cpp	/^int main(int argc, char **argv)$/;"	f
+main	server/main.cpp	/^int main(int argc,char** argv)$/;"	f
+size_	buffer/circularbuffer.h	/^    size_t size_;       $/;"	m	class:CircularBuffer
+useage	client/client.cpp	/^void useage(char* arg)$/;"	f
+useage	server/main.cpp	/^void useage(const char* arg)$/;"	f
+version	server/main.cpp	/^void version()$/;"	f
+~CircularBuffer	buffer/circularbuffer.cpp	/^CircularBuffer::~CircularBuffer()$/;"	f	class:CircularBuffer
+~Connection	server/connection.cpp	/^Connection::~Connection()$/;"	f	class:Connection
+~Daemon	daemon/daemon.h	/^    ~Daemon()$/;"	f	class:Daemon
+~Server	server/server.cpp	/^Server::~Server()$/;"	f	class:Server

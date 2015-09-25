@@ -1,0 +1,51 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCEPT	connection.h	/^        ACCEPT,$/;"	e	enum:Connection::ConnType
+Bind	server.cpp	/^void Server::Bind()$/;"	f	class:Server
+CC	Makefile	/^CC = g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g$/;"	m
+CONNECT	connection.h	/^        CONNECT$/;"	e	enum:Connection::ConnType
+ConnType	connection.h	/^    enum ConnType{$/;"	g	class:Connection
+Connection	connection.cpp	/^Connection::Connection()$/;"	f	class:Connection
+Connection	connection.h	/^class Connection$/;"	c
+EPOLLMAX	server.h	15;"	d
+HANDLEMAX	server.h	17;"	d
+HandleEvents	connection.cpp	/^void Connection::HandleEvents(epoll_event* ev)$/;"	f	class:Connection
+HandleInputEvents	connection.cpp	/^void Connection::HandleInputEvents()$/;"	f	class:Connection
+HandleOutputEvents	connection.cpp	/^void Connection::HandleOutputEvents()$/;"	f	class:Connection
+HandleServerEvents	server.cpp	/^void Server::HandleServerEvents()$/;"	f	class:Server
+Init	server.cpp	/^void Server::Init()$/;"	f	class:Server
+InitSockfd	server.cpp	/^void Server::InitSockfd()$/;"	f	class:Server
+LIBS	Makefile	/^LIBS = $/;"	m
+LISTENQ	server.h	16;"	d
+Listen	server.cpp	/^void Server::Listen()$/;"	f	class:Server
+OBJ	Makefile	/^OBJ=$(SRC:.cpp=.o)$/;"	m
+OnClose	connection.cpp	/^void Connection::OnClose()$/;"	f	class:Connection
+PRJ	Makefile	/^PRJ = server$/;"	m
+RecvData	connection.cpp	/^size_t Connection::RecvData()$/;"	f	class:Connection
+SRC	Makefile	/^SRC = 	server.cpp \\$/;"	m
+SendData	connection.cpp	/^size_t Connection::SendData()$/;"	f	class:Connection
+Server	server.cpp	/^Server::Server(uint16_t port)$/;"	f	class:Server
+Server	server.h	/^class Server$/;"	c
+SetNonblock	server.cpp	/^void Server::SetNonblock(int sockfd)$/;"	f	class:Server
+Start	server.cpp	/^void Server::Start()$/;"	f	class:Server
+cType	connection.h	/^    ConnType cType;$/;"	m	class:Connection
+m_addr	connection.h	/^    struct sockaddr_in m_addr;$/;"	m	class:Connection	typeref:struct:Connection::sockaddr_in
+m_addr	server.h	/^    struct sockaddr_in m_addr;         $/;"	m	class:Server	typeref:struct:Server::sockaddr_in
+m_connections	server.h	/^    std::map<uint64_t,Connection*> m_connections; $/;"	m	class:Server
+m_epollfd	server.h	/^    int m_epollfd;                  $/;"	m	class:Server
+m_ev	server.h	/^    epoll_event m_ev;               $/;"	m	class:Server
+m_events	server.h	/^    epoll_event m_events[HANDLEMAX];$/;"	m	class:Server
+m_eventsCount	server.h	/^    int m_eventsCount;                $/;"	m	class:Server
+m_inputbuffer	connection.h	/^    CircularBuffer* m_inputbuffer;$/;"	m	class:Connection
+m_outputbuffer	connection.h	/^    CircularBuffer* m_outputbuffer;$/;"	m	class:Connection
+m_serverState	server.h	/^    bool m_serverState;             $/;"	m	class:Server
+m_sockfd	connection.h	/^    int m_sockfd;$/;"	m	class:Connection
+m_sockfd	server.h	/^    int m_sockfd;$/;"	m	class:Server
+main	main.cpp	/^int main(int argc,char** argv)$/;"	f
+~Connection	connection.cpp	/^Connection::~Connection()$/;"	f	class:Connection
+~Server	server.cpp	/^Server::~Server()$/;"	f	class:Server
