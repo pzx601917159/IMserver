@@ -19,23 +19,26 @@ class Daemon
     public:
     Daemon()
     {
-        int pid;
-        if((pid=fork()) != 0)
-        {
-            exit(0);
-        }
-        else if(pid < 0)
+        pid_t pid;
+        pid = fork();
+        if(pid < 0)
         {
             exit(1);
+        }
+        else if(pid > 0)
+        {
+            exit(0);
         }
         setsid();
-        if((pid=fork()) != 0)
-        {
-            exit(0);
-        }
-        else if(pid <0)
+
+        pid = fork();
+        if(pid < 0)
         {
             exit(1);
+        }
+        else if(pid > 0)
+        {
+            exit(0);
         }
     }
 

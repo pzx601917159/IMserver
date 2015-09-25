@@ -76,7 +76,10 @@ int main(int argc,char** argv)
         return 0;
     }
 
-    Daemon daemon();
+    if(g_daemon)
+    {
+        Daemon daemon;
+    }
 
     Server server(2222);
 

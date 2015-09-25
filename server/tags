@@ -26,6 +26,7 @@ Listen	server.cpp	/^void Server::Listen()$/;"	f	class:Server
 OBJ	Makefile	/^OBJ=$(SRC:.cpp=.o)$/;"	m
 OnClose	connection.cpp	/^void Connection::OnClose()$/;"	f	class:Connection
 PRJ	Makefile	/^PRJ = server$/;"	m
+PROGRAM_VERSION	main.cpp	17;"	d	file:
 RecvData	connection.cpp	/^size_t Connection::RecvData()$/;"	f	class:Connection
 SRC	Makefile	/^SRC = 	server.cpp \\$/;"	m
 SendData	connection.cpp	/^size_t Connection::SendData()$/;"	f	class:Connection
@@ -34,6 +35,10 @@ Server	server.h	/^class Server$/;"	c
 SetNonblock	server.cpp	/^void Server::SetNonblock(int sockfd)$/;"	f	class:Server
 Start	server.cpp	/^void Server::Start()$/;"	f	class:Server
 cType	connection.h	/^    ConnType cType;$/;"	m	class:Connection
+checkOptions	main.cpp	/^bool checkOptions(int argc,char** argv)$/;"	f
+g_daemon	main.cpp	/^bool g_daemon = false;$/;"	v
+g_port	main.cpp	/^int g_port = 2222;$/;"	v
+long_options	main.cpp	/^static const struct option long_options[] = $/;"	v	typeref:struct:option	file:
 m_addr	connection.h	/^    struct sockaddr_in m_addr;$/;"	m	class:Connection	typeref:struct:Connection::sockaddr_in
 m_addr	server.h	/^    struct sockaddr_in m_addr;         $/;"	m	class:Server	typeref:struct:Server::sockaddr_in
 m_connections	server.h	/^    std::map<uint64_t,Connection*> m_connections; $/;"	m	class:Server
@@ -47,5 +52,7 @@ m_serverState	server.h	/^    bool m_serverState;             $/;"	m	class:Server
 m_sockfd	connection.h	/^    int m_sockfd;$/;"	m	class:Connection
 m_sockfd	server.h	/^    int m_sockfd;$/;"	m	class:Server
 main	main.cpp	/^int main(int argc,char** argv)$/;"	f
+useage	main.cpp	/^void useage(const char* arg)$/;"	f
+version	main.cpp	/^void version()$/;"	f
 ~Connection	connection.cpp	/^Connection::~Connection()$/;"	f	class:Connection
 ~Server	server.cpp	/^Server::~Server()$/;"	f	class:Server
