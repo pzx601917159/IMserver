@@ -7,8 +7,11 @@
 #include <string>
 #include <fstream>
 #include "tostring.h"
-#include "soxhelper.h"
+#include "loghelper.h"
 #include <syslog.h>
+
+
+// 历史原因，把这个放在名字空间外面，否则，要改的地方很多。
 
 class Global
 {
