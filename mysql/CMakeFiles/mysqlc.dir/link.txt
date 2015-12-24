@@ -1,0 +1,2 @@
+/usr/bin/ar cr libmysqlc.a  CMakeFiles/mysqlc.dir/db_pool.cpp.o CMakeFiles/mysqlc.dir/mysqldatabase.cpp.o CMakeFiles/mysqlc.dir/readconfig.cpp.o
+/usr/bin/ranlib libmysqlc.a

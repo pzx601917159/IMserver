@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 2.8)
+
+PROJECT(IMSERVER C CXX)
+
+SET(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR})
+SET(BIN_DIR ${CMAKE_CURRENT_BINARY_DIR})
+
+ADD_SUBDIRECTORY(buffer)
+ADD_SUBDIRECTORY(mysql)
+ADD_SUBDIRECTORY(protocol)
+ADD_SUBDIRECTORY(daemon)
+ADD_SUBDIRECTORY(log)
+ADD_SUBDIRECTORY(timer)
+ADD_SUBDIRECTORY(server)
+ADD_SUBDIRECTORY(client)
+
+#拷贝mysql配置文件
+configure_file(${SRC_DIR}/mysql/Config.ini ${BIN_DIR}/server COPYONLY)
+configure_file(${SRC_DIR}/mysql/Config.ini ${BIN_DIR}/client COPYONLY)
+
+

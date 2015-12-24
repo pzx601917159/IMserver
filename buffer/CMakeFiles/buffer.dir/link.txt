@@ -1,0 +1,2 @@
+/usr/bin/ar cr libbuffer.a  CMakeFiles/buffer.dir/circularbuffer.cpp.o
+/usr/bin/ranlib libbuffer.a

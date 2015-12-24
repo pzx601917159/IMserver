@@ -1,0 +1,2 @@
+SET(LIBBUFFER_SRC circularbuffer.cpp)
+ADD_LIBRARY(buffer STATIC ${LIBBUFFER_SRC})
