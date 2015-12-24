@@ -1,0 +1,6 @@
+//注册用户响应
+message RegUserRes
+{
+    //返回码
+    required int32 rescode = 1;
+}

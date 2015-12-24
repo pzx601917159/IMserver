@@ -1,0 +1,6 @@
+//注册用户请求
+message RegServerReq
+{
+    //服务器类型
+    required uint32 type = 1;
+}

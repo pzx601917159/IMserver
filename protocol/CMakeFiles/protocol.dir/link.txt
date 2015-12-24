@@ -1,0 +1,2 @@
+/usr/bin/ar cr libprotocol.a  CMakeFiles/protocol.dir/reguserreq.pb.cc.o CMakeFiles/protocol.dir/reguserres.pb.cc.o CMakeFiles/protocol.dir/loginreq.pb.cc.o CMakeFiles/protocol.dir/loginres.pb.cc.o CMakeFiles/protocol.dir/sendmsg.pb.cc.o CMakeFiles/protocol.dir/regserverreq.pb.cc.o CMakeFiles/protocol.dir/regserverres.pb.cc.o
+/usr/bin/ranlib libprotocol.a

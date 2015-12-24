@@ -1,0 +1,8 @@
+//注册用户请求
+message LoginRes
+{
+    //用户名
+    required uint32 rescode = 1;
+    //userid
+    required uint32 userid = 2;
+}

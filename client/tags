@@ -1,0 +1,259 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCEPT	connection.h	/^        ACCEPT,\/\/接受的连接$/;"	e	enum:Connection::ConnType
+ARCHITECTURE_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	193;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	196;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	199;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	202;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	206;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	181;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	187;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	190;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
+BroadcastMsg	client.cpp	/^void Client::BroadcastMsg(SendMsg* msg)$/;"	f	class:Client
+CHAT_MSG	request.h	/^    CHAT_MSG$/;"	e	enum:ReqType
+CMAKE_BINARY_DIR	Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/test\/myserver\/server$/;"	m
+CMAKE_COMMAND	Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/test\/myserver\/server$/;"	m
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	13;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	16;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	22;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	28;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	32;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	34;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	36;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	40;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	43;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	46;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	49;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	52;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	55;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	58;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	61;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	66;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	77;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	80;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	86;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	92;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	12;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	18;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	30;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	34;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	36;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	38;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	42;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	45;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	48;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	51;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	54;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	57;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	60;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	68;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	77;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	9;"	d	file:
+CONNECT	connection.h	/^        CONNECT\/\/连接别人的$/;"	e	enum:Connection::ConnType
+Client	client.cpp	/^Client::Client()$/;"	f	class:Client
+Client	client.h	/^class Client:public IConnection$/;"	c
+ConnType	connection.h	/^    enum ConnType{$/;"	g	class:Connection
+Connect	client.cpp	/^Connection* Client::Connect(int& sockfd)$/;"	f	class:Client
+Connection	connection.cpp	/^Connection::Connection(int sockfd,sockaddr_in addr,Client* client)$/;"	f	class:Connection
+Connection	connection.h	/^class Connection:public IConnection$/;"	c
+CreateConn	client.cpp	/^Connection* Client::CreateConn()$/;"	f	class:Client
+DeleteConn	client.cpp	/^void Client::DeleteConn(uint64_t key)$/;"	f	class:Client
+EPOLLMAX	client.h	20;"	d
+EPOLL_SIZE	epollselector.cpp	/^const int EPOLL_SIZE = 10240;$/;"	v
+EPollSelector	epollselector.cpp	/^EPollSelector::EPollSelector()$/;"	f	class:EPollSelector
+EPollSelector	epollselector.h	/^class EPollSelector$/;"	c
+FAILED	request.h	/^    FAILED = 400,   \/\/失败$/;"	e	enum:ResCode
+GetCachedSize	reguserreq.h	/^  int GetCachedSize() const { return _cached_size_; }$/;"	f	class:RegUserReq
+GetSelector	client.h	/^    EPollSelector* GetSelector() const {return  m_selector;}$/;"	f	class:Client
+GetSockfd	client.h	/^    int GetSockfd() const{return 0;};$/;"	f	class:Client
+GetSockfd	connection.cpp	/^int Connection::GetSockfd() const$/;"	f	class:Connection
+HANDLEMAX	client.h	22;"	d
+HEADER_LEN	request.h	27;"	d
+HandleChatMsg	connection.cpp	/^void Connection::HandleChatMsg(SendMsg* msg)$/;"	f	class:Connection
+HandleLoginRes	connection.cpp	/^void Connection::HandleLoginRes(LoginRes* res)$/;"	f	class:Connection
+HandleRegReq	connection.cpp	/^void Connection::HandleRegReq(RegUserReq* req)$/;"	f	class:Connection
+HandleReq	connection.cpp	/^void Connection::HandleReq(ReqType type,size_t len)$/;"	f	class:Connection
+IConnection	connection.h	/^class IConnection$/;"	c
+ID_VOID_MAIN	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
+INNER_ERR	request.h	/^    INNER_ERR = 500 \/\/内部错误$/;"	e	enum:ResCode
+Init	client.cpp	/^void Client::Init()$/;"	f	class:Client
+Init	epollselector.cpp	/^bool EPollSelector::Init()$/;"	f	class:EPollSelector
+InitSockfd	client.cpp	/^void Client::InitSockfd(int& sockfd)$/;"	f	class:Client
+LISTENQ	client.h	21;"	d
+LOGIN_REQ	request.h	/^    LOGIN_REQ,$/;"	e	enum:ReqType
+LOGIN_RES	request.h	/^    LOGIN_RES,$/;"	e	enum:ReqType
+MAX_EVENTS	epollselector.cpp	/^const int MAX_EVENTS = 500;$/;"	v
+OnClose	connection.cpp	/^void Connection::OnClose()$/;"	f	class:Connection
+OnConnected	connection.cpp	/^void Connection::OnConnected()$/;"	f	class:Connection
+OnRead	client.cpp	/^void Client::OnRead()$/;"	f	class:Client
+OnRead	connection.cpp	/^void Connection::OnRead()$/;"	f	class:Connection
+OnWrite	client.cpp	/^void Client::OnWrite()$/;"	f	class:Client
+OnWrite	connection.cpp	/^void Connection::OnWrite()$/;"	f	class:Connection
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	107;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	113;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	116;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	122;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	128;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	134;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	137;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	140;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	146;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	149;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	158;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	161;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	164;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	167;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	170;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	173;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	176;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	179;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	182;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	107;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	113;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	116;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	122;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	128;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	134;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	140;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	143;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	149;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	152;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	158;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	161;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	164;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	167;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	92;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	95;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
+PROGRAM_VERSION	main.cpp	17;"	d	file:
+PROTOBUF_reguserreq_2eproto__INCLUDED	reguserreq.h	5;"	d
+REGUSER_REQ	request.h	/^    REGUSER_REQ,$/;"	e	enum:ReqType
+REGUSER_RES	request.h	/^    REGUSER_RES,$/;"	e	enum:ReqType
+RM	Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RecvData	connection.cpp	/^size_t Connection::RecvData()$/;"	f	class:Connection
+RegUserReq	reguserreq.h	/^class RegUserReq : public ::google::protobuf::Message {$/;"	c
+Remove	epollselector.cpp	/^void EPollSelector::Remove(IConnection* conn)$/;"	f	class:EPollSelector
+ReqType	request.h	/^enum ReqType$/;"	g
+ResCode	request.h	/^enum ResCode$/;"	g
+SEL_READ	epollselector.h	/^    SEL_READ = 1,$/;"	e	enum:__anon1
+SEL_RW	epollselector.h	/^    SEL_RW$/;"	e	enum:__anon1
+SEL_WRITE	epollselector.h	/^    SEL_WRITE,$/;"	e	enum:__anon1
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SUCCESS	request.h	/^    SUCCESS = 200,  \/\/成功$/;"	e	enum:ResCode
+SUFFIXES	Makefile	/^SUFFIXES =$/;"	m
+Select	epollselector.cpp	/^void EPollSelector::Select()$/;"	f	class:EPollSelector
+Select	epollselector.cpp	/^void EPollSelector::Select(IConnection* conn,int remove,int add)$/;"	f	class:EPollSelector
+SendData	connection.cpp	/^size_t Connection::SendData()$/;"	f	class:Connection
+SendData	connection.cpp	/^void Connection::SendData(const char* data,size_t size)$/;"	f	class:Connection
+SendRequest	connection.cpp	/^void Connection::SendRequest(::google::protobuf::Message* req,ReqType type)$/;"	f	class:Connection
+SetNonblock	client.cpp	/^void Client::SetNonblock(int& sockfd)$/;"	f	class:Client
+SetupEpoll	epollselector.cpp	/^inline void SetupEpoll(int epollfd,int option,int sockfd,epoll_event &ev)$/;"	f
+Size	epollselector.cpp	/^size_t EPollSelector::Size() const$/;"	f	class:EPollSelector
+SockFdSet	epollselector.h	/^    typedef std::set<int> SockFdSet;$/;"	t	class:EPollSelector
+Start	client.cpp	/^void Client::Start()$/;"	f	class:Client
+_CLIENT_H	client.h	2;"	d
+_CONNECTION_H	connection.h	8;"	d
+_EPOLLSELECTOR_H	epollselector.h	8;"	d
+_REQUEST_H	request.h	8;"	d
+_cached_size_	reguserreq.h	/^  mutable int _cached_size_;$/;"	m	class:RegUserReq
+_has_bits_	reguserreq.h	/^  ::google::protobuf::uint32 _has_bits_[(2 + 31) \/ 32];$/;"	m	class:RegUserReq
+_unknown_fields_	reguserreq.h	/^  ::google::protobuf::UnknownFieldSet _unknown_fields_;$/;"	m	class:RegUserReq
+cType	connection.h	/^    ConnType cType;$/;"	m	class:Connection
+checkOptions	main.cpp	/^bool checkOptions(int argc,char** argv)$/;"	f
+clear_has_name	reguserreq.h	/^inline void RegUserReq::clear_has_name() {$/;"	f	class:RegUserReq
+clear_has_password	reguserreq.h	/^inline void RegUserReq::clear_has_password() {$/;"	f	class:RegUserReq
+clear_name	reguserreq.h	/^inline void RegUserReq::clear_name() {$/;"	f	class:RegUserReq
+clear_password	reguserreq.h	/^inline void RegUserReq::clear_password() {$/;"	f	class:RegUserReq
+default_instance_	reguserreq.h	/^  static RegUserReq* default_instance_;$/;"	m	class:RegUserReq
+g_daemon	main.cpp	/^bool g_daemon = false;$/;"	v
+g_port	main.cpp	/^int g_port = 2222;$/;"	v
+google	reguserreq.h	/^namespace google {$/;"	n
+has_name	reguserreq.h	/^inline bool RegUserReq::has_name() const {$/;"	f	class:RegUserReq
+has_password	reguserreq.h	/^inline bool RegUserReq::has_password() const {$/;"	f	class:RegUserReq
+info_arch	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_compiler	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_platform	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+kNameFieldNumber	reguserreq.h	/^  static const int kNameFieldNumber = 1;$/;"	m	class:RegUserReq
+kPasswordFieldNumber	reguserreq.h	/^  static const int kPasswordFieldNumber = 2;$/;"	m	class:RegUserReq
+long_options	main.cpp	/^static const struct option long_options[] = $/;"	v	typeref:struct:option	file:
+m_addr	connection.h	/^    struct sockaddr_in m_addr;\/\/连接的地址信息(IP地址和端口号)$/;"	m	class:Connection	typeref:struct:Connection::sockaddr_in
+m_client	connection.h	/^    Client* m_client;$/;"	m	class:Connection
+m_clientState	client.h	/^    bool m_clientState;             \/\/服务器状态$/;"	m	class:Client
+m_connections	client.h	/^    std::map<uint64_t,Connection*> m_connections; \/\/连接map$/;"	m	class:Client
+m_enable	connection.h	/^    bool m_enable;$/;"	m	class:Connection
+m_epollfd	epollselector.h	/^    int m_epollfd;$/;"	m	class:EPollSelector
+m_inputbuffer	connection.h	/^    CircularBuffer* m_inputbuffer;$/;"	m	class:Connection
+m_name	connection.h	/^    std::string m_name;\/\/记录聊天的人的名字$/;"	m	class:Connection
+m_outputbuffer	connection.h	/^    CircularBuffer* m_outputbuffer;$/;"	m	class:Connection
+m_selector	client.h	/^    EPollSelector* m_selector;      \/\/封装epoll的处理$/;"	m	class:Client
+m_sockfd	connection.h	/^    int m_sockfd;\/\/套接字$/;"	m	class:Connection
+m_sockfds	epollselector.h	/^    SockFdSet m_sockfds;$/;"	m	class:EPollSelector
+main	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^int main(int argc, char* argv[])$/;"	f
+main	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	main.cpp	/^int main(int argc,char** argv)$/;"	f
+mutable_name	reguserreq.h	/^inline ::std::string* RegUserReq::mutable_name() {$/;"	f	class:RegUserReq
+mutable_password	reguserreq.h	/^inline ::std::string* RegUserReq::mutable_password() {$/;"	f	class:RegUserReq
+mutable_unknown_fields	reguserreq.h	/^  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {$/;"	f	class:RegUserReq
+name	reguserreq.h	/^inline const ::std::string& RegUserReq::name() const {$/;"	f	class:RegUserReq
+name_	reguserreq.h	/^  ::std::string* name_;$/;"	m	class:RegUserReq
+operator =	reguserreq.h	/^  inline RegUserReq& operator=(const RegUserReq& from) {$/;"	f	class:RegUserReq
+password	reguserreq.h	/^inline const ::std::string& RegUserReq::password() const {$/;"	f	class:RegUserReq
+password_	reguserreq.h	/^  ::std::string* password_;$/;"	m	class:RegUserReq
+protobuf	reguserreq.h	/^namespace protobuf {$/;"	n	namespace:google
+release_name	reguserreq.h	/^inline ::std::string* RegUserReq::release_name() {$/;"	f	class:RegUserReq
+release_password	reguserreq.h	/^inline ::std::string* RegUserReq::release_password() {$/;"	f	class:RegUserReq
+set_allocated_name	reguserreq.h	/^inline void RegUserReq::set_allocated_name(::std::string* name) {$/;"	f	class:RegUserReq
+set_allocated_password	reguserreq.h	/^inline void RegUserReq::set_allocated_password(::std::string* password) {$/;"	f	class:RegUserReq
+set_has_name	reguserreq.h	/^inline void RegUserReq::set_has_name() {$/;"	f	class:RegUserReq
+set_has_password	reguserreq.h	/^inline void RegUserReq::set_has_password() {$/;"	f	class:RegUserReq
+set_name	reguserreq.h	/^inline void RegUserReq::set_name(const ::std::string& value) {$/;"	f	class:RegUserReq
+set_name	reguserreq.h	/^inline void RegUserReq::set_name(const char* value) {$/;"	f	class:RegUserReq
+set_name	reguserreq.h	/^inline void RegUserReq::set_name(const char* value, size_t size) {$/;"	f	class:RegUserReq
+set_password	reguserreq.h	/^inline void RegUserReq::set_password(const ::std::string& value) {$/;"	f	class:RegUserReq
+set_password	reguserreq.h	/^inline void RegUserReq::set_password(const char* value) {$/;"	f	class:RegUserReq
+set_password	reguserreq.h	/^inline void RegUserReq::set_password(const char* value, size_t size) {$/;"	f	class:RegUserReq
+testConnect	connection.cpp	/^bool testConnect(Connection* conn)$/;"	f
+unknown_fields	reguserreq.h	/^  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {$/;"	f	class:RegUserReq
+useage	main.cpp	/^void useage(const char* arg)$/;"	f
+version	main.cpp	/^void version()$/;"	f
+~Client	client.cpp	/^Client::~Client()$/;"	f	class:Client
+~Connection	connection.cpp	/^Connection::~Connection()$/;"	f	class:Connection
+~EPollSelector	epollselector.cpp	/^EPollSelector::~EPollSelector()$/;"	f	class:EPollSelector
