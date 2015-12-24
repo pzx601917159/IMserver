@@ -16,6 +16,8 @@
 
 #define PROGRAM_VERSION "1.0"
 bool g_daemon = false;
+
+//命令行出入的是int型,本来是uint16_t，为了兼容命令行选项先这么写吧
 int g_port = 2222;
 
 
@@ -47,7 +49,6 @@ bool checkOptions(int argc,char** argv)
 {
     int opt = 0;
     int options_index = 0;
-    char* tmp = NULL;
     while((opt = getopt_long(argc,argv,"dp:hv",long_options,&options_index)) != EOF)
     {
         switch(opt)
@@ -75,17 +76,15 @@ int main(int argc,char** argv)
     {
         return 0;
     }
+    
+    //是否以守护进程方式启动
+    Daemon daemon(g_daemon,argc,argv);
 
-    if(g_daemon)
-    {
-        Daemon daemon;
-    }
+    Server *server = Singleton<Server>();
+    
+    server->Init();
 
-    Server server(2222);
-
-    server.Init();
-
-    server.Start();
+    server->Start();
 
     return 0;
 }

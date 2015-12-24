@@ -14,36 +14,20 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include "../log/logger.h"
+
+//守护进程类
 class Daemon
 {
+    FILE* m_newFile;
+    int m_old;
     public:
-    Daemon()
-    {
-        pid_t pid;
-        pid = fork();
-        if(pid < 0)
-        {
-            exit(1);
-        }
-        else if(pid > 0)
-        {
-            exit(0);
-        }
-        setsid();
+    Daemon(bool daemon,int sz,char*args[]);
 
-        pid = fork();
-        if(pid < 0)
-        {
-            exit(1);
-        }
-        else if(pid > 0)
-        {
-            exit(0);
-        }
-    }
-
-    ~Daemon()
-    {
-    }
+    ~Daemon();
 };
 #endif //_DAEMON_H

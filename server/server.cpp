@@ -1,125 +1,174 @@
 #include "server.h"
-#include "log.h"
+#include "logger.h"
+#include "connection.h"
+#include "epollselector.h"
+
+#include "sendmsg.pb.h"
 
 Server::Server(uint16_t port)
 {
-    m_eventsCount = 0;
     m_serverState = false;
     memset(&m_addr, 0, sizeof(m_addr));
     m_addr.sin_family = AF_INET;
     m_addr.sin_addr.s_addr = htonl(INADDR_ANY);
     m_addr.sin_port = htons(port);
-    m_epollfd = epoll_create(EPOLLMAX);
+    m_selector = new EPollSelector();
 }
 
 Server::~Server()
 {
+    delete m_selector;
 };
 
+//初始化服务器
 void Server::Init()
 {
-    LOG_INFO("Init server...");
+    log::log(Info,"Init server...");
+    //初始化套接字
     InitSockfd();
+    //绑定
     Bind();
+    //侦听
     Listen();
+    //初始化epoll
+    m_selector->Init();
 }
 
+//启动服务器
 void Server::Start()
 {
-    LOG_INFO("start server...");
+    log::log(Info,"start server...");
     m_serverState = true;
-    m_ev.data.fd = m_sockfd;
-    m_ev.events = EPOLLIN|EPOLLET;
-    epoll_ctl(m_epollfd, EPOLL_CTL_ADD, m_sockfd, &m_ev);
-    LOG_INFO("run server");
+    //m_ev.data.fd = m_sockfd;
+    //m_ev.events = EPOLLIN|EPOLLET;
+    //注册事件
+    //epoll_ctl(m_epollfd, EPOLL_CTL_ADD, m_sockfd, &m_ev);
+
+    //相当于epoll_ctl_add
+    m_selector->Select(this,0,0);
+    log::log(Info,"m_selector.size:",m_selector->Size());
+
+    log::log(Info,"run server");
     while(m_serverState)
     {
-        m_eventsCount = epoll_wait(m_epollfd, m_events, HANDLEMAX, -1);
-        for(int i=0; i<m_eventsCount; i++)
-        {
-            if(m_events[i].data.fd == m_sockfd)
-            {
-                HandleServerEvents();
-            }
-            else if(m_events[i].events & EPOLLIN | m_events[i].events & EPOLLOUT)
-            {
-                epoll_event ev = m_events[i];
-                ((Connection*)(ev.data.ptr))->HandleEvents(&ev);
-            }
-        } 
-        
+        m_selector->Select();
     }
 }
 
-void Server::HandleServerEvents()
+//服务器侦听套接字上的事件
+void Server::OnRead()
 {
-    LOG_INFO("handle accept evets!");
-    Connection* conn = new Connection();
+    log::log(Info,"handle accept evets!");
+    //建立新的连接
     struct sockaddr_in addr;
     socklen_t len = sizeof(sockaddr);
-    conn->m_sockfd = accept(m_sockfd,(sockaddr *)&addr,&len);
+    int sockfd = accept(m_sockfd,(sockaddr *)&addr,&len);
            
-    if(conn->m_sockfd<0)
+    if(sockfd<0)
     {
-        perror("connfd<0");
+        log::log(Error,"connfd < 0");
         return;
-    } 
-    conn->m_addr.sin_addr = addr.sin_addr;
-    conn->m_addr.sin_port = ntohs(addr.sin_port);
-    std::map<uint64_t, Connection*>::iterator it = m_connections.find(conn->m_addr.sin_addr.s_addr);
+    }
+    //设置为非阻塞
+    SetNonblock(sockfd);
+   
+    //创建连接
+    Connection* conn = new Connection(sockfd,addr,this);
+ 
+    std::map<uint64_t, Connection*>::iterator it = m_connections.find(sockfd);
     if(it != m_connections.end())
     {
         Connection* connection =it->second;
+        //这个连接已经存在，其实是不可能的，但是还是删除把
+        m_selector->Remove(connection);
         m_connections.erase(it);
         delete connection;
     }
-    m_connections[conn->m_addr.sin_addr.s_addr] = conn;
+    //插入m_connections中,以IP为键，这样不合理，同一个IP会登陆多个客户端,所以还是用套接字作为键吧
+    m_connections[sockfd] = conn;
 
+    //打印一些信息
+    log::log(Info,"m_connections.size() = ",m_connections.size());
     char *str = inet_ntoa(addr.sin_addr);
-
     unsigned short port = ntohs(addr.sin_port);
-    LOG_INFO("accept a connection from ip:",str,"port:",port);
+    log::log(Info,"accept a connection from ip:",str,"port",port);
 
-    SetNonblock(conn->m_sockfd);
-    m_ev.data.ptr = conn;
-
-    m_ev.events=EPOLLIN | EPOLLET;
-
-    epoll_ctl(m_epollfd,EPOLL_CTL_ADD,conn->m_sockfd,&m_ev);
+    //添加到epoll中
+    m_selector->Select(conn,0,0);
+    log::log(Info,"m_selector.size:",m_selector->Size());
 }
 
+//生成套接字,并设置为非阻塞
 void Server::InitSockfd()
 {
     m_sockfd = socket(AF_INET, SOCK_STREAM, 0);//tcp
+    //设置非阻塞
     SetNonblock(m_sockfd);
 }
 
+/***功能:设置为非阻塞***/
+/***参数:套接字***/
 void Server::SetNonblock(int sockfd)
 {
     int opts;
     opts = fcntl(sockfd,F_GETFL);
     if(opts < 0)
     {
-        perror("fcntl(sock,GETFL)");
-        return;
+        log::log(Error,"fcntl(sock,GETFL)");
+        return ;
     }
     opts = opts|O_NONBLOCK;
     if(fcntl(sockfd,F_SETFL,opts)<0)
     {
-        perror("fcntl(sock,SETFL,opts)");
-        return;
+        log::log(Error,"fcntl(sock,SETFL,opts)");
+        return ;
     }
 }
 
+//绑定套接字
 void Server::Bind()
 {
+    int opt = 1;
+    if(setsockopt(m_sockfd,SOL_SOCKET,SO_REUSEADDR,&opt,sizeof(opt)) != 0)
+        log::log(Info,"setsockopt Error");
     socklen_t len = sizeof(m_addr);
-    bind(m_sockfd,(sockaddr *)&m_addr, len);
+    if(bind(m_sockfd,(sockaddr *)&m_addr, len) == -1)
+        log::log(Info,"bind error");
 }
 
+//侦听套接字
 void Server::Listen()
 {
-    listen(m_sockfd,LISTENQ);
+    listen(m_sockfd,LISTENQ);//连接请求队列的最大长度为20
+}
+
+void Server::DeleteConn(uint64_t key)
+{
+    std::map<uint64_t,Connection*>::iterator it = m_connections.find(key);
+
+    if(it != m_connections.end())
+    {
+        //删除epoll侦听的套接字
+        m_selector->Remove(it->second);
+
+        m_connections.erase(it);
+    }
+    log::log(Info,"m_connections.size() = ",m_connections.size());
 }
 
 
+int Server::GetSockfd() const
+{
+    return m_sockfd;
+}
+
+void Server::BroadcastMsg(SendMsg* msg)
+{
+    std::map<uint64_t,Connection*>::iterator it = m_connections.begin();
+
+    while(it != m_connections.end())
+    {
+        it->second->SendRequest(msg,CHAT_MSG);
+        ++it;
+    }
+}

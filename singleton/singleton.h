@@ -5,6 +5,7 @@
 	> Created Time: Wednesday 09 September 2015 02:37:44 PM CST
  ********************************************************************/
 
+//单例模式
 #ifndef _SIGLETION_H
 #define _SIGLETION_H
 template <typename T>
