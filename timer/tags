@@ -1,0 +1,198 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCHITECTURE_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	193;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	196;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	199;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	202;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	206;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	181;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	187;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	190;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
+Begin	wheelnode.cpp	/^Timer* WheelNode::Begin()$/;"	f	class:WheelNode
+CMAKE_BINARY_DIR	Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/test\/github\/timer$/;"	m
+CMAKE_COMMAND	Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/test\/github\/timer$/;"	m
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	13;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	16;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	22;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	28;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	32;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	34;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	36;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	40;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	43;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	46;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	49;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	52;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	55;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	58;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	61;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	66;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	77;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	80;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	86;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	92;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	12;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	18;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	30;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	34;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	36;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	38;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	42;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	45;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	48;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	51;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	54;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	57;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	60;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	68;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	77;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	9;"	d	file:
+Click	wheel.cpp	/^WheelNode* Wheel::Click(WheelNode* newNode)$/;"	f	class:Wheel
+Click	wheeltimer.cpp	/^bool WheelTimer::Click()$/;"	f	class:WheelTimer
+CreateTimer	wheeltimer.cpp	/^Timer* WheelTimer::CreateTimer(Task* task,uint32_t time)$/;"	f	class:WheelTimer
+DeleteTimer	wheelnode.cpp	/^void WheelNode::DeleteTimer(Timer* timer)$/;"	f	class:WheelNode
+Destroy	timer.cpp	/^void Timer::Destroy()$/;"	f	class:Timer
+GetAlarmCount	wheeltimer.cpp	/^uint32_t WheelTimer::GetAlarmCount()$/;"	f	class:WheelTimer
+GetNext	timer.cpp	/^Timer* Timer::GetNext()$/;"	f	class:Timer
+GetNode	timer.cpp	/^WheelNode* Timer::GetNode()$/;"	f	class:Timer
+GetPassedTime	wheel.cpp	/^uint32_t Wheel::GetPassedTime() const$/;"	f	class:Wheel
+GetPrev	timer.cpp	/^Timer* Timer::GetPrev()$/;"	f	class:Timer
+GetRemain	timer.cpp	/^uint32_t Timer::GetRemain() const$/;"	f	class:Timer
+GetRemainTime	wheel.cpp	/^uint32_t Wheel::GetRemainTime() const$/;"	f	class:Wheel
+GetTask	timer.cpp	/^Task* Timer::GetTask()$/;"	f	class:Timer
+GetTotalTime	wheel.cpp	/^uint32_t Wheel::GetTotalTime() const$/;"	f	class:Wheel
+GetUnitTime	wheel.cpp	/^uint32_t Wheel::GetUnitTime() const$/;"	f	class:Wheel
+ID_VOID_MAIN	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
+InitTimer	wheeltimer.cpp	/^void WheelTimer::InitTimer()$/;"	f	class:WheelTimer
+InsertTimer	wheel.cpp	/^void Wheel::InsertTimer(uint32_t pos,Timer* timer)$/;"	f	class:Wheel
+InsertTimer	wheelnode.cpp	/^void WheelNode::InsertTimer(Timer* timer)$/;"	f	class:WheelNode
+InsertTimer	wheeltimer.cpp	/^void WheelTimer::InsertTimer(Timer* timer)$/;"	f	class:WheelTimer
+OnAlarm	wheeltimer.cpp	/^void WheelTimer::OnAlarm(int)$/;"	f	class:WheelTimer
+OnTask	task.cpp	/^void Task::OnTask()$/;"	f	class:Task
+OnTimer	timer.cpp	/^void Timer::OnTimer()$/;"	f	class:Timer
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	107;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	113;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	116;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	122;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	128;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	134;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	137;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	140;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	146;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	149;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	158;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	161;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	164;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	167;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	170;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	173;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	176;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	179;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	182;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	107;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	113;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	116;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	122;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	128;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	134;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	140;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	143;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	149;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	152;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	158;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	161;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	164;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	167;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	92;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	95;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
+Pop	wheelnode.cpp	/^Timer* WheelNode::Pop()$/;"	f	class:WheelNode
+RM	Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+Reset	wheelnode.cpp	/^void WheelNode::Reset()$/;"	f	class:WheelNode
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SUFFIXES	Makefile	/^SUFFIXES =$/;"	m
+Schedule	timer.cpp	/^bool Timer::Schedule(Task* task,uint32_t minsec)$/;"	f	class:Timer
+SetNext	timer.cpp	/^void Timer::SetNext(Timer* next)$/;"	f	class:Timer
+SetNode	timer.cpp	/^void Timer::SetNode(WheelNode* node)$/;"	f	class:Timer
+SetPrev	timer.cpp	/^void Timer::SetPrev(Timer* prev)$/;"	f	class:Timer
+SetRemain	timer.cpp	/^void Timer::SetRemain(uint32_t remain)$/;"	f	class:Timer
+SetTask	timer.cpp	/^void Timer::SetTask(Task* task)$/;"	f	class:Timer
+Task	task.h	/^class Task$/;"	c
+Timer	timer.cpp	/^Timer::Timer(Task* task,uint32_t remain)$/;"	f	class:Timer
+Timer	timer.h	/^class Timer$/;"	c
+Wheel	wheel.cpp	/^Wheel::Wheel(uint32_t size,uint32_t time)$/;"	f	class:Wheel
+Wheel	wheel.h	/^class Wheel$/;"	c
+WheelList	wheeltimer.h	/^    typedef std::list<Wheel*> WheelList;$/;"	t	class:WheelTimer
+WheelNode	wheelnode.cpp	/^WheelNode::WheelNode()$/;"	f	class:WheelNode
+WheelNode	wheelnode.h	/^class WheelNode$/;"	c
+WheelNodeArray	wheel.h	/^    typedef std::vector<WheelNode*> WheelNodeArray;$/;"	t	class:Wheel
+WheelTimer	wheeltimer.cpp	/^WheelTimer::WheelTimer()$/;"	f	class:WheelTimer
+WheelTimer	wheeltimer.h	/^class WheelTimer$/;"	c
+_TASK_H	task.h	9;"	d
+_TIMER_H	timer.h	9;"	d
+_WHEELNODE_H	wheelnode.h	9;"	d
+_WHEELTIMER_H	wheeltimer.h	10;"	d
+_WHEEL_H	wheel.h	9;"	d
+info_arch	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_compiler	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_platform	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+m_alarmCount	wheeltimer.cpp	/^uint32_t WheelTimer::m_alarmCount = 0;$/;"	m	class:WheelTimer	file:
+m_alarmCount	wheeltimer.h	/^    static uint32_t m_alarmCount;\/\/alarm信号出发了几次$/;"	m	class:WheelTimer
+m_count	wheeltimer.h	/^    uint32_t m_count;       \/\/时间轮的数量$/;"	m	class:WheelTimer
+m_next	timer.h	/^    Timer* m_next; \/\/后一个定时器$/;"	m	class:Timer
+m_node	timer.h	/^    WheelNode* m_node;  \/\/轮子的槽$/;"	m	class:Timer
+m_node	wheeltimer.h	/^    WheelNode* m_node;      \/\/当前的时间槽$/;"	m	class:WheelTimer
+m_nodes	wheel.h	/^    WheelNodeArray m_nodes;$/;"	m	class:Wheel
+m_passed	wheel.h	/^    uint32_t m_passed;    \/\/当前过去单元数量$/;"	m	class:Wheel
+m_prev	timer.h	/^    Timer* m_prev; \/\/前一个定时器$/;"	m	class:Timer
+m_remain	timer.h	/^    uint32_t m_remain;  \/\/剩余的时间$/;"	m	class:Timer
+m_task	timer.h	/^    Task* m_task;  \/\/定时任务$/;"	m	class:Timer
+m_timer	wheelnode.h	/^    Timer *m_timer;$/;"	m	class:WheelNode
+m_unitTime	wheel.h	/^    uint32_t m_unitTime;  \/\/一个单元时间$/;"	m	class:Wheel
+m_unitTime	wheeltimer.h	/^    uint32_t m_unitTime;    \/\/单元时间$/;"	m	class:WheelTimer
+m_wheelList	wheeltimer.h	/^    WheelList m_wheelList;  \/\/时间轮链表$/;"	m	class:WheelTimer
+main	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^int main(int argc, char* argv[])$/;"	f
+main	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	main.cpp	/^int main()$/;"	f
+~Timer	timer.cpp	/^Timer::~Timer()$/;"	f	class:Timer
+~Wheel	wheel.cpp	/^Wheel::~Wheel()$/;"	f	class:Wheel
+~WheelNode	wheelnode.cpp	/^WheelNode::~WheelNode()$/;"	f	class:WheelNode
+~WheelTimer	wheeltimer.cpp	/^WheelTimer::~WheelTimer()$/;"	f	class:WheelTimer

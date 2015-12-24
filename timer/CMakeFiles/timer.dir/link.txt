@@ -1,0 +1,2 @@
+/usr/bin/ar cr libtimer.a  CMakeFiles/timer.dir/timer.cpp.o CMakeFiles/timer.dir/wheelnode.cpp.o CMakeFiles/timer.dir/wheel.cpp.o CMakeFiles/timer.dir/wheeltimer.cpp.o
+/usr/bin/ranlib libtimer.a
