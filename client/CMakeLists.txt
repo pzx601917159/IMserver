@@ -42,8 +42,8 @@ TARGET_LINK_LIBRARIES(
         )
 
 
-#SET_TARGET_PROPERTIES(
-    #    IMclient
-    #   PROPERTIES
-    #    RUNTIME_OUTPUT_DIRECTORY ${BIN_DIR}
-    #    )
+SET_TARGET_PROPERTIES(
+        IMclient
+       PROPERTIES
+        RUNTIME_OUTPUT_DIRECTORY ${BIN_DIR}
+        )

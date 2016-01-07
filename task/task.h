@@ -7,9 +7,10 @@
 
 #ifndef _TASK_H
 #define _TASK_H
-class task
+class Task
 {
     //任务的处理函数
     virtual void onTask();
+    virtual ~Task();
 };
 #endif //_TASK_H

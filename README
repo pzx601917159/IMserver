@@ -6,8 +6,10 @@
 运行平台:ubuntu12.04,centos尚未测试,后续会加上
 
 运行步骤:
+    mkdir bin
+    cd bin
+    cmake ..
     make
-    make install
     会在bin目录下生成可执行程序
 
 

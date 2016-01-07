@@ -12,5 +12,6 @@ class Task
 {
     public:
     virtual void OnTask(Timer*) = 0;
+    virtual ~Task(){};
 };
 #endif //_TASK_H

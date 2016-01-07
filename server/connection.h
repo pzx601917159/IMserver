@@ -29,6 +29,7 @@ class IConnection
     virtual void OnRead() = 0;
     virtual void OnWrite() = 0;
     virtual int GetSockfd() const = 0;
+    virtual ~IConnection(){};
 };
 
 class Connection:public IConnection

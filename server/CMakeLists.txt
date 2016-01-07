@@ -37,8 +37,8 @@ TARGET_LINK_LIBRARIES(
         crypto
         )
 
-#SET_TARGET_PROPERTIES(
-    #   IMserver
-    #   PROPERTIES
-    #   RUNTIME_OUTPUT_DIRECTORY ${BIN_DIR}
-    #   )
+SET_TARGET_PROPERTIES(
+       IMserver
+       PROPERTIES
+       RUNTIME_OUTPUT_DIRECTORY ${BIN_DIR}
+       )
