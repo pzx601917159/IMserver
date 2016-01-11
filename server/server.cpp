@@ -162,13 +162,14 @@ int Server::GetSockfd() const
     return m_sockfd;
 }
 
-void Server::BroadcastMsg(SendMsg* msg)
+//广播消息,广播给所有用户包括自己
+void Server::BroadcastMsg(::google::protobuf::Message* msg,ReqType type)
 {
     std::map<uint64_t,Connection*>::iterator it = m_connections.begin();
 
     while(it != m_connections.end())
     {
-        it->second->SendRequest(msg,CHAT_MSG);
+        it->second->SendRequest(msg,type);
         ++it;
     }
 }

@@ -119,6 +119,11 @@ void Connection::OnClose()
     log::log(Info,"On socket close!");
     //删除server中记录的连接中的元素
     m_server->DeleteConn(m_sockfd);
+    //广播离线消息，就不用广播给自己了
+    //TODO
+    
+
+
     delete this;
 }
 
@@ -288,7 +293,7 @@ void Connection::HandleChatMsg(SendMsg* msg)
 {
     log::log(Info,"recv msg:",msg->msg());
     //broadcast
-    m_server->BroadcastMsg(msg);
+    m_server->BroadcastMsg(msg,CHAT_MSG);
 }
 
 void Connection::SendRequest(::google::protobuf::Message* req,ReqType type)

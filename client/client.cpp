@@ -144,16 +144,18 @@ void Client::DeleteConn(uint64_t key)
     log::log(Info,"m_connections.size() = ",m_connections.size());
 }
 
-void Client::BroadcastMsg(SendMsg* msg)
+/*
+void client::BroadcastMsg(::google::protobuf::Message* msg,ReqType type);
 {
     std::map<uint64_t,Connection*>::iterator it = m_connections.begin();
 
     while(it != m_connections.end())
     {
-        it->second->SendRequest(msg,CHAT_MSG);
+        it->second->SendRequest(msg,type);
         ++it;
     }
 }
+*/
 
 //写
 void Client::OnWrite()

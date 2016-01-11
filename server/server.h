@@ -49,7 +49,7 @@ class Server:public IConnection
     void OnRead();
 
     //广播消息
-    void BroadcastMsg(SendMsg* msg);
+    void BroadcastMsg(::google::protobuf::Message* msg,ReqType type);
 
     private:
     //生成套接字,并设置为非阻塞
