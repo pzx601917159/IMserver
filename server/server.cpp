@@ -21,17 +21,15 @@ Server::~Server()
 };
 
 //初始化服务器
-void Server::Init()
+bool Server::Init()
 {
     log::log(Info,"Init server...");
-    //初始化套接字
-    InitSockfd();
-    //绑定
-    Bind();
-    //侦听
-    Listen();
-    //初始化epoll
-    m_selector->Init();
+    //都为true表示初始化成功
+    if(InitSockfd() && Bind() && Listen() && m_selector->Init())
+    {
+        return true;
+    }
+    return false;
 }
 
 //启动服务器
@@ -99,47 +97,67 @@ void Server::OnRead()
 }
 
 //生成套接字,并设置为非阻塞
-void Server::InitSockfd()
+bool Server::InitSockfd()
 {
-    m_sockfd = socket(AF_INET, SOCK_STREAM, 0);//tcp
+    log::log(Info,"init sock fd");
+    if((m_sockfd = socket(AF_INET, SOCK_STREAM, 0))==-1)
+    {
+        return false;
+    }
     //设置非阻塞
-    SetNonblock(m_sockfd);
+
+    return SetNonblock(m_sockfd);
 }
 
 /***功能:设置为非阻塞***/
 /***参数:套接字***/
-void Server::SetNonblock(int sockfd)
+bool Server::SetNonblock(int sockfd)
 {
     int opts;
     opts = fcntl(sockfd,F_GETFL);
     if(opts < 0)
     {
         log::log(Error,"fcntl(sock,GETFL)");
-        return ;
+        return false;
     }
     opts = opts|O_NONBLOCK;
     if(fcntl(sockfd,F_SETFL,opts)<0)
     {
         log::log(Error,"fcntl(sock,SETFL,opts)");
-        return ;
+        return false;
     }
+    return true;
 }
 
 //绑定套接字
-void Server::Bind()
+bool Server::Bind()
 {
+    log::log(Info,"bind");
     int opt = 1;
     if(setsockopt(m_sockfd,SOL_SOCKET,SO_REUSEADDR,&opt,sizeof(opt)) != 0)
+    {
         log::log(Info,"setsockopt Error");
+        return false;
+    }
     socklen_t len = sizeof(m_addr);
     if(bind(m_sockfd,(sockaddr *)&m_addr, len) == -1)
+    {
         log::log(Info,"bind error");
+        return false;
+    }
+    return true;
 }
 
 //侦听套接字
-void Server::Listen()
+bool Server::Listen()
 {
-    listen(m_sockfd,LISTENQ);//连接请求队列的最大长度为20
+    log::log(Info,"listen");
+    if( listen(m_sockfd,LISTENQ) == -1 )//连接请求队列的最大长度为20
+    {
+        log::log(Info,"listen failed errno:",errno);
+        return false;
+    }
+    return true;
 }
 
 void Server::DeleteConn(uint64_t key)

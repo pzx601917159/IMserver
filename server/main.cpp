@@ -83,10 +83,14 @@ int main(int argc,char** argv)
     //Server *server = Singleton<Server,g_port>();
     Server server(g_port);
     
-    server.Init();
-
-    server.Start();
-
+    if(server.Init())
+    {
+        server.Start();
+    }
+    else
+    {
+        log::log(Info,"server init err");
+    }
 
     return 0;
 }

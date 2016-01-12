@@ -29,7 +29,7 @@ class Server:public IConnection
     ~Server();
 
     //初始化服务器
-    void Init();
+    bool Init();
 
     //启动服务器
     void Start();
@@ -53,17 +53,17 @@ class Server:public IConnection
 
     private:
     //生成套接字,并设置为非阻塞
-    void InitSockfd();
+    bool InitSockfd();
 
     /***功能:设置为非阻塞***/
     /***参数:套接字***/
-    void SetNonblock(int sockfd);
+    bool SetNonblock(int sockfd);
 
     //绑定套接字
-    void Bind();
+    bool Bind();
 
     //侦听套接字
-    void Listen();
+    bool Listen();
 
 
     private:

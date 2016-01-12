@@ -44,6 +44,7 @@ EPollSelector::~EPollSelector()
 
 bool EPollSelector::Init()
 {
+    log::log(Info,"epoll init");
     if(m_epollfd == -1)
     {
         signal(SIGPIPE,SIG_IGN);
