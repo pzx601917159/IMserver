@@ -1,0 +1,6 @@
+//注册用户请求
+message Offline
+{
+    //用户名
+    required uint32 id = 1;
+}
