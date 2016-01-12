@@ -25,7 +25,7 @@ class SendMsg;
 class Server:public IConnection
 {
     public:
-    Server(uint16_t port=5555);
+    Server(uint16_t port=2222);
     ~Server();
 
     //初始化服务器

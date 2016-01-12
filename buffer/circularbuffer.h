@@ -5,6 +5,8 @@
 #include <algorithm> // for std::min
 #include <inttypes.h>
 
+/////这部分明显还需要进行优化，但暂时就不优化了,还有很多事情要做
+
 class CircularBuffer
 {
 public:

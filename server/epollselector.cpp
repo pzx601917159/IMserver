@@ -17,6 +17,7 @@
 
 const int MAX_EVENTS = 500;
 const int EPOLL_SIZE = 10240;
+const int MAX_SHORT = 65535;
 
 
 inline void SetupEpoll(int epollfd,int option,int sockfd,epoll_event &ev)
@@ -46,7 +47,7 @@ bool EPollSelector::Init()
     if(m_epollfd == -1)
     {
         signal(SIGPIPE,SIG_IGN);
-        m_epollfd = epoll_create(65535);
+        m_epollfd = epoll_create(MAX_SHORT);
     }
     return m_epollfd != -1;
 }

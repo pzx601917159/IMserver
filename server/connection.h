@@ -88,12 +88,14 @@ class Connection:public IConnection
     int m_sockfd;//套接字
     struct sockaddr_in m_addr;//连接的地址信息(IP地址和端口号)
     std::string m_name;//记录聊天的人的名字
+    int m_userid;
     //接收缓冲区
     CircularBuffer* m_inputbuffer;
     //发送缓冲区
     CircularBuffer* m_outputbuffer;
     //对应的server
     Server* m_server;
+    
 
 };
 

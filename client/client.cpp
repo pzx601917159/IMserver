@@ -7,6 +7,10 @@
 
 #include "sendmsg.pb.h"
 
+const uint16_t      SERVER_PORT = 2222;
+const char*   SERVER_IP   = "127.0.0.1";
+const int32_t       RECONN_TIME = 5000;       //5s
+
 Client::Client()
 {
     m_clientState = false;
@@ -90,8 +94,8 @@ Connection* Client::Connect(int& sockfd)
 {
     sockaddr_in addr;
     addr.sin_family = AF_INET;
-    addr.sin_port   = htons(5555);   
-    if (inet_pton(AF_INET, "127.0.0.1", &addr.sin_addr) <= 0)
+    addr.sin_port   = htons(SERVER_PORT);   
+    if (inet_pton(AF_INET, SERVER_IP, &addr.sin_addr) <= 0)
     {
         log::log(Info,"inet_pton error");
         return NULL;
@@ -127,7 +131,7 @@ Connection* Client::Connect(int& sockfd)
     m_connections[sockfd] = conn;
 
     //创建定时任务
-    conn->SetReconnTimer(m_wheeltimer->InsertTask(conn,5000));
+    conn->SetReconnTimer(m_wheeltimer->InsertTask(conn,RECONN_TIME));
     return conn;
 }
 

@@ -15,7 +15,6 @@ ADD_SUBDIRECTORY(server)
 ADD_SUBDIRECTORY(client)
 
 #拷贝mysql配置文件
-configure_file(${SRC_DIR}/mysql/Config.ini ${BIN_DIR}/server COPYONLY)
-configure_file(${SRC_DIR}/mysql/Config.ini ${BIN_DIR}/client COPYONLY)
+configure_file(${SRC_DIR}/mysql/Config.ini ${BIN_DIR} COPYONLY)
 
 

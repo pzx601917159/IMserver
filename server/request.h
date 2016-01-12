@@ -17,14 +17,14 @@ enum ResCode
 
 enum ReqType
 {
-    REGUSER_REQ,
-    REGUSER_RES,
-    LOGIN_REQ,
-    LOGIN_RES,
-    CHAT_MSG
+    REGUSER_REQ,    //注册用户请求
+    REGUSER_RES,    //注册用户响应
+    LOGIN_REQ,      //登陆请求
+    LOGIN_RES,      //登陆响应
+    CHAT_MSG,       //聊天消息(后面添加屏蔽字)
+    ONLINE_MSG,     //用户上线消息
+    OFFLINE_MSG     //用户下线消息
 };
-
-#define HEADER_LEN 8
 
 
 #endif //_REQUEST_H

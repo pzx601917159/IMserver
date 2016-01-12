@@ -80,11 +80,13 @@ int main(int argc,char** argv)
     //是否以守护进程方式启动
     Daemon daemon(g_daemon,argc,argv);
 
-    Server *server = Singleton<Server>();
+    //Server *server = Singleton<Server,g_port>();
+    Server server(g_port);
     
-    server->Init();
+    server.Init();
 
-    server->Start();
+    server.Start();
+
 
     return 0;
 }

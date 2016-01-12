@@ -30,6 +30,15 @@
 #include "loginreq.pb.h"
 #include "loginres.pb.h"
 #include "sendmsg.pb.h"
+#include "online.pb.h"
+#include "offline.pb.h"
+
+const uint32_t BUFFER_LEN=4096;
+const uint32_t MAX_REQ_LEN=1024;
+const uint32_t MAX_SQL_LEN =1024;
+const uint32_t HEADER_LEN=8;
+const uint32_t MSGTYPE_LEN=4;
+
 
 Connection::Connection(int sockfd,sockaddr_in addr,Client* client)
 {
@@ -37,10 +46,10 @@ Connection::Connection(int sockfd,sockaddr_in addr,Client* client)
     log::log(Info,"new Connection!");
     m_sockfd = sockfd;
     m_addr = addr;
-    m_inputbuffer = new CircularBuffer(4096);
+    m_inputbuffer = new CircularBuffer(BUFFER_LEN);
     //init才分配内存
     m_inputbuffer->Init();
-    m_outputbuffer = new CircularBuffer(4096);
+    m_outputbuffer = new CircularBuffer(BUFFER_LEN);
     //init才分配内存
     m_outputbuffer->Init();
     m_client = client;
@@ -108,7 +117,7 @@ size_t Connection::RecvData()
         m_inputbuffer->UpdateSize(ret);
     }
     //接受完成之后对buffer中的数据进行解析直到解析完成
-    while(m_inputbuffer->Size() > 8)
+    while(m_inputbuffer->Size() > HEADER_LEN)
     {
         //获取数据的长度
         uint32_t len =  m_inputbuffer->ReadUint32Only();
@@ -119,7 +128,7 @@ size_t Connection::RecvData()
             //break;
         }
         //读取消息的类型,消息的类型不能放在protobuf中，因为字节不固定
-        uint32_t type = m_inputbuffer->ReadUint32Only(4);
+        uint32_t type = m_inputbuffer->ReadUint32Only(MSGTYPE_LEN);
         log::log(Info,"Msg type:",type);
         m_inputbuffer->SkipData(HEADER_LEN);
         HandleReq((ReqType)type,len);
@@ -151,10 +160,12 @@ void Connection::OnClose()
     {
         //删除定时器
         m_reconnTimer->Destroy();
+        m_reconnTimer = NULL;
     }
     if(m_pingTimer != NULL)
     {
         m_pingTimer->Destroy();
+        m_pingTimer = NULL;
     }
 
     m_enable = false;
@@ -184,18 +195,18 @@ void Connection::HandleReq(ReqType type,size_t len)
                 RegUserReq req;
                 //从一个string中构造请求
                 //这里先读取1024个字节吧，这个buffer还是修改了比较好
-                if(len < 1032)
+                if(len < MAX_REQ_LEN)
                 {
-                    char buffer[1024];
+                    char buffer[MAX_REQ_LEN];
                     memset(buffer, 0, sizeof(buffer));
-                    m_inputbuffer->Read(buffer,len-8);
+                    m_inputbuffer->Read(buffer,len-HEADER_LEN);
                     std::string str = buffer;
                     req.ParseFromString(str);
                     log::log(Info,"username:",req.name());
                     log::log(Info,"password:",req.password());
                     HandleRegReq(&req);
                 }
-                m_inputbuffer->SkipData(len-8);
+                m_inputbuffer->SkipData(len-HEADER_LEN);
                 log::log(Info,"m_inputbuffer->Size():",m_inputbuffer->Size());
             }
             break;
@@ -203,29 +214,62 @@ void Connection::HandleReq(ReqType type,size_t len)
             {
                 log::log(Info,"recv login res");
                 LoginRes res;
-                if(len < 1032)
+                if(len < MAX_REQ_LEN)
                 {
-                    char buffer[1024];
+                    char buffer[MAX_REQ_LEN];
                     memset(buffer, 0, sizeof(buffer));
-                    m_inputbuffer->Read(buffer,len-8);
+                    m_inputbuffer->Read(buffer,len-HEADER_LEN);
                     std::string str = buffer;
                     res.ParseFromString(str);
                     HandleLoginRes(&res);
                 } 
             }
             break;
+        //聊天消息
         case CHAT_MSG:
             {
                 log::log(Info,"recv char msg");
                 SendMsg req;
-                if(len < 1032)
+                if(len < MAX_REQ_LEN)
                 {
-                    char buffer[1024];
+                    char buffer[MAX_REQ_LEN];
                     memset(buffer, 0, sizeof(buffer));
-                    m_inputbuffer->Read(buffer,len-8);
+                    m_inputbuffer->Read(buffer,len-HEADER_LEN);
                     std::string str = buffer;
                     req.ParseFromString(str);
                     HandleChatMsg(&req);
+                }
+            }
+            break;
+        //上线消息
+        case ONLINE_MSG:
+            {
+                log::log(Info,"recv online msg");
+                Online req;
+                if(len < MAX_REQ_LEN)
+                {
+                    char buffer[MAX_REQ_LEN];
+                    memset(buffer, 0, sizeof(buffer));
+                    m_inputbuffer->Read(buffer,len-HEADER_LEN);
+                    std::string str = buffer;
+                    req.ParseFromString(str);
+                    log::log(Info,"online name:",req.name(),"id:",req.id());
+                }
+            }
+            break;
+        //离线消息
+        case OFFLINE_MSG:
+            {
+                log::log(Info,"recv offline msg");
+                Offline req;
+                if(len < MAX_REQ_LEN)
+                {
+                    char buffer[MAX_REQ_LEN];
+                    memset(buffer, 0, sizeof(buffer));
+                    m_inputbuffer->Read(buffer,len-HEADER_LEN);
+                    std::string str = buffer;
+                    req.ParseFromString(str);
+                    log::log(Info,"offline id:",req.id());
                 }
             }
             break;
@@ -253,7 +297,7 @@ void Connection::HandleRegReq(RegUserReq* req)
     CDatabase *pdb = CDBPool<CDatabase>::Instance()->Acquire();
     if(pdb != NULL)
     {
-        char sql[1024];
+        char sql[MAX_SQL_LEN];
         memset(sql,0,sizeof(sql));
         snprintf(sql,sizeof(sql),"select * from tab_user where username='%s'",req->name().c_str());
         if(pdb->SelectBySql(sql))
@@ -388,9 +432,11 @@ void Connection::OnConnected()
     {
         log::log(Info,"Destroy timer");
         m_reconnTimer->Destroy();
+        m_reconnTimer = NULL;
     }
     log::log(Info,"on connected");
     //发送登陆请求
+    log::log(Info,"send login request");
     LoginReq req;
     req.set_name("pengzhixiang");
     req.set_password("123456");

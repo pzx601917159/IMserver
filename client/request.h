@@ -22,11 +22,8 @@ enum ReqType
     LOGIN_REQ,      //登陆
     LOGIN_RES,
     CHAT_MSG,       //聊天
-    REGSERVER_REQ,  //注册服务器
-    REGSERVER_RES 
+    ONLINE_MSG,     //用户上线消息
+    OFFLINE_MSG     //用户下线消息
 };
-
-#define HEADER_LEN 8
-
 
 #endif //_REQUEST_H
