@@ -8,14 +8,15 @@
 
 一个简单的/单进程/epoll/IM服务器
 
-依赖的第三方库：mysql google-protobuf
+依赖的第三方库：mysql google-protobuf cmake
 
 运行平台:ubuntu12.04,centos尚未测试,后续会加上
 
 运行步骤:
     mkdir bin
     cd bin
-    cmake ..
+    这里可以选择debug/release版本：
+    cmake -DCMAKE_BUILD_TYPE=Debug/Release ..
     make
     会在bin目录下生成可执行程序
 
