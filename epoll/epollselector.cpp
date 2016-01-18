@@ -10,9 +10,8 @@
 #include <signal.h>
 #include <string.h>
 
-#include "logger.h"
 #include "epollselector.h"
-#include "connection.h"
+#include "iconnection.h"
 
 
 const int MAX_EVENTS = 500;
@@ -44,7 +43,6 @@ EPollSelector::~EPollSelector()
 
 bool EPollSelector::Init()
 {
-    log::log(Info,"epoll init");
     if(m_epollfd == -1)
     {
         signal(SIGPIPE,SIG_IGN);
@@ -61,7 +59,6 @@ void EPollSelector::Select(IConnection* conn,int remove,int add)
     //存储这个连接
     ev.data.ptr = conn;
     ev.events = EPOLLIN | EPOLLET;
-    //插入vector中
     std::pair<SockFdSet::iterator, bool> p = m_sockfds.insert(conn->GetSockfd());
     if(p.second)
     {
@@ -100,8 +97,7 @@ void EPollSelector::Select()
     int ret = epoll_wait(m_epollfd,events,EPOLL_SIZE,0);
     for(int i = 0; i < ret; ++i)
     {
-        log::log(Info,"select events");
-        Connection* conn = (Connection*)events[i].data.ptr;
+        IConnection* conn = (IConnection*)events[i].data.ptr;
         if(events[i].events & (EPOLLIN|EPOLLERR|EPOLLHUP))
         {
             conn->OnRead();

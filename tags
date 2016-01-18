@@ -47,6 +47,16 @@ ARCHITECTURE_ID	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	f
 ARCHITECTURE_ID	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	187;"	d	file:
 ARCHITECTURE_ID	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	190;"	d	file:
 ARCHITECTURE_ID	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
+ARCHITECTURE_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	193;"	d	file:
+ARCHITECTURE_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	196;"	d	file:
+ARCHITECTURE_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	199;"	d	file:
+ARCHITECTURE_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	202;"	d	file:
+ARCHITECTURE_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	206;"	d	file:
+ARCHITECTURE_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	181;"	d	file:
+ARCHITECTURE_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	file:
+ARCHITECTURE_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	187;"	d	file:
+ARCHITECTURE_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	190;"	d	file:
+ARCHITECTURE_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
 ARCHITECTURE_ID	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	193;"	d	file:
 ARCHITECTURE_ID	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	196;"	d	file:
 ARCHITECTURE_ID	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	199;"	d	file:
@@ -94,9 +104,11 @@ BOOL	mysql/vostypes.h	/^typedef  int						BOOL;$/;"	t
 BOOLFALSE	mysql/vostypes.h	/^	BOOLFALSE = 0,$/;"	e	enum:__anon21
 BOOLTRUE	mysql/vostypes.h	/^	BOOLTRUE  =1,$/;"	e	enum:__anon21
 BOOLVAL	mysql/vostypes.h	/^}BOOLVAL;$/;"	t	typeref:enum:__anon21
+BUFFER_LEN	client/connection.cpp	/^const uint32_t BUFFER_LEN=4096;$/;"	v
+BUFFER_LEN	server/connection.cpp	/^const uint32_t BUFFER_LEN=4096;$/;"	v
 BYTE	mysql/vostypes.h	/^typedef  unsigned char		   BYTE;$/;"	t
 Begin	timer/wheelnode.cpp	/^Timer* WheelNode::Begin()$/;"	f	class:WheelNode
-Bind	server/server.cpp	/^void Server::Bind()$/;"	f	class:Server
+Bind	server/server.cpp	/^bool Server::Bind()$/;"	f	class:Server
 BroadcastMsg	server/server.cpp	/^void Server::BroadcastMsg(::google::protobuf::Message* msg,ReqType type)$/;"	f	class:Server
 ByteSize	protocol/loginreq.pb.cc	/^int LoginReq::ByteSize() const {$/;"	f	class:LoginReq
 ByteSize	protocol/loginres.pb.cc	/^int LoginRes::ByteSize() const {$/;"	f	class:LoginRes
@@ -115,17 +127,18 @@ CDatabase	mysql/mysqldatabase.h	/^class CDatabase$/;"	c
 CH8	mysql/vostypes.h	/^typedef char CH8;$/;"	t
 CHAT_MSG	client/request.h	/^    CHAT_MSG,       \/\/聊天$/;"	e	enum:ReqType
 CHAT_MSG	server/request.h	/^    CHAT_MSG,       \/\/聊天消息(后面添加屏蔽字)$/;"	e	enum:ReqType
-CMAKE_BINARY_DIR	bin/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/myserver\/bin$/;"	m
-CMAKE_BINARY_DIR	bin/buffer/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/myserver\/bin$/;"	m
-CMAKE_BINARY_DIR	bin/client/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/myserver\/bin$/;"	m
-CMAKE_BINARY_DIR	bin/daemon/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/myserver\/bin$/;"	m
-CMAKE_BINARY_DIR	bin/log/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/myserver\/bin$/;"	m
-CMAKE_BINARY_DIR	bin/mysql/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/myserver\/bin$/;"	m
-CMAKE_BINARY_DIR	bin/protocol/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/myserver\/bin$/;"	m
-CMAKE_BINARY_DIR	bin/server/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/myserver\/bin$/;"	m
-CMAKE_BINARY_DIR	bin/timer/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/myserver\/bin$/;"	m
+CMAKE_BINARY_DIR	bin/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
+CMAKE_BINARY_DIR	bin/buffer/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
+CMAKE_BINARY_DIR	bin/client/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
+CMAKE_BINARY_DIR	bin/daemon/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
+CMAKE_BINARY_DIR	bin/log/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
+CMAKE_BINARY_DIR	bin/mysql/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
+CMAKE_BINARY_DIR	bin/protocol/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
+CMAKE_BINARY_DIR	bin/server/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
+CMAKE_BINARY_DIR	bin/timer/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
 CMAKE_BINARY_DIR	client/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/test\/myserver\/server$/;"	m
 CMAKE_BINARY_DIR	daemon/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/test\/myserver\/server$/;"	m
+CMAKE_BINARY_DIR	epoll/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/epoll$/;"	m
 CMAKE_BINARY_DIR	mysql/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/test\/myserver\/server$/;"	m
 CMAKE_BINARY_DIR	protocol/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/test\/myserver\/server$/;"	m
 CMAKE_BINARY_DIR	server/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/test\/myserver\/server$/;"	m
@@ -141,21 +154,23 @@ CMAKE_COMMAND	bin/server/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	bin/timer/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	client/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	daemon/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	epoll/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	mysql/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	protocol/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	server/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	timer/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
-CMAKE_SOURCE_DIR	bin/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/myserver$/;"	m
-CMAKE_SOURCE_DIR	bin/buffer/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/myserver$/;"	m
-CMAKE_SOURCE_DIR	bin/client/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/myserver$/;"	m
-CMAKE_SOURCE_DIR	bin/daemon/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/myserver$/;"	m
-CMAKE_SOURCE_DIR	bin/log/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/myserver$/;"	m
-CMAKE_SOURCE_DIR	bin/mysql/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/myserver$/;"	m
-CMAKE_SOURCE_DIR	bin/protocol/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/myserver$/;"	m
-CMAKE_SOURCE_DIR	bin/server/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/myserver$/;"	m
-CMAKE_SOURCE_DIR	bin/timer/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/myserver$/;"	m
+CMAKE_SOURCE_DIR	bin/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
+CMAKE_SOURCE_DIR	bin/buffer/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
+CMAKE_SOURCE_DIR	bin/client/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
+CMAKE_SOURCE_DIR	bin/daemon/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
+CMAKE_SOURCE_DIR	bin/log/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
+CMAKE_SOURCE_DIR	bin/mysql/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
+CMAKE_SOURCE_DIR	bin/protocol/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
+CMAKE_SOURCE_DIR	bin/server/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
+CMAKE_SOURCE_DIR	bin/timer/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
 CMAKE_SOURCE_DIR	client/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/test\/myserver\/server$/;"	m
 CMAKE_SOURCE_DIR	daemon/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/test\/myserver\/server$/;"	m
+CMAKE_SOURCE_DIR	epoll/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver\/epoll$/;"	m
 CMAKE_SOURCE_DIR	mysql/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/test\/myserver\/server$/;"	m
 CMAKE_SOURCE_DIR	protocol/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/test\/myserver\/server$/;"	m
 CMAKE_SOURCE_DIR	server/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/test\/myserver\/server$/;"	m
@@ -350,6 +365,53 @@ COMPILER_ID	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
 COMPILER_ID	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	77;"	d	file:
 COMPILER_ID	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
 COMPILER_ID	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	9;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	13;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	16;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	22;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	28;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	32;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	34;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	36;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	40;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	43;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	46;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	49;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	52;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	55;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	58;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	61;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	66;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	77;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	80;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	86;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	92;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	12;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	18;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	30;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	34;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	36;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	38;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	42;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	45;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	48;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	51;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	54;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	57;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	60;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	68;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	77;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+COMPILER_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	9;"	d	file:
 COMPILER_ID	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
 COMPILER_ID	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	13;"	d	file:
 COMPILER_ID	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	16;"	d	file:
@@ -624,7 +686,7 @@ Data_Param	mysql/dbstruct.h	/^    Data_Param()$/;"	f	struct:Data_Param
 Data_Param	mysql/dbstruct.h	/^struct Data_Param   $/;"	s
 Database_param	mysql/dbstruct.h	/^    Database_param()$/;"	f	struct:Database_param
 Database_param	mysql/dbstruct.h	/^struct Database_param$/;"	s
-Debug	log/logger.h	/^	Debug = 0,$/;"	e	enum:__anon24
+Debug	log/logger.h	/^	Debug = 0,$/;"	e	enum:__anon22
 DelRecord	mysql/mysqldatabase.cpp	/^bool CDatabase::DelRecord(Data_Param *para)$/;"	f	class:CDatabase
 DeleteConn	client/client.cpp	/^void Client::DeleteConn(uint64_t key)$/;"	f	class:Client
 DeleteConn	server/server.cpp	/^void Server::DeleteConn(uint64_t key)$/;"	f	class:Server
@@ -634,14 +696,11 @@ Destroy	timer/timer.cpp	/^void Timer::Destroy()$/;"	f	class:Timer
 DropDB	mysql/mysqldatabase.cpp	/^int CDatabase::DropDB(char *db)$/;"	f	class:CDatabase
 EIMD_LOGGER_H	log/logger.h	2;"	d
 EPOLLMAX	client/client.h	21;"	d
-EPOLL_SIZE	client/epollselector.cpp	/^const int EPOLL_SIZE = 10240;$/;"	v
-EPOLL_SIZE	server/epollselector.cpp	/^const int EPOLL_SIZE = 10240;$/;"	v
-EPollSelector	client/epollselector.cpp	/^EPollSelector::EPollSelector()$/;"	f	class:EPollSelector
-EPollSelector	client/epollselector.h	/^class EPollSelector$/;"	c
-EPollSelector	server/epollselector.cpp	/^EPollSelector::EPollSelector()$/;"	f	class:EPollSelector
-EPollSelector	server/epollselector.h	/^class EPollSelector$/;"	c
+EPOLL_SIZE	epoll/epollselector.cpp	/^const int EPOLL_SIZE = 10240;$/;"	v
+EPollSelector	epoll/epollselector.cpp	/^EPollSelector::EPollSelector()$/;"	f	class:EPollSelector
+EPollSelector	epoll/epollselector.h	/^class EPollSelector$/;"	c
 Empty	buffer/circularbuffer.h	/^    bool Empty(){return size_ == 0;}$/;"	f	class:CircularBuffer
-Error	log/logger.h	/^	Error = 3,$/;"	e	enum:__anon24
+Error	log/logger.h	/^	Error = 3,$/;"	e	enum:__anon22
 ExecSql	mysql/mysqldatabase.cpp	/^bool CDatabase::ExecSql(char *sqlstr)$/;"	f	class:CDatabase
 FAILED	client/request.h	/^    FAILED = 400,   \/\/失败$/;"	e	enum:ResCode
 FAILED	server/request.h	/^    FAILED = 400,   \/\/失败$/;"	e	enum:ResCode
@@ -702,11 +761,11 @@ GetTotalTime	timer/wheel.cpp	/^uint32_t Wheel::GetTotalTime() const$/;"	f	class:
 GetUnitTime	timer/wheel.cpp	/^uint32_t Wheel::GetUnitTime() const$/;"	f	class:Wheel
 GetWheelTimer	client/client.h	/^    WheelTimer* GetWheelTimer(){return m_wheeltimer;}$/;"	f	class:Client
 Global	log/logger.h	/^class Global$/;"	c
-Godx	log/logger.h	/^	Godx  = 4,$/;"	e	enum:__anon24
+Godx	log/logger.h	/^	Godx  = 4,$/;"	e	enum:__anon22
 HALF_MINUTE	mysql/vostypes.h	115;"	d
 HANDLEMAX	client/client.h	23;"	d
-HEADER_LEN	client/request.h	29;"	d
-HEADER_LEN	server/request.h	29;"	d
+HEADER_LEN	client/connection.cpp	/^const uint32_t HEADER_LEN=8;$/;"	v
+HEADER_LEN	server/connection.cpp	/^const uint32_t HEADER_LEN=8;$/;"	v
 HandleChatMsg	client/connection.cpp	/^void Connection::HandleChatMsg(SendMsg* msg)$/;"	f	class:Connection
 HandleChatMsg	server/connection.cpp	/^void Connection::HandleChatMsg(SendMsg* msg)$/;"	f	class:Connection
 HandleLoginReq	server/connection.cpp	/^void Connection::HandleLoginReq(LoginReq* req)$/;"	f	class:Connection
@@ -715,12 +774,13 @@ HandleRegReq	client/connection.cpp	/^void Connection::HandleRegReq(RegUserReq* r
 HandleRegReq	server/connection.cpp	/^void Connection::HandleRegReq(RegUserReq* req)$/;"	f	class:Connection
 HandleReq	client/connection.cpp	/^void Connection::HandleReq(ReqType type,size_t len)$/;"	f	class:Connection
 HandleReq	server/connection.cpp	/^void Connection::HandleReq(ReqType type,size_t len)$/;"	f	class:Connection
-IConnection	client/connection.h	/^class IConnection$/;"	c
+IConnection	epoll/iconnection.h	/^class IConnection$/;"	c
 IConnection	server/connection.h	/^class IConnection$/;"	c
 ID_VOID_MAIN	bin/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 ID_VOID_MAIN	buffer/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 ID_VOID_MAIN	client/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 ID_VOID_MAIN	daemon/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
+ID_VOID_MAIN	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 ID_VOID_MAIN	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 ID_VOID_MAIN	protocol/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 ID_VOID_MAIN	server/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
@@ -742,13 +802,12 @@ INVALID_HANDLE_VALUE	mysql/vostypes.h	106;"	d
 INVALID_NUMBER	mysql/vostypes.h	102;"	d
 Increase	mysql/db_pool.cpp	/^bool CDBPool<T>::Increase(int num)$/;"	f	class:CDBPool
 IncreaseCapacity	buffer/circularbuffer.cpp	/^bool CircularBuffer::IncreaseCapacity(size_t n)$/;"	f	class:CircularBuffer
-Info	log/logger.h	/^	Info  = 1,$/;"	e	enum:__anon24
+Info	log/logger.h	/^	Info  = 1,$/;"	e	enum:__anon22
 Init	buffer/circularbuffer.cpp	/^bool CircularBuffer::Init()$/;"	f	class:CircularBuffer
 Init	client/client.cpp	/^void Client::Init()$/;"	f	class:Client
-Init	client/epollselector.cpp	/^bool EPollSelector::Init()$/;"	f	class:EPollSelector
+Init	epoll/epollselector.cpp	/^bool EPollSelector::Init()$/;"	f	class:EPollSelector
 Init	mysql/db_pool.cpp	/^bool CDBPool<T>::Init(int num)$/;"	f	class:CDBPool
-Init	server/epollselector.cpp	/^bool EPollSelector::Init()$/;"	f	class:EPollSelector
-Init	server/server.cpp	/^void Server::Init()$/;"	f	class:Server
+Init	server/server.cpp	/^bool Server::Init()$/;"	f	class:Server
 InitAsDefaultInstance	protocol/loginreq.pb.cc	/^void LoginReq::InitAsDefaultInstance() {$/;"	f	class:LoginReq
 InitAsDefaultInstance	protocol/loginres.pb.cc	/^void LoginRes::InitAsDefaultInstance() {$/;"	f	class:LoginRes
 InitAsDefaultInstance	protocol/logoutreq.pb.cc	/^void LogoutReq::InitAsDefaultInstance() {$/;"	f	class:LogoutReq
@@ -760,7 +819,7 @@ InitAsDefaultInstance	protocol/reguserreq.pb.cc	/^void RegUserReq::InitAsDefault
 InitAsDefaultInstance	protocol/reguserres.pb.cc	/^void RegUserRes::InitAsDefaultInstance() {$/;"	f	class:RegUserRes
 InitAsDefaultInstance	protocol/sendmsg.pb.cc	/^void SendMsg::InitAsDefaultInstance() {$/;"	f	class:SendMsg
 InitSockfd	client/client.cpp	/^void Client::InitSockfd(int& sockfd)$/;"	f	class:Client
-InitSockfd	server/server.cpp	/^void Server::InitSockfd()$/;"	f	class:Server
+InitSockfd	server/server.cpp	/^bool Server::InitSockfd()$/;"	f	class:Server
 InitTimer	timer/wheeltimer.cpp	/^void WheelTimer::InitTimer()$/;"	f	class:WheelTimer
 InsertRecord	mysql/mysqldatabase.cpp	/^int CDatabase::InsertRecord(Data_Param *para)$/;"	f	class:CDatabase
 InsertSql	mysql/mysqldatabase.cpp	/^bool CDatabase::InsertSql(char *sqlstr, my_ulonglong& insert_id)$/;"	f	class:CDatabase
@@ -792,7 +851,7 @@ LOGIN_RES	server/request.h	/^    LOGIN_RES,      \/\/登陆响应$/;"	e	enum:Req
 Lenptr	mysql/vostypes.h	/^typedef unsigned long		Lenptr;$/;"	t
 LevelToName	log/logger.h	46;"	d
 ListRecord	mysql/mysqldatabase.cpp	/^void CDatabase::ListRecord()$/;"	f	class:CDatabase
-Listen	server/server.cpp	/^void Server::Listen()$/;"	f	class:Server
+Listen	server/server.cpp	/^bool Server::Listen()$/;"	f	class:Server
 Lock	mysql/db_pool.h	/^    void Lock()$/;"	f	class:Peng_Single_Lock
 LoginReq	protocol/loginreq.pb.cc	/^LoginReq::LoginReq()$/;"	f	class:LoginReq
 LoginReq	protocol/loginreq.pb.cc	/^LoginReq::LoginReq(const LoginReq& from)$/;"	f	class:LoginReq
@@ -812,17 +871,23 @@ LogoutReq_reflection_	protocol/logoutreq.pb.cc	/^  LogoutReq_reflection_ = NULL;
 MAX_COUNTPACKETRESERVE	mysql/vostypes.h	131;"	d
 MAX_COUNTREADDOGFAILOR	mysql/vostypes.h	137;"	d
 MAX_EIA_PORTS	mysql/vostypes.h	134;"	d
-MAX_EVENTS	client/epollselector.cpp	/^const int MAX_EVENTS = 500;$/;"	v
-MAX_EVENTS	server/epollselector.cpp	/^const int MAX_EVENTS = 500;$/;"	v
+MAX_EVENTS	epoll/epollselector.cpp	/^const int MAX_EVENTS = 500;$/;"	v
 MAX_LOG_SIZE	log/logger.cpp	15;"	d	file:
 MAX_MONITOR_NUM	mysql/vostypes.h	104;"	d
 MAX_ONLINE_USER_COUNT	mysql/vostypes.h	140;"	d
 MAX_PATH	mysql/vostypes.h	111;"	d
+MAX_REQ_LEN	client/connection.cpp	/^const uint32_t MAX_REQ_LEN=1024;$/;"	v
+MAX_REQ_LEN	server/connection.cpp	/^const uint32_t MAX_REQ_LEN=1024;$/;"	v
 MAX_RETRANSMIT_COUNT	mysql/vostypes.h	129;"	d
 MAX_SEND_FAIL_NUM	mysql/vostypes.h	126;"	d
+MAX_SHORT	epoll/epollselector.cpp	/^const int MAX_SHORT = 65535;$/;"	v
+MAX_SQL_LEN	client/connection.cpp	/^const uint32_t MAX_SQL_LEN =1024;$/;"	v
+MAX_SQL_LEN	server/connection.cpp	/^const uint32_t MAX_SQL_LEN =1024;$/;"	v
 MAX_STRING_LEN	mysql/vostypes.h	103;"	d
 MIN_RATE_DUR	mysql/vostypes.h	124;"	d
 MQD_T	mysql/vostypes.h	/^typedef mqd_t MQD_T;$/;"	t
+MSGTYPE_LEN	client/connection.cpp	/^const uint32_t MSGTYPE_LEN=4;$/;"	v
+MSGTYPE_LEN	server/connection.cpp	/^const uint32_t MSGTYPE_LEN=4;$/;"	v
 MergeFrom	protocol/loginreq.pb.cc	/^void LoginReq::MergeFrom(const ::google::protobuf::Message& from) {$/;"	f	class:LoginReq
 MergeFrom	protocol/loginreq.pb.cc	/^void LoginReq::MergeFrom(const LoginReq& from) {$/;"	f	class:LoginReq
 MergeFrom	protocol/loginres.pb.cc	/^void LoginRes::MergeFrom(const ::google::protobuf::Message& from) {$/;"	f	class:LoginRes
@@ -864,11 +929,13 @@ New	protocol/reguserreq.pb.cc	/^RegUserReq* RegUserReq::New() const {$/;"	f	clas
 New	protocol/reguserres.pb.cc	/^RegUserRes* RegUserRes::New() const {$/;"	f	class:RegUserRes
 New	protocol/sendmsg.pb.cc	/^SendMsg* SendMsg::New() const {$/;"	f	class:SendMsg
 NowStr	log/logger.h	/^inline std::string NowStr() { time_t t = time(0); return FormatTime(t); }$/;"	f	namespace:log
+OFFLINE_MSG	client/request.h	/^    OFFLINE_MSG     \/\/用户下线消息$/;"	e	enum:ReqType
 OFFLINE_MSG	server/request.h	/^    OFFLINE_MSG     \/\/用户下线消息$/;"	e	enum:ReqType
 ONE_DAY_SECOND	mysql/vostypes.h	123;"	d
 ONE_HOUR	mysql/vostypes.h	120;"	d
 ONE_MINUTE	mysql/vostypes.h	116;"	d
 ONE_SECOND	mysql/vostypes.h	122;"	d
+ONLINE_MSG	client/request.h	/^    ONLINE_MSG,     \/\/用户上线消息$/;"	e	enum:ReqType
 ONLINE_MSG	server/request.h	/^    ONLINE_MSG,     \/\/用户上线消息$/;"	e	enum:ReqType
 Offline	protocol/offline.pb.cc	/^Offline::Offline()$/;"	f	class:Offline
 Offline	protocol/offline.pb.cc	/^Offline::Offline(const Offline& from)$/;"	f	class:Offline
@@ -896,7 +963,7 @@ Online	protocol/online.pb.h	/^class Online : public ::google::protobuf::Message 
 Online_descriptor_	protocol/online.pb.cc	/^const ::google::protobuf::Descriptor* Online_descriptor_ = NULL;$/;"	m	namespace:__anon13	file:
 Online_reflection_	protocol/online.pb.cc	/^  Online_reflection_ = NULL;$/;"	m	namespace:__anon13	file:
 OutErrors	mysql/mysqldatabase.cpp	/^char * CDatabase::OutErrors()$/;"	f	class:CDatabase
-PING_INTERVAL	client/connection.h	29;"	d
+PING_INTERVAL	client/connection.h	30;"	d
 PLATFORM_ID	bin/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
 PLATFORM_ID	bin/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	107;"	d	file:
 PLATFORM_ID	bin/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
@@ -1105,6 +1172,58 @@ PLATFORM_ID	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
 PLATFORM_ID	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	92;"	d	file:
 PLATFORM_ID	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	95;"	d	file:
 PLATFORM_ID	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	107;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	113;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	116;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	122;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	128;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	134;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	137;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	140;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	146;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	149;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	158;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	161;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	164;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	167;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	170;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	173;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	176;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	179;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	182;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	107;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	113;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	116;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	122;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	128;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	134;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	140;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	143;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	149;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	152;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	158;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	161;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	164;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	167;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	92;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	95;"	d	file:
+PLATFORM_ID	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
 PLATFORM_ID	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
 PLATFORM_ID	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	107;"	d	file:
 PLATFORM_ID	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
@@ -1336,9 +1455,8 @@ Peng_Single_Lock	mysql/db_pool.h	/^    Peng_Single_Lock()$/;"	f	class:Peng_Singl
 Peng_Single_Lock	mysql/db_pool.h	/^class Peng_Single_Lock$/;"	c
 Pop	timer/wheelnode.cpp	/^Timer* WheelNode::Pop()$/;"	f	class:WheelNode
 QUARTER_MINUTE	mysql/vostypes.h	119;"	d
-RECONN_INTERVAL	client/connection.h	30;"	d
-REGSERVER_REQ	client/request.h	/^    REGSERVER_REQ,  \/\/注册服务器$/;"	e	enum:ReqType
-REGSERVER_RES	client/request.h	/^    REGSERVER_RES $/;"	e	enum:ReqType
+RECONN_INTERVAL	client/connection.h	31;"	d
+RECONN_TIME	client/client.cpp	/^const int32_t       RECONN_TIME = 5000;       \/\/5s$/;"	v
 REGUSER_REQ	client/request.h	/^    REGUSER_REQ,    \/\/注册用户$/;"	e	enum:ReqType
 REGUSER_REQ	server/request.h	/^    REGUSER_REQ,    \/\/注册用户请求$/;"	e	enum:ReqType
 REGUSER_RES	client/request.h	/^    REGUSER_RES,$/;"	e	enum:ReqType
@@ -1356,6 +1474,7 @@ RM	bin/server/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	bin/timer/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	client/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	daemon/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	epoll/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	mysql/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	protocol/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	server/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
@@ -1392,8 +1511,7 @@ RegUserRes_descriptor_	protocol/reguserres.pb.cc	/^const ::google::protobuf::Des
 RegUserRes_reflection_	protocol/reguserres.pb.cc	/^  RegUserRes_reflection_ = NULL;$/;"	m	namespace:__anon19	file:
 Release	mysql/db_pool.cpp	/^void CDBPool<T>::Release(T *cnn, bool Succ)$/;"	f	class:CDBPool
 Release	mysql/db_pool.cpp	/^void CDBPool<T>::Release(T* cnn)$/;"	f	class:CDBPool
-Remove	client/epollselector.cpp	/^void EPollSelector::Remove(IConnection* conn)$/;"	f	class:EPollSelector
-Remove	server/epollselector.cpp	/^void EPollSelector::Remove(IConnection* conn)$/;"	f	class:EPollSelector
+Remove	epoll/epollselector.cpp	/^void EPollSelector::Remove(IConnection* conn)$/;"	f	class:EPollSelector
 ReqType	client/request.h	/^enum ReqType$/;"	g
 ReqType	server/request.h	/^enum ReqType$/;"	g
 ResCode	client/request.h	/^enum ResCode$/;"	g
@@ -1402,14 +1520,13 @@ Reset	timer/wheelnode.cpp	/^void WheelNode::Reset()$/;"	f	class:WheelNode
 S16	mysql/vostypes.h	/^typedef short S16;$/;"	t
 S32	mysql/vostypes.h	/^typedef int S32;$/;"	t
 S8	mysql/vostypes.h	/^typedef char S8;$/;"	t
-SEL_READ	client/epollselector.h	/^    SEL_READ = 1,$/;"	e	enum:__anon22
-SEL_READ	server/epollselector.h	/^    SEL_READ = 1,$/;"	e	enum:__anon23
-SEL_RW	client/epollselector.h	/^    SEL_RW$/;"	e	enum:__anon22
-SEL_RW	server/epollselector.h	/^    SEL_RW$/;"	e	enum:__anon23
-SEL_WRITE	client/epollselector.h	/^    SEL_WRITE,$/;"	e	enum:__anon22
-SEL_WRITE	server/epollselector.h	/^    SEL_WRITE,$/;"	e	enum:__anon23
+SEL_READ	epoll/epollselector.h	/^    SEL_READ = 1,$/;"	e	enum:__anon24
+SEL_RW	epoll/epollselector.h	/^    SEL_RW$/;"	e	enum:__anon24
+SEL_WRITE	epoll/epollselector.h	/^    SEL_WRITE,$/;"	e	enum:__anon24
 SEM_T	mysql/vostypes.h	/^typedef sem_t SEM_T;$/;"	t
-SFile	log/logger.h	/^	SFile = 2$/;"	e	enum:__anon25
+SERVER_IP	client/client.cpp	/^const char*   SERVER_IP   = "127.0.0.1";$/;"	v
+SERVER_PORT	client/client.cpp	/^const uint16_t      SERVER_PORT = 2222;$/;"	v
+SFile	log/logger.h	/^	SFile = 2$/;"	e	enum:__anon23
 SHELL	bin/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	bin/buffer/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	bin/client/Makefile	/^SHELL = \/bin\/sh$/;"	m
@@ -1421,6 +1538,7 @@ SHELL	bin/server/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	bin/timer/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	client/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	daemon/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	epoll/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	mysql/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	protocol/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	server/Makefile	/^SHELL = \/bin\/sh$/;"	m
@@ -1440,6 +1558,7 @@ SUFFIXES	bin/server/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	bin/timer/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	client/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	daemon/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	epoll/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	mysql/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	protocol/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	server/Makefile	/^SUFFIXES =$/;"	m
@@ -1447,10 +1566,8 @@ SUFFIXES	timer/Makefile	/^SUFFIXES =$/;"	m
 SYS_LOG	log/logger.h	165;"	d
 Schedule	timer/timer.cpp	/^bool Timer::Schedule(Task* task,uint32_t minsec)$/;"	f	class:Timer
 SeekData	mysql/mysqldatabase.cpp	/^void CDatabase::SeekData(int offset)$/;"	f	class:CDatabase
-Select	client/epollselector.cpp	/^void EPollSelector::Select()$/;"	f	class:EPollSelector
-Select	client/epollselector.cpp	/^void EPollSelector::Select(IConnection* conn,int remove,int add)$/;"	f	class:EPollSelector
-Select	server/epollselector.cpp	/^void EPollSelector::Select()$/;"	f	class:EPollSelector
-Select	server/epollselector.cpp	/^void EPollSelector::Select(IConnection* conn,int remove,int add)$/;"	f	class:EPollSelector
+Select	epoll/epollselector.cpp	/^void EPollSelector::Select()$/;"	f	class:EPollSelector
+Select	epoll/epollselector.cpp	/^void EPollSelector::Select(IConnection* conn,int remove,int add)$/;"	f	class:EPollSelector
 SelectAll	mysql/mysqldatabase.cpp	/^bool CDatabase::SelectAll(Data_Param *para)$/;"	f	class:CDatabase
 SelectBySql	mysql/mysqldatabase.cpp	/^bool CDatabase::SelectBySql(const char* sqlstr)$/;"	f	class:CDatabase
 SelectDB	mysql/mysqldatabase.cpp	/^bool CDatabase::SelectDB(Data_Param *para)$/;"	f	class:CDatabase
@@ -1501,14 +1618,13 @@ SetCachedSize	protocol/sendmsg.pb.cc	/^void SendMsg::SetCachedSize(int size) con
 SetNext	timer/timer.cpp	/^void Timer::SetNext(Timer* next)$/;"	f	class:Timer
 SetNode	timer/timer.cpp	/^void Timer::SetNode(WheelNode* node)$/;"	f	class:Timer
 SetNonblock	client/client.cpp	/^void Client::SetNonblock(int& sockfd)$/;"	f	class:Client
-SetNonblock	server/server.cpp	/^void Server::SetNonblock(int sockfd)$/;"	f	class:Server
+SetNonblock	server/server.cpp	/^bool Server::SetNonblock(int sockfd)$/;"	f	class:Server
 SetPingTimer	client/connection.h	/^    void SetPingTimer(Timer* timer){m_pingTimer = timer;}$/;"	f	class:Connection
 SetPrev	timer/timer.cpp	/^void Timer::SetPrev(Timer* prev)$/;"	f	class:Timer
 SetReconnTimer	client/connection.h	/^    void SetReconnTimer(Timer* timer){m_reconnTimer = timer;}$/;"	f	class:Connection
 SetRemain	timer/timer.cpp	/^void Timer::SetRemain(uint32_t remain)$/;"	f	class:Timer
 SetTask	timer/timer.cpp	/^void Timer::SetTask(Task* task)$/;"	f	class:Timer
-SetupEpoll	client/epollselector.cpp	/^inline void SetupEpoll(int epollfd,int option,int sockfd,epoll_event &ev)$/;"	f
-SetupEpoll	server/epollselector.cpp	/^inline void SetupEpoll(int epollfd,int option,int sockfd,epoll_event &ev)$/;"	f
+SetupEpoll	epoll/epollselector.cpp	/^inline void SetupEpoll(int epollfd,int option,int sockfd,epoll_event &ev)$/;"	f
 SharedCtor	protocol/loginreq.pb.cc	/^void LoginReq::SharedCtor() {$/;"	f	class:LoginReq
 SharedCtor	protocol/loginres.pb.cc	/^void LoginRes::SharedCtor() {$/;"	f	class:LoginRes
 SharedCtor	protocol/logoutreq.pb.cc	/^void LogoutReq::SharedCtor() {$/;"	f	class:LogoutReq
@@ -1532,12 +1648,10 @@ SharedDtor	protocol/sendmsg.pb.cc	/^void SendMsg::SharedDtor() {$/;"	f	class:Sen
 Singleton	singleton/singleton.h	/^T* Singleton()$/;"	f
 Singleton	timer/singleton.h	/^T* Singleton()$/;"	f
 Size	buffer/circularbuffer.h	/^    size_t Size() const { return size_; }\/\/大小$/;"	f	class:CircularBuffer
-Size	client/epollselector.cpp	/^size_t EPollSelector::Size() const$/;"	f	class:EPollSelector
-Size	server/epollselector.cpp	/^size_t EPollSelector::Size() const$/;"	f	class:EPollSelector
+Size	epoll/epollselector.cpp	/^size_t EPollSelector::Size() const$/;"	f	class:EPollSelector
 SkipData	buffer/circularbuffer.cpp	/^bool CircularBuffer::SkipData(size_t bytes)$/;"	f	class:CircularBuffer
-SockFdSet	client/epollselector.h	/^    typedef std::set<int> SockFdSet;$/;"	t	class:EPollSelector
-SockFdSet	server/epollselector.h	/^    typedef std::set<int> SockFdSet;$/;"	t	class:EPollSelector
-Standard	log/logger.h	/^	Standard = 1,$/;"	e	enum:__anon25
+SockFdSet	epoll/epollselector.h	/^    typedef std::set<int> SockFdSet;$/;"	t	class:EPollSelector
+Standard	log/logger.h	/^	Standard = 1,$/;"	e	enum:__anon23
 Start	client/client.cpp	/^void Client::Start()$/;"	f	class:Client
 Start	server/server.cpp	/^void Server::Start()$/;"	f	class:Server
 StaticDescriptorInitializer_loginreq_2eproto	protocol/loginreq.pb.cc	/^  StaticDescriptorInitializer_loginreq_2eproto() {$/;"	f	struct:StaticDescriptorInitializer_loginreq_2eproto
@@ -1571,7 +1685,7 @@ Swap	protocol/regserverres.pb.cc	/^void RegServerRes::Swap(RegServerRes* other) 
 Swap	protocol/reguserreq.pb.cc	/^void RegUserReq::Swap(RegUserReq* other) {$/;"	f	class:RegUserReq
 Swap	protocol/reguserres.pb.cc	/^void RegUserRes::Swap(RegUserRes* other) {$/;"	f	class:RegUserRes
 Swap	protocol/sendmsg.pb.cc	/^void SendMsg::Swap(SendMsg* other) {$/;"	f	class:SendMsg
-Syslog	log/logger.h	/^	Syslog = 0,$/;"	e	enum:__anon25
+Syslog	log/logger.h	/^	Syslog = 0,$/;"	e	enum:__anon23
 TEN_SECOND	mysql/vostypes.h	117;"	d
 TIMEOUT	mysql/vostypes.h	121;"	d
 TIMER_T	mysql/vostypes.h	/^typedef timer_t TIMER_T;$/;"	t
@@ -1592,7 +1706,7 @@ Unlock	mysql/db_pool.h	/^    void Unlock()$/;"	f	class:Peng_Single_Lock
 UpdateRecord	mysql/mysqldatabase.cpp	/^bool CDatabase::UpdateRecord(Data_Param *para)$/;"	f	class:CDatabase
 UpdateSize	buffer/circularbuffer.cpp	/^bool CircularBuffer::UpdateSize(size_t addsize)$/;"	f	class:CircularBuffer
 WORD	mysql/vostypes.h	/^typedef  unsigned short           WORD;$/;"	t
-Warn	log/logger.h	/^	Warn  = 2,$/;"	e	enum:__anon24
+Warn	log/logger.h	/^	Warn  = 2,$/;"	e	enum:__anon22
 Wheel	timer/wheel.cpp	/^Wheel::Wheel(uint32_t size,uint32_t time)$/;"	f	class:Wheel
 Wheel	timer/wheel.h	/^class Wheel$/;"	c
 WheelList	timer/wheeltimer.h	/^    typedef std::list<Wheel*> WheelList;$/;"	t	class:WheelTimer
@@ -1610,8 +1724,7 @@ _CONNECTION_H	client/connection.h	8;"	d
 _CONNECTION_H	server/connection.h	8;"	d
 _DAEMON_H	daemon/daemon.h	9;"	d
 _DB_MASTER_POOL_H	mysql/db_pool.h	2;"	d
-_EPOLLSELECTOR_H	client/epollselector.h	8;"	d
-_EPOLLSELECTOR_H	server/epollselector.h	8;"	d
+_EPOLLSELECTOR_H	epoll/epollselector.h	8;"	d
 _LOGHELPER_H	log/loghelper.h	3;"	d
 _MYSQLDB_ACCESS_H	mysql/mysqldatabase.h	3;"	d
 _READCONFIG_H	mysql/readconfig.h	3;"	d
@@ -1827,6 +1940,8 @@ info_arch	client/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_ar
 info_arch	client/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
 info_arch	daemon/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
 info_arch	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
 info_arch	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
 info_arch	mysql/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
 info_arch	protocol/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
@@ -1843,6 +1958,8 @@ info_compiler	client/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* inf
 info_compiler	client/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
 info_compiler	daemon/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
 info_compiler	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
 info_compiler	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
 info_compiler	mysql/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
 info_compiler	protocol/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
@@ -1859,6 +1976,8 @@ info_platform	client/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* inf
 info_platform	client/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
 info_platform	daemon/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
 info_platform	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
 info_platform	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
 info_platform	mysql/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
 info_platform	protocol/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
@@ -1941,8 +2060,7 @@ m_connections	client/client.h	/^    std::map<uint64_t,Connection*> m_connections
 m_connections	server/server.h	/^    std::map<uint64_t,Connection*> m_connections; \/\/连接map$/;"	m	class:Server
 m_count	timer/wheeltimer.h	/^    uint32_t m_count;       \/\/时间轮的数量$/;"	m	class:WheelTimer
 m_enable	client/connection.h	/^    bool m_enable;$/;"	m	class:Connection
-m_epollfd	client/epollselector.h	/^    int m_epollfd;$/;"	m	class:EPollSelector
-m_epollfd	server/epollselector.h	/^    int m_epollfd;$/;"	m	class:EPollSelector
+m_epollfd	epoll/epollselector.h	/^    int m_epollfd;$/;"	m	class:EPollSelector
 m_inputbuffer	client/connection.h	/^    CircularBuffer* m_inputbuffer;$/;"	m	class:Connection
 m_inputbuffer	server/connection.h	/^    CircularBuffer* m_inputbuffer;$/;"	m	class:Connection
 m_lock	mysql/db_pool.h	/^    pthread_mutex_t m_lock;$/;"	m	class:Peng_Single_Lock
@@ -1972,8 +2090,7 @@ m_serverState	server/server.h	/^    bool m_serverState;             \/\/服务�
 m_sockfd	client/connection.h	/^    int m_sockfd;\/\/套接字$/;"	m	class:Connection
 m_sockfd	server/connection.h	/^    int m_sockfd;\/\/套接字$/;"	m	class:Connection
 m_sockfd	server/server.h	/^    int m_sockfd;$/;"	m	class:Server
-m_sockfds	client/epollselector.h	/^    SockFdSet m_sockfds;$/;"	m	class:EPollSelector
-m_sockfds	server/epollselector.h	/^    SockFdSet m_sockfds;$/;"	m	class:EPollSelector
+m_sockfds	epoll/epollselector.h	/^    SockFdSet m_sockfds;$/;"	m	class:EPollSelector
 m_task	timer/timer.h	/^    Task* m_task;  \/\/定时任务$/;"	m	class:Timer
 m_timer	client/client.h	/^    Timer* m_timer;                 \/\/定时器$/;"	m	class:Client
 m_timer	timer/wheelnode.h	/^    Timer *m_timer;$/;"	m	class:WheelNode
@@ -1996,6 +2113,9 @@ main	client/main.cpp	/^int main(int argc,char** argv)$/;"	f
 main	daemon/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^int main(int argc, char* argv[])$/;"	f
 main	daemon/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
 main	daemon/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^int main(int argc, char* argv[])$/;"	f
+main	epoll/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	epoll/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
 main	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^int main(int argc, char* argv[])$/;"	f
 main	mysql/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
 main	mysql/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
@@ -2308,9 +2428,8 @@ xatol	log/loghelper.h	/^inline unsigned xatol(const char * s, size_t len, const 
 ~Connection	client/connection.cpp	/^Connection::~Connection()$/;"	f	class:Connection
 ~Connection	server/connection.cpp	/^Connection::~Connection()$/;"	f	class:Connection
 ~Daemon	daemon/daemon.cpp	/^Daemon::~Daemon()$/;"	f	class:Daemon
-~EPollSelector	client/epollselector.cpp	/^EPollSelector::~EPollSelector()$/;"	f	class:EPollSelector
-~EPollSelector	server/epollselector.cpp	/^EPollSelector::~EPollSelector()$/;"	f	class:EPollSelector
-~IConnection	client/connection.h	/^    virtual ~IConnection(){};$/;"	f	class:IConnection
+~EPollSelector	epoll/epollselector.cpp	/^EPollSelector::~EPollSelector()$/;"	f	class:EPollSelector
+~IConnection	epoll/iconnection.h	/^    virtual ~IConnection(){};$/;"	f	class:IConnection
 ~IConnection	server/connection.h	/^    virtual ~IConnection(){};$/;"	f	class:IConnection
 ~LoginReq	protocol/loginreq.pb.cc	/^LoginReq::~LoginReq() {$/;"	f	class:LoginReq
 ~LoginRes	protocol/loginres.pb.cc	/^LoginRes::~LoginRes() {$/;"	f	class:LoginRes

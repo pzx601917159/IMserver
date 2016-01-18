@@ -5,7 +5,6 @@ SET(MAIN_SRC
         main.cpp
         client.cpp
         connection.cpp
-        epollselector.cpp
         )
 
 #定义变量
@@ -17,11 +16,12 @@ SET(LOGDIR ${BASEDIR}/../log/)
 SET(PROTOCOLDIR ${BASEDIR}/../protocol/)
 SET(DAEMONDIR ${BASEDIR}/../daemon/)
 SET(TIMERDIR ${BASEDIR}/../timer/)
+SET(MYEPOLLDIR ${BASEDIR}/../epoll)
 
 
 #编译选项
 SET(CMAKE_CXX_FLAGS
-    "-Wall -Wno-deprecated -O3 -D__STDC_LIMIT_MACROS -D_REENTRANT -I${BASEDIR} -I${MYSQLCDIR} -I${SINGLETONDIR} -I${BUFFERDIR} -I${LOGDIR} -I${PROTOCOLDIR} -I${DAEMONDIR} -I${TIMERDIR}"
+    "-Wall -Wno-deprecated -O3 -D__STDC_LIMIT_MACROS -D_REENTRANT -I${BASEDIR} -I${MYSQLCDIR} -I${SINGLETONDIR} -I${BUFFERDIR} -I${LOGDIR} -I${PROTOCOLDIR} -I${DAEMONDIR} -I${TIMERDIR} -I${MYEPOLLDIR}"
         )
 
 #生成可执行文件
@@ -40,6 +40,7 @@ TARGET_LINK_LIBRARIES(
         protocol
         daemon
         timer
+        myepoll
         protobuf
         crypto
         )

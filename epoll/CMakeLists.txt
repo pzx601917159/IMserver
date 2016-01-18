@@ -1,0 +1,2 @@
+SET(LIBMYEPOLL_SRC epollselector.cpp)
+ADD_LIBRARY(myepoll STATIC ${LIBMYEPOLL_SRC})

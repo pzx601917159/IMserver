@@ -18,6 +18,7 @@
 #include "reguserreq.h"
 #include "task.h"
 #include "timertask.h"
+#include "iconnection.h"
 
 class LoginReq;
 class LoginRes;
@@ -30,15 +31,6 @@ class Client;
 #define RECONN_INTERVAL 5000
 
 //接口类
-class IConnection
-{
-    public:
-    virtual void OnRead() = 0;
-    virtual void OnWrite() = 0;
-    virtual int GetSockfd() const = 0;
-    virtual ~IConnection(){};
-};
-
 class Connection:public IConnection,public TimerTask
 {
     public:

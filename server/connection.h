@@ -16,21 +16,12 @@
 
 #include "request.h"
 #include "reguserreq.h"
+#include "iconnection.h"
 class LoginReq;
 class SendMsg;
 
 class CircularBuffer;
 class Server;
-
-//接口类
-class IConnection
-{
-    public:
-    virtual void OnRead() = 0;
-    virtual void OnWrite() = 0;
-    virtual int GetSockfd() const = 0;
-    virtual ~IConnection(){};
-};
 
 class Connection:public IConnection
 {
