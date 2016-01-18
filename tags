@@ -131,6 +131,7 @@ CMAKE_BINARY_DIR	bin/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IM
 CMAKE_BINARY_DIR	bin/buffer/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
 CMAKE_BINARY_DIR	bin/client/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
 CMAKE_BINARY_DIR	bin/daemon/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
+CMAKE_BINARY_DIR	bin/epoll/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
 CMAKE_BINARY_DIR	bin/log/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
 CMAKE_BINARY_DIR	bin/mysql/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
 CMAKE_BINARY_DIR	bin/protocol/Makefile	/^CMAKE_BINARY_DIR = \/home\/pengzhixiang\/git\/IMserver\/bin$/;"	m
@@ -147,6 +148,7 @@ CMAKE_COMMAND	bin/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	bin/buffer/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	bin/client/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	bin/daemon/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	bin/epoll/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	bin/log/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	bin/mysql/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	bin/protocol/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
@@ -163,6 +165,7 @@ CMAKE_SOURCE_DIR	bin/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IM
 CMAKE_SOURCE_DIR	bin/buffer/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
 CMAKE_SOURCE_DIR	bin/client/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
 CMAKE_SOURCE_DIR	bin/daemon/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
+CMAKE_SOURCE_DIR	bin/epoll/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
 CMAKE_SOURCE_DIR	bin/log/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
 CMAKE_SOURCE_DIR	bin/mysql/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
 CMAKE_SOURCE_DIR	bin/protocol/Makefile	/^CMAKE_SOURCE_DIR = \/home\/pengzhixiang\/git\/IMserver$/;"	m
@@ -775,7 +778,6 @@ HandleRegReq	server/connection.cpp	/^void Connection::HandleRegReq(RegUserReq* r
 HandleReq	client/connection.cpp	/^void Connection::HandleReq(ReqType type,size_t len)$/;"	f	class:Connection
 HandleReq	server/connection.cpp	/^void Connection::HandleReq(ReqType type,size_t len)$/;"	f	class:Connection
 IConnection	epoll/iconnection.h	/^class IConnection$/;"	c
-IConnection	server/connection.h	/^class IConnection$/;"	c
 ID_VOID_MAIN	bin/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 ID_VOID_MAIN	buffer/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 ID_VOID_MAIN	client/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
@@ -1467,6 +1469,7 @@ RM	bin/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	bin/buffer/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	bin/client/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	bin/daemon/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	bin/epoll/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	bin/log/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	bin/mysql/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	bin/protocol/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
@@ -1531,6 +1534,7 @@ SHELL	bin/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	bin/buffer/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	bin/client/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	bin/daemon/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	bin/epoll/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	bin/log/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	bin/mysql/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	bin/protocol/Makefile	/^SHELL = \/bin\/sh$/;"	m
@@ -1551,6 +1555,7 @@ SUFFIXES	bin/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	bin/buffer/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	bin/client/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	bin/daemon/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	bin/epoll/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	bin/log/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	bin/mysql/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	bin/protocol/Makefile	/^SUFFIXES =$/;"	m
@@ -2430,7 +2435,6 @@ xatol	log/loghelper.h	/^inline unsigned xatol(const char * s, size_t len, const 
 ~Daemon	daemon/daemon.cpp	/^Daemon::~Daemon()$/;"	f	class:Daemon
 ~EPollSelector	epoll/epollselector.cpp	/^EPollSelector::~EPollSelector()$/;"	f	class:EPollSelector
 ~IConnection	epoll/iconnection.h	/^    virtual ~IConnection(){};$/;"	f	class:IConnection
-~IConnection	server/connection.h	/^    virtual ~IConnection(){};$/;"	f	class:IConnection
 ~LoginReq	protocol/loginreq.pb.cc	/^LoginReq::~LoginReq() {$/;"	f	class:LoginReq
 ~LoginRes	protocol/loginres.pb.cc	/^LoginRes::~LoginRes() {$/;"	f	class:LoginRes
 ~LogoutReq	protocol/logoutreq.pb.cc	/^LogoutReq::~LogoutReq() {$/;"	f	class:LogoutReq
