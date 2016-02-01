@@ -101,15 +101,16 @@ Acquire	mysql/db_pool.cpp	/^T* CDBPool<T>::Acquire()$/;"	f	class:CDBPool
 AvailableSize	buffer/circularbuffer.cpp	/^size_t CircularBuffer::AvailableSize()$/;"	f	class:CircularBuffer
 BCD	mysql/vostypes.h	/^typedef  unsigned char             BCD;$/;"	t
 BOOL	mysql/vostypes.h	/^typedef  int						BOOL;$/;"	t
-BOOLFALSE	mysql/vostypes.h	/^	BOOLFALSE = 0,$/;"	e	enum:__anon21
-BOOLTRUE	mysql/vostypes.h	/^	BOOLTRUE  =1,$/;"	e	enum:__anon21
-BOOLVAL	mysql/vostypes.h	/^}BOOLVAL;$/;"	t	typeref:enum:__anon21
+BOOLFALSE	mysql/vostypes.h	/^	BOOLFALSE = 0,$/;"	e	enum:__anon23
+BOOLTRUE	mysql/vostypes.h	/^	BOOLTRUE  =1,$/;"	e	enum:__anon23
+BOOLVAL	mysql/vostypes.h	/^}BOOLVAL;$/;"	t	typeref:enum:__anon23
 BUFFER_LEN	client/connection.cpp	/^const uint32_t BUFFER_LEN=4096;$/;"	v
 BUFFER_LEN	server/connection.cpp	/^const uint32_t BUFFER_LEN=4096;$/;"	v
 BYTE	mysql/vostypes.h	/^typedef  unsigned char		   BYTE;$/;"	t
 Begin	timer/wheelnode.cpp	/^Timer* WheelNode::Begin()$/;"	f	class:WheelNode
 Bind	server/server.cpp	/^bool Server::Bind()$/;"	f	class:Server
 BroadcastMsg	server/server.cpp	/^void Server::BroadcastMsg(::google::protobuf::Message* msg,ReqType type)$/;"	f	class:Server
+ByteSize	protocol/chatmsg.pb.cc	/^int ChatMsg::ByteSize() const {$/;"	f	class:ChatMsg
 ByteSize	protocol/loginreq.pb.cc	/^int LoginReq::ByteSize() const {$/;"	f	class:LoginReq
 ByteSize	protocol/loginres.pb.cc	/^int LoginRes::ByteSize() const {$/;"	f	class:LoginRes
 ByteSize	protocol/logoutreq.pb.cc	/^int LogoutReq::ByteSize() const {$/;"	f	class:LogoutReq
@@ -606,10 +607,16 @@ COMPILER_ID	timer/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	9;"	d	file:
 CONNECT	client/connection.h	/^        CONNECT\/\/连接别人的$/;"	e	enum:Connection::ConnType
 CONNECT	server/connection.h	/^        CONNECT\/\/连接别人的$/;"	e	enum:Connection::ConnType
 Capacity	buffer/circularbuffer.h	/^    size_t Capacity() const { return capacity_; }\/\/容量$/;"	f	class:CircularBuffer
+ChatMsg	protocol/chatmsg.pb.cc	/^ChatMsg::ChatMsg()$/;"	f	class:ChatMsg
+ChatMsg	protocol/chatmsg.pb.cc	/^ChatMsg::ChatMsg(const ChatMsg& from)$/;"	f	class:ChatMsg
+ChatMsg	protocol/chatmsg.pb.h	/^class ChatMsg : public ::google::protobuf::Message {$/;"	c
+ChatMsg_descriptor_	protocol/chatmsg.pb.cc	/^const ::google::protobuf::Descriptor* ChatMsg_descriptor_ = NULL;$/;"	m	namespace:__anon19	file:
+ChatMsg_reflection_	protocol/chatmsg.pb.cc	/^  ChatMsg_reflection_ = NULL;$/;"	m	namespace:__anon19	file:
 CheckConnect	client/connection.cpp	/^bool Connection::CheckConnect(Connection* conn)$/;"	f	class:Connection
 CircularBuffer	buffer/circularbuffer.cpp	/^CircularBuffer::CircularBuffer(size_t capacity)$/;"	f	class:CircularBuffer
 CircularBuffer	buffer/circularbuffer.h	/^class CircularBuffer$/;"	c
 Clear	buffer/circularbuffer.cpp	/^void CircularBuffer::Clear(bool rmdata)$/;"	f	class:CircularBuffer
+Clear	protocol/chatmsg.pb.cc	/^void ChatMsg::Clear() {$/;"	f	class:ChatMsg
 Clear	protocol/loginreq.pb.cc	/^void LoginReq::Clear() {$/;"	f	class:LoginReq
 Clear	protocol/loginres.pb.cc	/^void LoginRes::Clear() {$/;"	f	class:LoginRes
 Clear	protocol/logoutreq.pb.cc	/^void LogoutReq::Clear() {$/;"	f	class:LogoutReq
@@ -634,6 +641,8 @@ Connection	client/connection.cpp	/^Connection::Connection(int sockfd,sockaddr_in
 Connection	client/connection.h	/^class Connection:public IConnection,public TimerTask$/;"	c
 Connection	server/connection.cpp	/^Connection::Connection(int sockfd,sockaddr_in addr,Server* server)$/;"	f	class:Connection
 Connection	server/connection.h	/^class Connection:public IConnection$/;"	c
+CopyFrom	protocol/chatmsg.pb.cc	/^void ChatMsg::CopyFrom(const ::google::protobuf::Message& from) {$/;"	f	class:ChatMsg
+CopyFrom	protocol/chatmsg.pb.cc	/^void ChatMsg::CopyFrom(const ChatMsg& from) {$/;"	f	class:ChatMsg
 CopyFrom	protocol/loginreq.pb.cc	/^void LoginReq::CopyFrom(const ::google::protobuf::Message& from) {$/;"	f	class:LoginReq
 CopyFrom	protocol/loginreq.pb.cc	/^void LoginReq::CopyFrom(const LoginReq& from) {$/;"	f	class:LoginReq
 CopyFrom	protocol/loginres.pb.cc	/^void LoginRes::CopyFrom(const ::google::protobuf::Message& from) {$/;"	f	class:LoginRes
@@ -660,6 +669,8 @@ CreateTimer	timer/wheeltimer.cpp	/^Timer* WheelTimer::CreateTimer(Task* task,uin
 DBFETCH_SQL_LEN	mysql/mysqldatabase.h	17;"	d
 DBUSER_PWD_LEN	mysql/mysqldatabase.h	16;"	d
 DEFAULT_MAX_ONLINE_USER_COUNT	mysql/vostypes.h	141;"	d
+DO_	protocol/chatmsg.pb.cc	181;"	d	file:
+DO_	protocol/chatmsg.pb.cc	262;"	d	file:
 DO_	protocol/loginreq.pb.cc	179;"	d	file:
 DO_	protocol/loginreq.pb.cc	229;"	d	file:
 DO_	protocol/loginres.pb.cc	165;"	d	file:
@@ -689,7 +700,7 @@ Data_Param	mysql/dbstruct.h	/^    Data_Param()$/;"	f	struct:Data_Param
 Data_Param	mysql/dbstruct.h	/^struct Data_Param   $/;"	s
 Database_param	mysql/dbstruct.h	/^    Database_param()$/;"	f	struct:Database_param
 Database_param	mysql/dbstruct.h	/^struct Database_param$/;"	s
-Debug	log/logger.h	/^	Debug = 0,$/;"	e	enum:__anon22
+Debug	log/logger.h	/^	Debug = 0,$/;"	e	enum:__anon24
 DelRecord	mysql/mysqldatabase.cpp	/^bool CDatabase::DelRecord(Data_Param *para)$/;"	f	class:CDatabase
 DeleteConn	client/client.cpp	/^void Client::DeleteConn(uint64_t key)$/;"	f	class:Client
 DeleteConn	server/server.cpp	/^void Server::DeleteConn(uint64_t key)$/;"	f	class:Server
@@ -703,7 +714,7 @@ EPOLL_SIZE	epoll/epollselector.cpp	/^const int EPOLL_SIZE = 10240;$/;"	v
 EPollSelector	epoll/epollselector.cpp	/^EPollSelector::EPollSelector()$/;"	f	class:EPollSelector
 EPollSelector	epoll/epollselector.h	/^class EPollSelector$/;"	c
 Empty	buffer/circularbuffer.h	/^    bool Empty(){return size_ == 0;}$/;"	f	class:CircularBuffer
-Error	log/logger.h	/^	Error = 3,$/;"	e	enum:__anon22
+Error	log/logger.h	/^	Error = 3,$/;"	e	enum:__anon24
 ExecSql	mysql/mysqldatabase.cpp	/^bool CDatabase::ExecSql(char *sqlstr)$/;"	f	class:CDatabase
 FAILED	client/request.h	/^    FAILED = 400,   \/\/失败$/;"	e	enum:ResCode
 FAILED	server/request.h	/^    FAILED = 400,   \/\/失败$/;"	e	enum:ResCode
@@ -715,6 +726,7 @@ FormatTime	log/loghelper.h	/^inline std::string FormatTime(const time_t &t)$/;"	
 FreeRecord	mysql/mysqldatabase.cpp	/^void CDatabase::FreeRecord()$/;"	f	class:CDatabase
 GetAlarmCount	timer/wheeltimer.cpp	/^uint32_t WheelTimer::GetAlarmCount()$/;"	f	class:WheelTimer
 GetCachedSize	client/reguserreq.h	/^  int GetCachedSize() const { return _cached_size_; }$/;"	f	class:RegUserReq
+GetCachedSize	protocol/chatmsg.pb.h	/^  int GetCachedSize() const { return _cached_size_; }$/;"	f	class:ChatMsg
 GetCachedSize	protocol/loginreq.pb.h	/^  int GetCachedSize() const { return _cached_size_; }$/;"	f	class:LoginReq
 GetCachedSize	protocol/loginres.pb.h	/^  int GetCachedSize() const { return _cached_size_; }$/;"	f	class:LoginRes
 GetCachedSize	protocol/logoutreq.pb.h	/^  int GetCachedSize() const { return _cached_size_; }$/;"	f	class:LogoutReq
@@ -731,6 +743,7 @@ GetExeSqlState	mysql/mysqldatabase.h	/^    BOOL GetExeSqlState() {return Succ;};
 GetFieldName	mysql/mysqldatabase.cpp	/^char* CDatabase::GetFieldName(int FieldNum)$/;"	f	class:CDatabase
 GetFieldNum	mysql/mysqldatabase.cpp	/^unsigned int CDatabase::GetFieldNum()$/;"	f	class:CDatabase
 GetHostInfo	mysql/mysqldatabase.cpp	/^char* CDatabase::GetHostInfo()$/;"	f	class:CDatabase
+GetMetadata	protocol/chatmsg.pb.cc	/^::google::protobuf::Metadata ChatMsg::GetMetadata() const {$/;"	f	class:ChatMsg
 GetMetadata	protocol/loginreq.pb.cc	/^::google::protobuf::Metadata LoginReq::GetMetadata() const {$/;"	f	class:LoginReq
 GetMetadata	protocol/loginres.pb.cc	/^::google::protobuf::Metadata LoginRes::GetMetadata() const {$/;"	f	class:LoginRes
 GetMetadata	protocol/logoutreq.pb.cc	/^::google::protobuf::Metadata LogoutReq::GetMetadata() const {$/;"	f	class:LogoutReq
@@ -764,7 +777,7 @@ GetTotalTime	timer/wheel.cpp	/^uint32_t Wheel::GetTotalTime() const$/;"	f	class:
 GetUnitTime	timer/wheel.cpp	/^uint32_t Wheel::GetUnitTime() const$/;"	f	class:Wheel
 GetWheelTimer	client/client.h	/^    WheelTimer* GetWheelTimer(){return m_wheeltimer;}$/;"	f	class:Client
 Global	log/logger.h	/^class Global$/;"	c
-Godx	log/logger.h	/^	Godx  = 4,$/;"	e	enum:__anon22
+Godx	log/logger.h	/^	Godx  = 4,$/;"	e	enum:__anon24
 HALF_MINUTE	mysql/vostypes.h	115;"	d
 HANDLEMAX	client/client.h	23;"	d
 HEADER_LEN	client/connection.cpp	/^const uint32_t HEADER_LEN=8;$/;"	v
@@ -790,6 +803,7 @@ ID_VOID_MAIN	timer/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 INNER_ERR	client/request.h	/^    INNER_ERR = 500 \/\/内部错误$/;"	e	enum:ResCode
 INNER_ERR	server/request.h	/^    INNER_ERR = 500 \/\/内部错误$/;"	e	enum:ResCode
 INTERNAL_BUFFER_LEN	mysql/vostypes.h	108;"	d
+INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION	protocol/chatmsg.pb.cc	4;"	d	file:
 INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION	protocol/loginreq.pb.cc	4;"	d	file:
 INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION	protocol/loginres.pb.cc	4;"	d	file:
 INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION	protocol/logoutreq.pb.cc	4;"	d	file:
@@ -804,12 +818,13 @@ INVALID_HANDLE_VALUE	mysql/vostypes.h	106;"	d
 INVALID_NUMBER	mysql/vostypes.h	102;"	d
 Increase	mysql/db_pool.cpp	/^bool CDBPool<T>::Increase(int num)$/;"	f	class:CDBPool
 IncreaseCapacity	buffer/circularbuffer.cpp	/^bool CircularBuffer::IncreaseCapacity(size_t n)$/;"	f	class:CircularBuffer
-Info	log/logger.h	/^	Info  = 1,$/;"	e	enum:__anon22
+Info	log/logger.h	/^	Info  = 1,$/;"	e	enum:__anon24
 Init	buffer/circularbuffer.cpp	/^bool CircularBuffer::Init()$/;"	f	class:CircularBuffer
 Init	client/client.cpp	/^void Client::Init()$/;"	f	class:Client
 Init	epoll/epollselector.cpp	/^bool EPollSelector::Init()$/;"	f	class:EPollSelector
 Init	mysql/db_pool.cpp	/^bool CDBPool<T>::Init(int num)$/;"	f	class:CDBPool
 Init	server/server.cpp	/^bool Server::Init()$/;"	f	class:Server
+InitAsDefaultInstance	protocol/chatmsg.pb.cc	/^void ChatMsg::InitAsDefaultInstance() {$/;"	f	class:ChatMsg
 InitAsDefaultInstance	protocol/loginreq.pb.cc	/^void LoginReq::InitAsDefaultInstance() {$/;"	f	class:LoginReq
 InitAsDefaultInstance	protocol/loginres.pb.cc	/^void LoginRes::InitAsDefaultInstance() {$/;"	f	class:LoginRes
 InitAsDefaultInstance	protocol/logoutreq.pb.cc	/^void LogoutReq::InitAsDefaultInstance() {$/;"	f	class:LogoutReq
@@ -832,6 +847,7 @@ InsertTimer	timer/wheeltimer.cpp	/^void WheelTimer::InsertTimer(Timer* timer)$/;
 Instance	mysql/db_pool.cpp	/^CDBPool<T>* CDBPool<T>::Instance()$/;"	f	class:CDBPool
 Instance	mysql/db_pool.h	/^    static Peng_Single_Lock* Instance()$/;"	f	class:Peng_Single_Lock
 IsEnd	mysql/mysqldatabase.cpp	/^BOOL CDatabase::IsEnd()$/;"	f	class:CDatabase
+IsInitialized	protocol/chatmsg.pb.cc	/^bool ChatMsg::IsInitialized() const {$/;"	f	class:ChatMsg
 IsInitialized	protocol/loginreq.pb.cc	/^bool LoginReq::IsInitialized() const {$/;"	f	class:LoginReq
 IsInitialized	protocol/loginres.pb.cc	/^bool LoginRes::IsInitialized() const {$/;"	f	class:LoginRes
 IsInitialized	protocol/logoutreq.pb.cc	/^bool LogoutReq::IsInitialized() const {$/;"	f	class:LogoutReq
@@ -890,6 +906,8 @@ MIN_RATE_DUR	mysql/vostypes.h	124;"	d
 MQD_T	mysql/vostypes.h	/^typedef mqd_t MQD_T;$/;"	t
 MSGTYPE_LEN	client/connection.cpp	/^const uint32_t MSGTYPE_LEN=4;$/;"	v
 MSGTYPE_LEN	server/connection.cpp	/^const uint32_t MSGTYPE_LEN=4;$/;"	v
+MergeFrom	protocol/chatmsg.pb.cc	/^void ChatMsg::MergeFrom(const ::google::protobuf::Message& from) {$/;"	f	class:ChatMsg
+MergeFrom	protocol/chatmsg.pb.cc	/^void ChatMsg::MergeFrom(const ChatMsg& from) {$/;"	f	class:ChatMsg
 MergeFrom	protocol/loginreq.pb.cc	/^void LoginReq::MergeFrom(const ::google::protobuf::Message& from) {$/;"	f	class:LoginReq
 MergeFrom	protocol/loginreq.pb.cc	/^void LoginReq::MergeFrom(const LoginReq& from) {$/;"	f	class:LoginReq
 MergeFrom	protocol/loginres.pb.cc	/^void LoginRes::MergeFrom(const ::google::protobuf::Message& from) {$/;"	f	class:LoginRes
@@ -910,6 +928,7 @@ MergeFrom	protocol/reguserres.pb.cc	/^void RegUserRes::MergeFrom(const ::google:
 MergeFrom	protocol/reguserres.pb.cc	/^void RegUserRes::MergeFrom(const RegUserRes& from) {$/;"	f	class:RegUserRes
 MergeFrom	protocol/sendmsg.pb.cc	/^void SendMsg::MergeFrom(const ::google::protobuf::Message& from) {$/;"	f	class:SendMsg
 MergeFrom	protocol/sendmsg.pb.cc	/^void SendMsg::MergeFrom(const SendMsg& from) {$/;"	f	class:SendMsg
+MergePartialFromCodedStream	protocol/chatmsg.pb.cc	/^bool ChatMsg::MergePartialFromCodedStream($/;"	f	class:ChatMsg
 MergePartialFromCodedStream	protocol/loginreq.pb.cc	/^bool LoginReq::MergePartialFromCodedStream($/;"	f	class:LoginReq
 MergePartialFromCodedStream	protocol/loginres.pb.cc	/^bool LoginRes::MergePartialFromCodedStream($/;"	f	class:LoginRes
 MergePartialFromCodedStream	protocol/logoutreq.pb.cc	/^bool LogoutReq::MergePartialFromCodedStream($/;"	f	class:LogoutReq
@@ -920,6 +939,7 @@ MergePartialFromCodedStream	protocol/regserverres.pb.cc	/^bool RegServerRes::Mer
 MergePartialFromCodedStream	protocol/reguserreq.pb.cc	/^bool RegUserReq::MergePartialFromCodedStream($/;"	f	class:RegUserReq
 MergePartialFromCodedStream	protocol/reguserres.pb.cc	/^bool RegUserRes::MergePartialFromCodedStream($/;"	f	class:RegUserRes
 MergePartialFromCodedStream	protocol/sendmsg.pb.cc	/^bool SendMsg::MergePartialFromCodedStream($/;"	f	class:SendMsg
+New	protocol/chatmsg.pb.cc	/^ChatMsg* ChatMsg::New() const {$/;"	f	class:ChatMsg
 New	protocol/loginreq.pb.cc	/^LoginReq* LoginReq::New() const {$/;"	f	class:LoginReq
 New	protocol/loginres.pb.cc	/^LoginRes* LoginRes::New() const {$/;"	f	class:LoginRes
 New	protocol/logoutreq.pb.cc	/^LogoutReq* LogoutReq::New() const {$/;"	f	class:LogoutReq
@@ -1436,6 +1456,7 @@ PLATFORM_ID	timer/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	95;"	d	file:
 PLATFORM_ID	timer/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
 PROGRAM_VERSION	client/main.cpp	17;"	d	file:
 PROGRAM_VERSION	server/main.cpp	17;"	d	file:
+PROTOBUF_chatmsg_2eproto__INCLUDED	protocol/chatmsg.pb.h	5;"	d
 PROTOBUF_loginreq_2eproto__INCLUDED	protocol/loginreq.pb.h	5;"	d
 PROTOBUF_loginres_2eproto__INCLUDED	protocol/loginres.pb.h	5;"	d
 PROTOBUF_logoutreq_2eproto__INCLUDED	protocol/logoutreq.pb.h	5;"	d
@@ -1510,8 +1531,8 @@ RegUserReq_reflection_	protocol/reguserreq.pb.cc	/^  RegUserReq_reflection_ = NU
 RegUserRes	protocol/reguserres.pb.cc	/^RegUserRes::RegUserRes()$/;"	f	class:RegUserRes
 RegUserRes	protocol/reguserres.pb.cc	/^RegUserRes::RegUserRes(const RegUserRes& from)$/;"	f	class:RegUserRes
 RegUserRes	protocol/reguserres.pb.h	/^class RegUserRes : public ::google::protobuf::Message {$/;"	c
-RegUserRes_descriptor_	protocol/reguserres.pb.cc	/^const ::google::protobuf::Descriptor* RegUserRes_descriptor_ = NULL;$/;"	m	namespace:__anon19	file:
-RegUserRes_reflection_	protocol/reguserres.pb.cc	/^  RegUserRes_reflection_ = NULL;$/;"	m	namespace:__anon19	file:
+RegUserRes_descriptor_	protocol/reguserres.pb.cc	/^const ::google::protobuf::Descriptor* RegUserRes_descriptor_ = NULL;$/;"	m	namespace:__anon21	file:
+RegUserRes_reflection_	protocol/reguserres.pb.cc	/^  RegUserRes_reflection_ = NULL;$/;"	m	namespace:__anon21	file:
 Release	mysql/db_pool.cpp	/^void CDBPool<T>::Release(T *cnn, bool Succ)$/;"	f	class:CDBPool
 Release	mysql/db_pool.cpp	/^void CDBPool<T>::Release(T* cnn)$/;"	f	class:CDBPool
 Remove	epoll/epollselector.cpp	/^void EPollSelector::Remove(IConnection* conn)$/;"	f	class:EPollSelector
@@ -1523,13 +1544,13 @@ Reset	timer/wheelnode.cpp	/^void WheelNode::Reset()$/;"	f	class:WheelNode
 S16	mysql/vostypes.h	/^typedef short S16;$/;"	t
 S32	mysql/vostypes.h	/^typedef int S32;$/;"	t
 S8	mysql/vostypes.h	/^typedef char S8;$/;"	t
-SEL_READ	epoll/epollselector.h	/^    SEL_READ = 1,$/;"	e	enum:__anon24
-SEL_RW	epoll/epollselector.h	/^    SEL_RW$/;"	e	enum:__anon24
-SEL_WRITE	epoll/epollselector.h	/^    SEL_WRITE,$/;"	e	enum:__anon24
+SEL_READ	epoll/epollselector.h	/^    SEL_READ = 1,$/;"	e	enum:__anon26
+SEL_RW	epoll/epollselector.h	/^    SEL_RW$/;"	e	enum:__anon26
+SEL_WRITE	epoll/epollselector.h	/^    SEL_WRITE,$/;"	e	enum:__anon26
 SEM_T	mysql/vostypes.h	/^typedef sem_t SEM_T;$/;"	t
 SERVER_IP	client/client.cpp	/^const char*   SERVER_IP   = "127.0.0.1";$/;"	v
 SERVER_PORT	client/client.cpp	/^const uint16_t      SERVER_PORT = 2222;$/;"	v
-SFile	log/logger.h	/^	SFile = 2$/;"	e	enum:__anon23
+SFile	log/logger.h	/^	SFile = 2$/;"	e	enum:__anon25
 SHELL	bin/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	bin/buffer/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	bin/client/Makefile	/^SHELL = \/bin\/sh$/;"	m
@@ -1588,6 +1609,7 @@ SendMsg_descriptor_	protocol/sendmsg.pb.cc	/^const ::google::protobuf::Descripto
 SendMsg_reflection_	protocol/sendmsg.pb.cc	/^  SendMsg_reflection_ = NULL;$/;"	m	namespace:__anon7	file:
 SendRequest	client/connection.cpp	/^void Connection::SendRequest(::google::protobuf::Message* req,ReqType type)$/;"	f	class:Connection
 SendRequest	server/connection.cpp	/^void Connection::SendRequest(::google::protobuf::Message* req,ReqType type)$/;"	f	class:Connection
+SerializeWithCachedSizes	protocol/chatmsg.pb.cc	/^void ChatMsg::SerializeWithCachedSizes($/;"	f	class:ChatMsg
 SerializeWithCachedSizes	protocol/loginreq.pb.cc	/^void LoginReq::SerializeWithCachedSizes($/;"	f	class:LoginReq
 SerializeWithCachedSizes	protocol/loginres.pb.cc	/^void LoginRes::SerializeWithCachedSizes($/;"	f	class:LoginRes
 SerializeWithCachedSizes	protocol/logoutreq.pb.cc	/^void LogoutReq::SerializeWithCachedSizes($/;"	f	class:LogoutReq
@@ -1598,6 +1620,7 @@ SerializeWithCachedSizes	protocol/regserverres.pb.cc	/^void RegServerRes::Serial
 SerializeWithCachedSizes	protocol/reguserreq.pb.cc	/^void RegUserReq::SerializeWithCachedSizes($/;"	f	class:RegUserReq
 SerializeWithCachedSizes	protocol/reguserres.pb.cc	/^void RegUserRes::SerializeWithCachedSizes($/;"	f	class:RegUserRes
 SerializeWithCachedSizes	protocol/sendmsg.pb.cc	/^void SendMsg::SerializeWithCachedSizes($/;"	f	class:SendMsg
+SerializeWithCachedSizesToArray	protocol/chatmsg.pb.cc	/^::google::protobuf::uint8* ChatMsg::SerializeWithCachedSizesToArray($/;"	f	class:ChatMsg
 SerializeWithCachedSizesToArray	protocol/loginreq.pb.cc	/^::google::protobuf::uint8* LoginReq::SerializeWithCachedSizesToArray($/;"	f	class:LoginReq
 SerializeWithCachedSizesToArray	protocol/loginres.pb.cc	/^::google::protobuf::uint8* LoginRes::SerializeWithCachedSizesToArray($/;"	f	class:LoginRes
 SerializeWithCachedSizesToArray	protocol/logoutreq.pb.cc	/^::google::protobuf::uint8* LogoutReq::SerializeWithCachedSizesToArray($/;"	f	class:LogoutReq
@@ -1610,6 +1633,7 @@ SerializeWithCachedSizesToArray	protocol/reguserres.pb.cc	/^::google::protobuf::
 SerializeWithCachedSizesToArray	protocol/sendmsg.pb.cc	/^::google::protobuf::uint8* SendMsg::SerializeWithCachedSizesToArray($/;"	f	class:SendMsg
 Server	server/server.cpp	/^Server::Server(uint16_t port)$/;"	f	class:Server
 Server	server/server.h	/^class Server:public IConnection$/;"	c
+SetCachedSize	protocol/chatmsg.pb.cc	/^void ChatMsg::SetCachedSize(int size) const {$/;"	f	class:ChatMsg
 SetCachedSize	protocol/loginreq.pb.cc	/^void LoginReq::SetCachedSize(int size) const {$/;"	f	class:LoginReq
 SetCachedSize	protocol/loginres.pb.cc	/^void LoginRes::SetCachedSize(int size) const {$/;"	f	class:LoginRes
 SetCachedSize	protocol/logoutreq.pb.cc	/^void LogoutReq::SetCachedSize(int size) const {$/;"	f	class:LogoutReq
@@ -1630,6 +1654,7 @@ SetReconnTimer	client/connection.h	/^    void SetReconnTimer(Timer* timer){m_rec
 SetRemain	timer/timer.cpp	/^void Timer::SetRemain(uint32_t remain)$/;"	f	class:Timer
 SetTask	timer/timer.cpp	/^void Timer::SetTask(Task* task)$/;"	f	class:Timer
 SetupEpoll	epoll/epollselector.cpp	/^inline void SetupEpoll(int epollfd,int option,int sockfd,epoll_event &ev)$/;"	f
+SharedCtor	protocol/chatmsg.pb.cc	/^void ChatMsg::SharedCtor() {$/;"	f	class:ChatMsg
 SharedCtor	protocol/loginreq.pb.cc	/^void LoginReq::SharedCtor() {$/;"	f	class:LoginReq
 SharedCtor	protocol/loginres.pb.cc	/^void LoginRes::SharedCtor() {$/;"	f	class:LoginRes
 SharedCtor	protocol/logoutreq.pb.cc	/^void LogoutReq::SharedCtor() {$/;"	f	class:LogoutReq
@@ -1640,6 +1665,7 @@ SharedCtor	protocol/regserverres.pb.cc	/^void RegServerRes::SharedCtor() {$/;"	f
 SharedCtor	protocol/reguserreq.pb.cc	/^void RegUserReq::SharedCtor() {$/;"	f	class:RegUserReq
 SharedCtor	protocol/reguserres.pb.cc	/^void RegUserRes::SharedCtor() {$/;"	f	class:RegUserRes
 SharedCtor	protocol/sendmsg.pb.cc	/^void SendMsg::SharedCtor() {$/;"	f	class:SendMsg
+SharedDtor	protocol/chatmsg.pb.cc	/^void ChatMsg::SharedDtor() {$/;"	f	class:ChatMsg
 SharedDtor	protocol/loginreq.pb.cc	/^void LoginReq::SharedDtor() {$/;"	f	class:LoginReq
 SharedDtor	protocol/loginres.pb.cc	/^void LoginRes::SharedDtor() {$/;"	f	class:LoginRes
 SharedDtor	protocol/logoutreq.pb.cc	/^void LogoutReq::SharedDtor() {$/;"	f	class:LogoutReq
@@ -1656,9 +1682,11 @@ Size	buffer/circularbuffer.h	/^    size_t Size() const { return size_; }\/\/大�
 Size	epoll/epollselector.cpp	/^size_t EPollSelector::Size() const$/;"	f	class:EPollSelector
 SkipData	buffer/circularbuffer.cpp	/^bool CircularBuffer::SkipData(size_t bytes)$/;"	f	class:CircularBuffer
 SockFdSet	epoll/epollselector.h	/^    typedef std::set<int> SockFdSet;$/;"	t	class:EPollSelector
-Standard	log/logger.h	/^	Standard = 1,$/;"	e	enum:__anon23
+Standard	log/logger.h	/^	Standard = 1,$/;"	e	enum:__anon25
 Start	client/client.cpp	/^void Client::Start()$/;"	f	class:Client
 Start	server/server.cpp	/^void Server::Start()$/;"	f	class:Server
+StaticDescriptorInitializer_chatmsg_2eproto	protocol/chatmsg.pb.cc	/^  StaticDescriptorInitializer_chatmsg_2eproto() {$/;"	f	struct:StaticDescriptorInitializer_chatmsg_2eproto
+StaticDescriptorInitializer_chatmsg_2eproto	protocol/chatmsg.pb.cc	/^struct StaticDescriptorInitializer_chatmsg_2eproto {$/;"	s	file:
 StaticDescriptorInitializer_loginreq_2eproto	protocol/loginreq.pb.cc	/^  StaticDescriptorInitializer_loginreq_2eproto() {$/;"	f	struct:StaticDescriptorInitializer_loginreq_2eproto
 StaticDescriptorInitializer_loginreq_2eproto	protocol/loginreq.pb.cc	/^struct StaticDescriptorInitializer_loginreq_2eproto {$/;"	s	file:
 StaticDescriptorInitializer_loginres_2eproto	protocol/loginres.pb.cc	/^  StaticDescriptorInitializer_loginres_2eproto() {$/;"	f	struct:StaticDescriptorInitializer_loginres_2eproto
@@ -1680,6 +1708,7 @@ StaticDescriptorInitializer_reguserres_2eproto	protocol/reguserres.pb.cc	/^struc
 StaticDescriptorInitializer_sendmsg_2eproto	protocol/sendmsg.pb.cc	/^  StaticDescriptorInitializer_sendmsg_2eproto() {$/;"	f	struct:StaticDescriptorInitializer_sendmsg_2eproto
 StaticDescriptorInitializer_sendmsg_2eproto	protocol/sendmsg.pb.cc	/^struct StaticDescriptorInitializer_sendmsg_2eproto {$/;"	s	file:
 Succ	mysql/mysqldatabase.h	/^    bool Succ;$/;"	m	class:CDatabase
+Swap	protocol/chatmsg.pb.cc	/^void ChatMsg::Swap(ChatMsg* other) {$/;"	f	class:ChatMsg
 Swap	protocol/loginreq.pb.cc	/^void LoginReq::Swap(LoginReq* other) {$/;"	f	class:LoginReq
 Swap	protocol/loginres.pb.cc	/^void LoginRes::Swap(LoginRes* other) {$/;"	f	class:LoginRes
 Swap	protocol/logoutreq.pb.cc	/^void LogoutReq::Swap(LogoutReq* other) {$/;"	f	class:LogoutReq
@@ -1690,7 +1719,7 @@ Swap	protocol/regserverres.pb.cc	/^void RegServerRes::Swap(RegServerRes* other) 
 Swap	protocol/reguserreq.pb.cc	/^void RegUserReq::Swap(RegUserReq* other) {$/;"	f	class:RegUserReq
 Swap	protocol/reguserres.pb.cc	/^void RegUserRes::Swap(RegUserRes* other) {$/;"	f	class:RegUserRes
 Swap	protocol/sendmsg.pb.cc	/^void SendMsg::Swap(SendMsg* other) {$/;"	f	class:SendMsg
-Syslog	log/logger.h	/^	Syslog = 0,$/;"	e	enum:__anon23
+Syslog	log/logger.h	/^	Syslog = 0,$/;"	e	enum:__anon25
 TEN_SECOND	mysql/vostypes.h	117;"	d
 TIMEOUT	mysql/vostypes.h	121;"	d
 TIMER_T	mysql/vostypes.h	/^typedef timer_t TIMER_T;$/;"	t
@@ -1711,7 +1740,7 @@ Unlock	mysql/db_pool.h	/^    void Unlock()$/;"	f	class:Peng_Single_Lock
 UpdateRecord	mysql/mysqldatabase.cpp	/^bool CDatabase::UpdateRecord(Data_Param *para)$/;"	f	class:CDatabase
 UpdateSize	buffer/circularbuffer.cpp	/^bool CircularBuffer::UpdateSize(size_t addsize)$/;"	f	class:CircularBuffer
 WORD	mysql/vostypes.h	/^typedef  unsigned short           WORD;$/;"	t
-Warn	log/logger.h	/^	Warn  = 2,$/;"	e	enum:__anon22
+Warn	log/logger.h	/^	Warn  = 2,$/;"	e	enum:__anon24
 Wheel	timer/wheel.cpp	/^Wheel::Wheel(uint32_t size,uint32_t time)$/;"	f	class:Wheel
 Wheel	timer/wheel.h	/^class Wheel$/;"	c
 WheelList	timer/wheeltimer.h	/^    typedef std::list<Wheel*> WheelList;$/;"	t	class:WheelTimer
@@ -1751,6 +1780,7 @@ _WHEELTIMER_H	timer/wheeltimer.h	10;"	d
 _WHEEL_H	timer/wheel.h	9;"	d
 __DB_STRUCT_H__	mysql/dbstruct.h	2;"	d
 _cached_size_	client/reguserreq.h	/^  mutable int _cached_size_;$/;"	m	class:RegUserReq
+_cached_size_	protocol/chatmsg.pb.h	/^  mutable int _cached_size_;$/;"	m	class:ChatMsg
 _cached_size_	protocol/loginreq.pb.h	/^  mutable int _cached_size_;$/;"	m	class:LoginReq
 _cached_size_	protocol/loginres.pb.h	/^  mutable int _cached_size_;$/;"	m	class:LoginRes
 _cached_size_	protocol/logoutreq.pb.h	/^  mutable int _cached_size_;$/;"	m	class:LogoutReq
@@ -1765,6 +1795,7 @@ _cached_size_	server/reguserreq.h	/^  mutable int _cached_size_;$/;"	m	class:Reg
 _cnn	mysql/db_pool.h	/^	T* _cnn;$/;"	m	class:CMasterDBGuard
 _getTime	log/logger.cpp	/^std::string _getTime()$/;"	f	namespace:log
 _has_bits_	client/reguserreq.h	/^  ::google::protobuf::uint32 _has_bits_[(2 + 31) \/ 32];$/;"	m	class:RegUserReq
+_has_bits_	protocol/chatmsg.pb.h	/^  ::google::protobuf::uint32 _has_bits_[(4 + 31) \/ 32];$/;"	m	class:ChatMsg
 _has_bits_	protocol/loginreq.pb.h	/^  ::google::protobuf::uint32 _has_bits_[(2 + 31) \/ 32];$/;"	m	class:LoginReq
 _has_bits_	protocol/loginres.pb.h	/^  ::google::protobuf::uint32 _has_bits_[(2 + 31) \/ 32];$/;"	m	class:LoginRes
 _has_bits_	protocol/logoutreq.pb.h	/^  ::google::protobuf::uint32 _has_bits_[(1 + 31) \/ 32];$/;"	m	class:LogoutReq
@@ -1779,6 +1810,7 @@ _has_bits_	server/reguserreq.h	/^  ::google::protobuf::uint32 _has_bits_[(2 + 31
 _linux_update_timestr	log/logger.cpp	/^void _linux_update_timestr() {$/;"	f	namespace:log
 _pool	mysql/db_pool.h	/^    std::vector<T*> _pool;$/;"	m	class:CDBPool
 _unknown_fields_	client/reguserreq.h	/^  ::google::protobuf::UnknownFieldSet _unknown_fields_;$/;"	m	class:RegUserReq
+_unknown_fields_	protocol/chatmsg.pb.h	/^  ::google::protobuf::UnknownFieldSet _unknown_fields_;$/;"	m	class:ChatMsg
 _unknown_fields_	protocol/loginreq.pb.h	/^  ::google::protobuf::UnknownFieldSet _unknown_fields_;$/;"	m	class:LoginReq
 _unknown_fields_	protocol/loginres.pb.h	/^  ::google::protobuf::UnknownFieldSet _unknown_fields_;$/;"	m	class:LoginRes
 _unknown_fields_	protocol/logoutreq.pb.h	/^  ::google::protobuf::UnknownFieldSet _unknown_fields_;$/;"	m	class:LogoutReq
@@ -1802,6 +1834,8 @@ checkOptions	client/main.cpp	/^bool checkOptions(int argc,char** argv)$/;"	f
 checkOptions	server/main.cpp	/^bool checkOptions(int argc,char** argv)$/;"	f
 clear_has_id	protocol/offline.pb.h	/^inline void Offline::clear_has_id() {$/;"	f	class:Offline
 clear_has_id	protocol/online.pb.h	/^inline void Online::clear_has_id() {$/;"	f	class:Online
+clear_has_lenth	protocol/chatmsg.pb.h	/^inline void ChatMsg::clear_has_lenth() {$/;"	f	class:ChatMsg
+clear_has_msg	protocol/chatmsg.pb.h	/^inline void ChatMsg::clear_has_msg() {$/;"	f	class:ChatMsg
 clear_has_msg	protocol/sendmsg.pb.h	/^inline void SendMsg::clear_has_msg() {$/;"	f	class:SendMsg
 clear_has_name	client/reguserreq.h	/^inline void RegUserReq::clear_has_name() {$/;"	f	class:RegUserReq
 clear_has_name	protocol/loginreq.pb.h	/^inline void LoginReq::clear_has_name() {$/;"	f	class:LoginReq
@@ -1816,12 +1850,16 @@ clear_has_port	protocol/regserverres.pb.h	/^inline void RegServerRes::clear_has_
 clear_has_rescode	protocol/loginres.pb.h	/^inline void LoginRes::clear_has_rescode() {$/;"	f	class:LoginRes
 clear_has_rescode	protocol/reguserres.pb.h	/^inline void RegUserRes::clear_has_rescode() {$/;"	f	class:RegUserRes
 clear_has_serverid	protocol/regserverres.pb.h	/^inline void RegServerRes::clear_has_serverid() {$/;"	f	class:RegServerRes
+clear_has_type	protocol/chatmsg.pb.h	/^inline void ChatMsg::clear_has_type() {$/;"	f	class:ChatMsg
 clear_has_type	protocol/regserverreq.pb.h	/^inline void RegServerReq::clear_has_type() {$/;"	f	class:RegServerReq
+clear_has_userid	protocol/chatmsg.pb.h	/^inline void ChatMsg::clear_has_userid() {$/;"	f	class:ChatMsg
 clear_has_userid	protocol/loginres.pb.h	/^inline void LoginRes::clear_has_userid() {$/;"	f	class:LoginRes
 clear_has_userid	protocol/logoutreq.pb.h	/^inline void LogoutReq::clear_has_userid() {$/;"	f	class:LogoutReq
 clear_has_userid	protocol/sendmsg.pb.h	/^inline void SendMsg::clear_has_userid() {$/;"	f	class:SendMsg
 clear_id	protocol/offline.pb.h	/^inline void Offline::clear_id() {$/;"	f	class:Offline
 clear_id	protocol/online.pb.h	/^inline void Online::clear_id() {$/;"	f	class:Online
+clear_lenth	protocol/chatmsg.pb.h	/^inline void ChatMsg::clear_lenth() {$/;"	f	class:ChatMsg
+clear_msg	protocol/chatmsg.pb.h	/^inline void ChatMsg::clear_msg() {$/;"	f	class:ChatMsg
 clear_msg	protocol/sendmsg.pb.h	/^inline void SendMsg::clear_msg() {$/;"	f	class:SendMsg
 clear_name	client/reguserreq.h	/^inline void RegUserReq::clear_name() {$/;"	f	class:RegUserReq
 clear_name	protocol/loginreq.pb.h	/^inline void LoginReq::clear_name() {$/;"	f	class:LoginReq
@@ -1836,7 +1874,9 @@ clear_port	protocol/regserverres.pb.h	/^inline void RegServerRes::clear_port() {
 clear_rescode	protocol/loginres.pb.h	/^inline void LoginRes::clear_rescode() {$/;"	f	class:LoginRes
 clear_rescode	protocol/reguserres.pb.h	/^inline void RegUserRes::clear_rescode() {$/;"	f	class:RegUserRes
 clear_serverid	protocol/regserverres.pb.h	/^inline void RegServerRes::clear_serverid() {$/;"	f	class:RegServerRes
+clear_type	protocol/chatmsg.pb.h	/^inline void ChatMsg::clear_type() {$/;"	f	class:ChatMsg
 clear_type	protocol/regserverreq.pb.h	/^inline void RegServerReq::clear_type() {$/;"	f	class:RegServerReq
+clear_userid	protocol/chatmsg.pb.h	/^inline void ChatMsg::clear_userid() {$/;"	f	class:ChatMsg
 clear_userid	protocol/loginres.pb.h	/^inline void LoginRes::clear_userid() {$/;"	f	class:LoginRes
 clear_userid	protocol/logoutreq.pb.h	/^inline void LogoutReq::clear_userid() {$/;"	f	class:LogoutReq
 clear_userid	protocol/sendmsg.pb.h	/^inline void SendMsg::clear_userid() {$/;"	f	class:SendMsg
@@ -1845,6 +1885,7 @@ col_name	mysql/dbstruct.h	/^    char col_name[MAX_STRING_LEN];$/;"	m	struct:Data
 data_	buffer/circularbuffer.h	/^    char *data_;        \/\/数据指针$/;"	m	class:CircularBuffer
 db	mysql/dbstruct.h	/^    char db[MAX_STRING_LEN];$/;"	m	struct:Database_param
 db_name	mysql/dbstruct.h	/^    char db_name[MAX_STRING_LEN];$/;"	m	struct:Data_Param
+default_instance	protocol/chatmsg.pb.cc	/^const ChatMsg& ChatMsg::default_instance() {$/;"	f	class:ChatMsg
 default_instance	protocol/loginreq.pb.cc	/^const LoginReq& LoginReq::default_instance() {$/;"	f	class:LoginReq
 default_instance	protocol/loginres.pb.cc	/^const LoginRes& LoginRes::default_instance() {$/;"	f	class:LoginRes
 default_instance	protocol/logoutreq.pb.cc	/^const LogoutReq& LogoutReq::default_instance() {$/;"	f	class:LogoutReq
@@ -1856,6 +1897,8 @@ default_instance	protocol/reguserreq.pb.cc	/^const RegUserReq& RegUserReq::defau
 default_instance	protocol/reguserres.pb.cc	/^const RegUserRes& RegUserRes::default_instance() {$/;"	f	class:RegUserRes
 default_instance	protocol/sendmsg.pb.cc	/^const SendMsg& SendMsg::default_instance() {$/;"	f	class:SendMsg
 default_instance_	client/reguserreq.h	/^  static RegUserReq* default_instance_;$/;"	m	class:RegUserReq
+default_instance_	protocol/chatmsg.pb.cc	/^ChatMsg* ChatMsg::default_instance_ = NULL;$/;"	m	class:ChatMsg	file:
+default_instance_	protocol/chatmsg.pb.h	/^  static ChatMsg* default_instance_;$/;"	m	class:ChatMsg
 default_instance_	protocol/loginreq.pb.cc	/^LoginReq* LoginReq::default_instance_ = NULL;$/;"	m	class:LoginReq	file:
 default_instance_	protocol/loginreq.pb.h	/^  static LoginReq* default_instance_;$/;"	m	class:LoginReq
 default_instance_	protocol/loginres.pb.cc	/^LoginRes* LoginRes::default_instance_ = NULL;$/;"	m	class:LoginRes	file:
@@ -1877,6 +1920,7 @@ default_instance_	protocol/reguserres.pb.h	/^  static RegUserRes* default_instan
 default_instance_	protocol/sendmsg.pb.cc	/^SendMsg* SendMsg::default_instance_ = NULL;$/;"	m	class:SendMsg	file:
 default_instance_	protocol/sendmsg.pb.h	/^  static SendMsg* default_instance_;$/;"	m	class:SendMsg
 default_instance_	server/reguserreq.h	/^  static RegUserReq* default_instance_;$/;"	m	class:RegUserReq
+descriptor	protocol/chatmsg.pb.cc	/^const ::google::protobuf::Descriptor* ChatMsg::descriptor() {$/;"	f	class:ChatMsg
 descriptor	protocol/loginreq.pb.cc	/^const ::google::protobuf::Descriptor* LoginReq::descriptor() {$/;"	f	class:LoginReq
 descriptor	protocol/loginres.pb.cc	/^const ::google::protobuf::Descriptor* LoginRes::descriptor() {$/;"	f	class:LoginRes
 descriptor	protocol/logoutreq.pb.cc	/^const ::google::protobuf::Descriptor* LogoutReq::descriptor() {$/;"	f	class:LogoutReq
@@ -1901,6 +1945,7 @@ g_port	server/main.cpp	/^int g_port = 2222;$/;"	v
 g_style	log/logger.cpp	/^static int g_style = SFile;$/;"	m	namespace:log	file:
 g_timeStr	log/logger.cpp	/^char g_timeStr[256];	$/;"	m	namespace:log	file:
 google	client/reguserreq.h	/^namespace google {$/;"	n
+google	protocol/chatmsg.pb.h	/^namespace google {$/;"	n
 google	protocol/loginreq.pb.h	/^namespace google {$/;"	n
 google	protocol/loginres.pb.h	/^namespace google {$/;"	n
 google	protocol/logoutreq.pb.h	/^namespace google {$/;"	n
@@ -1914,6 +1959,8 @@ google	protocol/sendmsg.pb.h	/^namespace google {$/;"	n
 google	server/reguserreq.h	/^namespace google {$/;"	n
 has_id	protocol/offline.pb.h	/^inline bool Offline::has_id() const {$/;"	f	class:Offline
 has_id	protocol/online.pb.h	/^inline bool Online::has_id() const {$/;"	f	class:Online
+has_lenth	protocol/chatmsg.pb.h	/^inline bool ChatMsg::has_lenth() const {$/;"	f	class:ChatMsg
+has_msg	protocol/chatmsg.pb.h	/^inline bool ChatMsg::has_msg() const {$/;"	f	class:ChatMsg
 has_msg	protocol/sendmsg.pb.h	/^inline bool SendMsg::has_msg() const {$/;"	f	class:SendMsg
 has_name	client/reguserreq.h	/^inline bool RegUserReq::has_name() const {$/;"	f	class:RegUserReq
 has_name	protocol/loginreq.pb.h	/^inline bool LoginReq::has_name() const {$/;"	f	class:LoginReq
@@ -1928,7 +1975,9 @@ has_port	protocol/regserverres.pb.h	/^inline bool RegServerRes::has_port() const
 has_rescode	protocol/loginres.pb.h	/^inline bool LoginRes::has_rescode() const {$/;"	f	class:LoginRes
 has_rescode	protocol/reguserres.pb.h	/^inline bool RegUserRes::has_rescode() const {$/;"	f	class:RegUserRes
 has_serverid	protocol/regserverres.pb.h	/^inline bool RegServerRes::has_serverid() const {$/;"	f	class:RegServerRes
+has_type	protocol/chatmsg.pb.h	/^inline bool ChatMsg::has_type() const {$/;"	f	class:ChatMsg
 has_type	protocol/regserverreq.pb.h	/^inline bool RegServerReq::has_type() const {$/;"	f	class:RegServerReq
+has_userid	protocol/chatmsg.pb.h	/^inline bool ChatMsg::has_userid() const {$/;"	f	class:ChatMsg
 has_userid	protocol/loginres.pb.h	/^inline bool LoginRes::has_userid() const {$/;"	f	class:LoginRes
 has_userid	protocol/logoutreq.pb.h	/^inline bool LogoutReq::has_userid() const {$/;"	f	class:LogoutReq
 has_userid	protocol/sendmsg.pb.h	/^inline bool SendMsg::has_userid() const {$/;"	f	class:SendMsg
@@ -1996,6 +2045,10 @@ kIdFieldNumber	protocol/offline.pb.cc	/^const int Offline::kIdFieldNumber;$/;"	m
 kIdFieldNumber	protocol/offline.pb.h	/^  static const int kIdFieldNumber = 1;$/;"	m	class:Offline
 kIdFieldNumber	protocol/online.pb.cc	/^const int Online::kIdFieldNumber;$/;"	m	class:Online	file:
 kIdFieldNumber	protocol/online.pb.h	/^  static const int kIdFieldNumber = 1;$/;"	m	class:Online
+kLenthFieldNumber	protocol/chatmsg.pb.cc	/^const int ChatMsg::kLenthFieldNumber;$/;"	m	class:ChatMsg	file:
+kLenthFieldNumber	protocol/chatmsg.pb.h	/^  static const int kLenthFieldNumber = 1;$/;"	m	class:ChatMsg
+kMsgFieldNumber	protocol/chatmsg.pb.cc	/^const int ChatMsg::kMsgFieldNumber;$/;"	m	class:ChatMsg	file:
+kMsgFieldNumber	protocol/chatmsg.pb.h	/^  static const int kMsgFieldNumber = 4;$/;"	m	class:ChatMsg
 kMsgFieldNumber	protocol/sendmsg.pb.cc	/^const int SendMsg::kMsgFieldNumber;$/;"	m	class:SendMsg	file:
 kMsgFieldNumber	protocol/sendmsg.pb.h	/^  static const int kMsgFieldNumber = 2;$/;"	m	class:SendMsg
 kNameFieldNumber	client/reguserreq.h	/^  static const int kNameFieldNumber = 1;$/;"	m	class:RegUserReq
@@ -2020,8 +2073,12 @@ kRescodeFieldNumber	protocol/reguserres.pb.cc	/^const int RegUserRes::kRescodeFi
 kRescodeFieldNumber	protocol/reguserres.pb.h	/^  static const int kRescodeFieldNumber = 1;$/;"	m	class:RegUserRes
 kServeridFieldNumber	protocol/regserverres.pb.cc	/^const int RegServerRes::kServeridFieldNumber;$/;"	m	class:RegServerRes	file:
 kServeridFieldNumber	protocol/regserverres.pb.h	/^  static const int kServeridFieldNumber = 1;$/;"	m	class:RegServerRes
+kTypeFieldNumber	protocol/chatmsg.pb.cc	/^const int ChatMsg::kTypeFieldNumber;$/;"	m	class:ChatMsg	file:
+kTypeFieldNumber	protocol/chatmsg.pb.h	/^  static const int kTypeFieldNumber = 2;$/;"	m	class:ChatMsg
 kTypeFieldNumber	protocol/regserverreq.pb.cc	/^const int RegServerReq::kTypeFieldNumber;$/;"	m	class:RegServerReq	file:
 kTypeFieldNumber	protocol/regserverreq.pb.h	/^  static const int kTypeFieldNumber = 1;$/;"	m	class:RegServerReq
+kUseridFieldNumber	protocol/chatmsg.pb.cc	/^const int ChatMsg::kUseridFieldNumber;$/;"	m	class:ChatMsg	file:
+kUseridFieldNumber	protocol/chatmsg.pb.h	/^  static const int kUseridFieldNumber = 3;$/;"	m	class:ChatMsg
 kUseridFieldNumber	protocol/loginres.pb.cc	/^const int LoginRes::kUseridFieldNumber;$/;"	m	class:LoginRes	file:
 kUseridFieldNumber	protocol/loginres.pb.h	/^  static const int kUseridFieldNumber = 2;$/;"	m	class:LoginRes
 kUseridFieldNumber	protocol/logoutreq.pb.cc	/^const int LogoutReq::kUseridFieldNumber;$/;"	m	class:LogoutReq	file:
@@ -2029,6 +2086,8 @@ kUseridFieldNumber	protocol/logoutreq.pb.h	/^  static const int kUseridFieldNumb
 kUseridFieldNumber	protocol/sendmsg.pb.cc	/^const int SendMsg::kUseridFieldNumber;$/;"	m	class:SendMsg	file:
 kUseridFieldNumber	protocol/sendmsg.pb.h	/^  static const int kUseridFieldNumber = 1;$/;"	m	class:SendMsg
 l_trim	mysql/readconfig.cpp	/^char * l_trim(char * szOutput, const char *szInput)$/;"	f
+lenth	protocol/chatmsg.pb.h	/^inline ::google::protobuf::uint32 ChatMsg::lenth() const {$/;"	f	class:ChatMsg
+lenth_	protocol/chatmsg.pb.h	/^  ::google::protobuf::uint32 lenth_;$/;"	m	class:ChatMsg
 levelToString	log/logger.cpp	/^const char * levelToString(int l) {$/;"	f	namespace:log
 levelToSysLevel	log/logger.cpp	/^int levelToSysLevel(int l) {$/;"	f	namespace:log
 levelnames	log/logger.cpp	/^const char * levelnames[Godx+1] = { "debug - ", "info  - ", "WARN  - ", "ERROR - ",$/;"	m	namespace:log	file:
@@ -2140,8 +2199,11 @@ maxsize	log/logger.cpp	/^unsigned int maxsize;$/;"	m	namespace:log	file:
 memzero	log/logger.cpp	17;"	d	file:
 mlock	mysql/db_pool.h	/^	pthread_mutex_t mlock;$/;"	m	class:Peng_Recursive_Lock
 mlock	mysql/db_pool.h	/^	static pthread_mutex_t mlock;$/;"	m	class:Peng_Lock
+msg	protocol/chatmsg.pb.h	/^inline const ::std::string& ChatMsg::msg() const {$/;"	f	class:ChatMsg
 msg	protocol/sendmsg.pb.h	/^inline const ::std::string& SendMsg::msg() const {$/;"	f	class:SendMsg
+msg_	protocol/chatmsg.pb.h	/^  ::std::string* msg_;$/;"	m	class:ChatMsg
 msg_	protocol/sendmsg.pb.h	/^  ::std::string* msg_;$/;"	m	class:SendMsg
+mutable_msg	protocol/chatmsg.pb.h	/^inline ::std::string* ChatMsg::mutable_msg() {$/;"	f	class:ChatMsg
 mutable_msg	protocol/sendmsg.pb.h	/^inline ::std::string* SendMsg::mutable_msg() {$/;"	f	class:SendMsg
 mutable_name	client/reguserreq.h	/^inline ::std::string* RegUserReq::mutable_name() {$/;"	f	class:RegUserReq
 mutable_name	protocol/loginreq.pb.h	/^inline ::std::string* LoginReq::mutable_name() {$/;"	f	class:LoginReq
@@ -2153,6 +2215,7 @@ mutable_password	protocol/loginreq.pb.h	/^inline ::std::string* LoginReq::mutabl
 mutable_password	protocol/reguserreq.pb.h	/^inline ::std::string* RegUserReq::mutable_password() {$/;"	f	class:RegUserReq
 mutable_password	server/reguserreq.h	/^inline ::std::string* RegUserReq::mutable_password() {$/;"	f	class:RegUserReq
 mutable_unknown_fields	client/reguserreq.h	/^  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {$/;"	f	class:RegUserReq
+mutable_unknown_fields	protocol/chatmsg.pb.h	/^  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {$/;"	f	class:ChatMsg
 mutable_unknown_fields	protocol/loginreq.pb.h	/^  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {$/;"	f	class:LoginReq
 mutable_unknown_fields	protocol/loginres.pb.h	/^  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {$/;"	f	class:LoginRes
 mutable_unknown_fields	protocol/logoutreq.pb.h	/^  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {$/;"	f	class:LogoutReq
@@ -2181,6 +2244,7 @@ name_	server/reguserreq.h	/^  ::std::string* name_;$/;"	m	class:RegUserReq
 now	log/logger.cpp	/^time_t Global::now;$/;"	m	class:Global	file:
 now	log/logger.h	/^    static time_t now;$/;"	m	class:Global
 operator =	client/reguserreq.h	/^  inline RegUserReq& operator=(const RegUserReq& from) {$/;"	f	class:RegUserReq
+operator =	protocol/chatmsg.pb.h	/^  inline ChatMsg& operator=(const ChatMsg& from) {$/;"	f	class:ChatMsg
 operator =	protocol/loginreq.pb.h	/^  inline LoginReq& operator=(const LoginReq& from) {$/;"	f	class:LoginReq
 operator =	protocol/loginres.pb.h	/^  inline LoginRes& operator=(const LoginRes& from) {$/;"	f	class:LoginRes
 operator =	protocol/logoutreq.pb.h	/^  inline LogoutReq& operator=(const LogoutReq& from) {$/;"	f	class:LogoutReq
@@ -2207,6 +2271,7 @@ port	mysql/dbstruct.h	/^    unsigned int port;$/;"	m	struct:Database_param
 port	protocol/regserverres.pb.h	/^inline ::google::protobuf::uint32 RegServerRes::port() const {$/;"	f	class:RegServerRes
 port_	protocol/regserverres.pb.h	/^  ::google::protobuf::uint32 port_;$/;"	m	class:RegServerRes
 protobuf	client/reguserreq.h	/^namespace protobuf {$/;"	n	namespace:google
+protobuf	protocol/chatmsg.pb.h	/^namespace protobuf {$/;"	n	namespace:google
 protobuf	protocol/loginreq.pb.h	/^namespace protobuf {$/;"	n	namespace:google
 protobuf	protocol/loginres.pb.h	/^namespace protobuf {$/;"	n	namespace:google
 protobuf	protocol/logoutreq.pb.h	/^namespace protobuf {$/;"	n	namespace:google
@@ -2218,6 +2283,7 @@ protobuf	protocol/reguserreq.pb.h	/^namespace protobuf {$/;"	n	namespace:google
 protobuf	protocol/reguserres.pb.h	/^namespace protobuf {$/;"	n	namespace:google
 protobuf	protocol/sendmsg.pb.h	/^namespace protobuf {$/;"	n	namespace:google
 protobuf	server/reguserreq.h	/^namespace protobuf {$/;"	n	namespace:google
+protobuf_AddDesc_chatmsg_2eproto	protocol/chatmsg.pb.cc	/^void protobuf_AddDesc_chatmsg_2eproto() {$/;"	f
 protobuf_AddDesc_loginreq_2eproto	protocol/loginreq.pb.cc	/^void protobuf_AddDesc_loginreq_2eproto() {$/;"	f
 protobuf_AddDesc_loginres_2eproto	protocol/loginres.pb.cc	/^void protobuf_AddDesc_loginres_2eproto() {$/;"	f
 protobuf_AddDesc_logoutreq_2eproto	protocol/logoutreq.pb.cc	/^void protobuf_AddDesc_logoutreq_2eproto() {$/;"	f
@@ -2228,6 +2294,7 @@ protobuf_AddDesc_regserverres_2eproto	protocol/regserverres.pb.cc	/^void protobu
 protobuf_AddDesc_reguserreq_2eproto	protocol/reguserreq.pb.cc	/^void protobuf_AddDesc_reguserreq_2eproto() {$/;"	f
 protobuf_AddDesc_reguserres_2eproto	protocol/reguserres.pb.cc	/^void protobuf_AddDesc_reguserres_2eproto() {$/;"	f
 protobuf_AddDesc_sendmsg_2eproto	protocol/sendmsg.pb.cc	/^void protobuf_AddDesc_sendmsg_2eproto() {$/;"	f
+protobuf_AssignDesc_chatmsg_2eproto	protocol/chatmsg.pb.cc	/^void protobuf_AssignDesc_chatmsg_2eproto() {$/;"	f
 protobuf_AssignDesc_loginreq_2eproto	protocol/loginreq.pb.cc	/^void protobuf_AssignDesc_loginreq_2eproto() {$/;"	f
 protobuf_AssignDesc_loginres_2eproto	protocol/loginres.pb.cc	/^void protobuf_AssignDesc_loginres_2eproto() {$/;"	f
 protobuf_AssignDesc_logoutreq_2eproto	protocol/logoutreq.pb.cc	/^void protobuf_AssignDesc_logoutreq_2eproto() {$/;"	f
@@ -2238,6 +2305,7 @@ protobuf_AssignDesc_regserverres_2eproto	protocol/regserverres.pb.cc	/^void prot
 protobuf_AssignDesc_reguserreq_2eproto	protocol/reguserreq.pb.cc	/^void protobuf_AssignDesc_reguserreq_2eproto() {$/;"	f
 protobuf_AssignDesc_reguserres_2eproto	protocol/reguserres.pb.cc	/^void protobuf_AssignDesc_reguserres_2eproto() {$/;"	f
 protobuf_AssignDesc_sendmsg_2eproto	protocol/sendmsg.pb.cc	/^void protobuf_AssignDesc_sendmsg_2eproto() {$/;"	f
+protobuf_AssignDescriptorsOnce	protocol/chatmsg.pb.cc	/^inline void protobuf_AssignDescriptorsOnce() {$/;"	f	namespace:__anon20
 protobuf_AssignDescriptorsOnce	protocol/loginreq.pb.cc	/^inline void protobuf_AssignDescriptorsOnce() {$/;"	f	namespace:__anon6
 protobuf_AssignDescriptorsOnce	protocol/loginres.pb.cc	/^inline void protobuf_AssignDescriptorsOnce() {$/;"	f	namespace:__anon10
 protobuf_AssignDescriptorsOnce	protocol/logoutreq.pb.cc	/^inline void protobuf_AssignDescriptorsOnce() {$/;"	f	namespace:__anon4
@@ -2246,8 +2314,9 @@ protobuf_AssignDescriptorsOnce	protocol/online.pb.cc	/^inline void protobuf_Assi
 protobuf_AssignDescriptorsOnce	protocol/regserverreq.pb.cc	/^inline void protobuf_AssignDescriptorsOnce() {$/;"	f	namespace:__anon18
 protobuf_AssignDescriptorsOnce	protocol/regserverres.pb.cc	/^inline void protobuf_AssignDescriptorsOnce() {$/;"	f	namespace:__anon12
 protobuf_AssignDescriptorsOnce	protocol/reguserreq.pb.cc	/^inline void protobuf_AssignDescriptorsOnce() {$/;"	f	namespace:__anon2
-protobuf_AssignDescriptorsOnce	protocol/reguserres.pb.cc	/^inline void protobuf_AssignDescriptorsOnce() {$/;"	f	namespace:__anon20
+protobuf_AssignDescriptorsOnce	protocol/reguserres.pb.cc	/^inline void protobuf_AssignDescriptorsOnce() {$/;"	f	namespace:__anon22
 protobuf_AssignDescriptorsOnce	protocol/sendmsg.pb.cc	/^inline void protobuf_AssignDescriptorsOnce() {$/;"	f	namespace:__anon8
+protobuf_RegisterTypes	protocol/chatmsg.pb.cc	/^void protobuf_RegisterTypes(const ::std::string&) {$/;"	f	namespace:__anon20
 protobuf_RegisterTypes	protocol/loginreq.pb.cc	/^void protobuf_RegisterTypes(const ::std::string&) {$/;"	f	namespace:__anon6
 protobuf_RegisterTypes	protocol/loginres.pb.cc	/^void protobuf_RegisterTypes(const ::std::string&) {$/;"	f	namespace:__anon10
 protobuf_RegisterTypes	protocol/logoutreq.pb.cc	/^void protobuf_RegisterTypes(const ::std::string&) {$/;"	f	namespace:__anon4
@@ -2256,8 +2325,9 @@ protobuf_RegisterTypes	protocol/online.pb.cc	/^void protobuf_RegisterTypes(const
 protobuf_RegisterTypes	protocol/regserverreq.pb.cc	/^void protobuf_RegisterTypes(const ::std::string&) {$/;"	f	namespace:__anon18
 protobuf_RegisterTypes	protocol/regserverres.pb.cc	/^void protobuf_RegisterTypes(const ::std::string&) {$/;"	f	namespace:__anon12
 protobuf_RegisterTypes	protocol/reguserreq.pb.cc	/^void protobuf_RegisterTypes(const ::std::string&) {$/;"	f	namespace:__anon2
-protobuf_RegisterTypes	protocol/reguserres.pb.cc	/^void protobuf_RegisterTypes(const ::std::string&) {$/;"	f	namespace:__anon20
+protobuf_RegisterTypes	protocol/reguserres.pb.cc	/^void protobuf_RegisterTypes(const ::std::string&) {$/;"	f	namespace:__anon22
 protobuf_RegisterTypes	protocol/sendmsg.pb.cc	/^void protobuf_RegisterTypes(const ::std::string&) {$/;"	f	namespace:__anon8
+protobuf_ShutdownFile_chatmsg_2eproto	protocol/chatmsg.pb.cc	/^void protobuf_ShutdownFile_chatmsg_2eproto() {$/;"	f
 protobuf_ShutdownFile_loginreq_2eproto	protocol/loginreq.pb.cc	/^void protobuf_ShutdownFile_loginreq_2eproto() {$/;"	f
 protobuf_ShutdownFile_loginres_2eproto	protocol/loginres.pb.cc	/^void protobuf_ShutdownFile_loginres_2eproto() {$/;"	f
 protobuf_ShutdownFile_logoutreq_2eproto	protocol/logoutreq.pb.cc	/^void protobuf_ShutdownFile_logoutreq_2eproto() {$/;"	f
@@ -2271,6 +2341,7 @@ protobuf_ShutdownFile_sendmsg_2eproto	protocol/sendmsg.pb.cc	/^void protobuf_Shu
 query	mysql/mysqldatabase.h	/^    MYSQL_RES *query;	$/;"	m	class:CDatabase
 r_trim	mysql/readconfig.cpp	/^char *r_trim(char *szOutput, const char *szInput)$/;"	f
 recursive_mkdir	log/logger.cpp	/^void recursive_mkdir(const char * path, size_t len) {$/;"	f	namespace:log
+release_msg	protocol/chatmsg.pb.h	/^inline ::std::string* ChatMsg::release_msg() {$/;"	f	class:ChatMsg
 release_msg	protocol/sendmsg.pb.h	/^inline ::std::string* SendMsg::release_msg() {$/;"	f	class:SendMsg
 release_name	client/reguserreq.h	/^inline ::std::string* RegUserReq::release_name() {$/;"	f	class:RegUserReq
 release_name	protocol/loginreq.pb.h	/^inline ::std::string* LoginReq::release_name() {$/;"	f	class:LoginReq
@@ -2294,6 +2365,7 @@ serverid	protocol/regserverres.pb.h	/^inline ::google::protobuf::uint32 RegServe
 serverid_	protocol/regserverres.pb.h	/^  ::google::protobuf::uint32 serverid_;$/;"	m	class:RegServerRes
 setLogStyle	log/logger.cpp	/^void setLogStyle(int style) {$/;"	f	namespace:log
 setSysLogLevel	log/logger.h	/^inline void setSysLogLevel(const char * level) { syslog_level = stringToLevel(level); }$/;"	f	namespace:log
+set_allocated_msg	protocol/chatmsg.pb.h	/^inline void ChatMsg::set_allocated_msg(::std::string* msg) {$/;"	f	class:ChatMsg
 set_allocated_msg	protocol/sendmsg.pb.h	/^inline void SendMsg::set_allocated_msg(::std::string* msg) {$/;"	f	class:SendMsg
 set_allocated_name	client/reguserreq.h	/^inline void RegUserReq::set_allocated_name(::std::string* name) {$/;"	f	class:RegUserReq
 set_allocated_name	protocol/loginreq.pb.h	/^inline void LoginReq::set_allocated_name(::std::string* name) {$/;"	f	class:LoginReq
@@ -2309,6 +2381,8 @@ set_exp	mysql/dbstruct.h	/^    char set_exp[MAX_STRING_LEN];$/;"	m	struct:Data_P
 set_file_limit	daemon/daemon.cpp	/^static void set_file_limit(int cur, int max)$/;"	f	file:
 set_has_id	protocol/offline.pb.h	/^inline void Offline::set_has_id() {$/;"	f	class:Offline
 set_has_id	protocol/online.pb.h	/^inline void Online::set_has_id() {$/;"	f	class:Online
+set_has_lenth	protocol/chatmsg.pb.h	/^inline void ChatMsg::set_has_lenth() {$/;"	f	class:ChatMsg
+set_has_msg	protocol/chatmsg.pb.h	/^inline void ChatMsg::set_has_msg() {$/;"	f	class:ChatMsg
 set_has_msg	protocol/sendmsg.pb.h	/^inline void SendMsg::set_has_msg() {$/;"	f	class:SendMsg
 set_has_name	client/reguserreq.h	/^inline void RegUserReq::set_has_name() {$/;"	f	class:RegUserReq
 set_has_name	protocol/loginreq.pb.h	/^inline void LoginReq::set_has_name() {$/;"	f	class:LoginReq
@@ -2323,12 +2397,18 @@ set_has_port	protocol/regserverres.pb.h	/^inline void RegServerRes::set_has_port
 set_has_rescode	protocol/loginres.pb.h	/^inline void LoginRes::set_has_rescode() {$/;"	f	class:LoginRes
 set_has_rescode	protocol/reguserres.pb.h	/^inline void RegUserRes::set_has_rescode() {$/;"	f	class:RegUserRes
 set_has_serverid	protocol/regserverres.pb.h	/^inline void RegServerRes::set_has_serverid() {$/;"	f	class:RegServerRes
+set_has_type	protocol/chatmsg.pb.h	/^inline void ChatMsg::set_has_type() {$/;"	f	class:ChatMsg
 set_has_type	protocol/regserverreq.pb.h	/^inline void RegServerReq::set_has_type() {$/;"	f	class:RegServerReq
+set_has_userid	protocol/chatmsg.pb.h	/^inline void ChatMsg::set_has_userid() {$/;"	f	class:ChatMsg
 set_has_userid	protocol/loginres.pb.h	/^inline void LoginRes::set_has_userid() {$/;"	f	class:LoginRes
 set_has_userid	protocol/logoutreq.pb.h	/^inline void LogoutReq::set_has_userid() {$/;"	f	class:LogoutReq
 set_has_userid	protocol/sendmsg.pb.h	/^inline void SendMsg::set_has_userid() {$/;"	f	class:SendMsg
 set_id	protocol/offline.pb.h	/^inline void Offline::set_id(::google::protobuf::uint32 value) {$/;"	f	class:Offline
 set_id	protocol/online.pb.h	/^inline void Online::set_id(::google::protobuf::uint32 value) {$/;"	f	class:Online
+set_lenth	protocol/chatmsg.pb.h	/^inline void ChatMsg::set_lenth(::google::protobuf::uint32 value) {$/;"	f	class:ChatMsg
+set_msg	protocol/chatmsg.pb.h	/^inline void ChatMsg::set_msg(const ::std::string& value) {$/;"	f	class:ChatMsg
+set_msg	protocol/chatmsg.pb.h	/^inline void ChatMsg::set_msg(const char* value) {$/;"	f	class:ChatMsg
+set_msg	protocol/chatmsg.pb.h	/^inline void ChatMsg::set_msg(const char* value, size_t size) {$/;"	f	class:ChatMsg
 set_msg	protocol/sendmsg.pb.h	/^inline void SendMsg::set_msg(const ::std::string& value) {$/;"	f	class:SendMsg
 set_msg	protocol/sendmsg.pb.h	/^inline void SendMsg::set_msg(const char* value) {$/;"	f	class:SendMsg
 set_msg	protocol/sendmsg.pb.h	/^inline void SendMsg::set_msg(const char* value, size_t size) {$/;"	f	class:SendMsg
@@ -2363,7 +2443,9 @@ set_port	protocol/regserverres.pb.h	/^inline void RegServerRes::set_port(::googl
 set_rescode	protocol/loginres.pb.h	/^inline void LoginRes::set_rescode(::google::protobuf::uint32 value) {$/;"	f	class:LoginRes
 set_rescode	protocol/reguserres.pb.h	/^inline void RegUserRes::set_rescode(::google::protobuf::int32 value) {$/;"	f	class:RegUserRes
 set_serverid	protocol/regserverres.pb.h	/^inline void RegServerRes::set_serverid(::google::protobuf::uint32 value) {$/;"	f	class:RegServerRes
+set_type	protocol/chatmsg.pb.h	/^inline void ChatMsg::set_type(::google::protobuf::uint32 value) {$/;"	f	class:ChatMsg
 set_type	protocol/regserverreq.pb.h	/^inline void RegServerReq::set_type(::google::protobuf::uint32 value) {$/;"	f	class:RegServerReq
+set_userid	protocol/chatmsg.pb.h	/^inline void ChatMsg::set_userid(::google::protobuf::uint32 value) {$/;"	f	class:ChatMsg
 set_userid	protocol/loginres.pb.h	/^inline void LoginRes::set_userid(::google::protobuf::uint32 value) {$/;"	f	class:LoginRes
 set_userid	protocol/logoutreq.pb.h	/^inline void LogoutReq::set_userid(::google::protobuf::uint32 value) {$/;"	f	class:LogoutReq
 set_userid	protocol/sendmsg.pb.h	/^inline void SendMsg::set_userid(::google::protobuf::uint32 value) {$/;"	f	class:SendMsg
@@ -2372,6 +2454,7 @@ singleDBConnectPool	mysql/db_pool.cpp	/^CDBPool<T>* CDBPool<T>::singleDBConnectP
 singleDBConnectPool	mysql/db_pool.h	/^    static CDBPool* singleDBConnectPool;$/;"	m	class:CDBPool
 size_	buffer/circularbuffer.h	/^    size_t size_;       \/\/大小$/;"	m	class:CircularBuffer
 startsWith	log/loghelper.h	/^inline bool startsWith(const std::string & big, const std::string & little)$/;"	f	namespace:log
+static_descriptor_initializer_chatmsg_2eproto_	protocol/chatmsg.pb.cc	/^} static_descriptor_initializer_chatmsg_2eproto_;$/;"	v	typeref:struct:StaticDescriptorInitializer_chatmsg_2eproto
 static_descriptor_initializer_loginreq_2eproto_	protocol/loginreq.pb.cc	/^} static_descriptor_initializer_loginreq_2eproto_;$/;"	v	typeref:struct:StaticDescriptorInitializer_loginreq_2eproto
 static_descriptor_initializer_loginres_2eproto_	protocol/loginres.pb.cc	/^} static_descriptor_initializer_loginres_2eproto_;$/;"	v	typeref:struct:StaticDescriptorInitializer_loginres_2eproto
 static_descriptor_initializer_logoutreq_2eproto_	protocol/logoutreq.pb.cc	/^} static_descriptor_initializer_logoutreq_2eproto_;$/;"	v	typeref:struct:StaticDescriptorInitializer_logoutreq_2eproto
@@ -2392,12 +2475,15 @@ tostring	log/tostring.h	/^inline std::string tostring(const T1 & t1, const T2 & 
 tostring	log/tostring.h	/^inline std::string tostring(const T1 & t1, const T2 & t2, const T3 & t3)$/;"	f	namespace:log
 tostring	log/tostring.h	/^inline std::string tostring(const T1 & t1, const T2 & t2, const T3 & t3, const T4 & t4)$/;"	f	namespace:log
 tostring	log/tostring.h	/^inline std::string tostring(const T1 & t1, const T2 & t2, const T3 & t3, const T4 & t4,$/;"	f	namespace:log
+type	protocol/chatmsg.pb.h	/^inline ::google::protobuf::uint32 ChatMsg::type() const {$/;"	f	class:ChatMsg
 type	protocol/regserverreq.pb.h	/^inline ::google::protobuf::uint32 RegServerReq::type() const {$/;"	f	class:RegServerReq
+type_	protocol/chatmsg.pb.h	/^  ::google::protobuf::uint32 type_;$/;"	m	class:ChatMsg
 type_	protocol/regserverreq.pb.h	/^  ::google::protobuf::uint32 type_;$/;"	m	class:RegServerReq
 uint	mysql/vostypes.h	/^typedef  unsigned int             uint;$/;"	t
 ultoa10	log/loghelper.h	/^inline std::string ultoa10(size_t n)$/;"	f	namespace:log
 unix_socket	mysql/dbstruct.h	/^    char unix_socket[MAX_STRING_LEN];$/;"	m	struct:Database_param
 unknown_fields	client/reguserreq.h	/^  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {$/;"	f	class:RegUserReq
+unknown_fields	protocol/chatmsg.pb.h	/^  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {$/;"	f	class:ChatMsg
 unknown_fields	protocol/loginreq.pb.h	/^  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {$/;"	f	class:LoginReq
 unknown_fields	protocol/loginres.pb.h	/^  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {$/;"	f	class:LoginRes
 unknown_fields	protocol/logoutreq.pb.h	/^  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {$/;"	f	class:LogoutReq
@@ -2414,9 +2500,11 @@ unlock	log/mutex.cpp	/^void scope_lock::unlock()$/;"	f	class:log::scope_lock
 useage	client/main.cpp	/^void useage(const char* arg)$/;"	f
 useage	server/main.cpp	/^void useage(const char* arg)$/;"	f
 user	mysql/dbstruct.h	/^    char user[MAX_STRING_LEN];$/;"	m	struct:Database_param
+userid	protocol/chatmsg.pb.h	/^inline ::google::protobuf::uint32 ChatMsg::userid() const {$/;"	f	class:ChatMsg
 userid	protocol/loginres.pb.h	/^inline ::google::protobuf::uint32 LoginRes::userid() const {$/;"	f	class:LoginRes
 userid	protocol/logoutreq.pb.h	/^inline ::google::protobuf::uint32 LogoutReq::userid() const {$/;"	f	class:LogoutReq
 userid	protocol/sendmsg.pb.h	/^inline ::google::protobuf::uint32 SendMsg::userid() const {$/;"	f	class:SendMsg
+userid_	protocol/chatmsg.pb.h	/^  ::google::protobuf::uint32 userid_;$/;"	m	class:ChatMsg
 userid_	protocol/loginres.pb.h	/^  ::google::protobuf::uint32 userid_;$/;"	m	class:LoginRes
 userid_	protocol/logoutreq.pb.h	/^  ::google::protobuf::uint32 userid_;$/;"	m	class:LogoutReq
 userid_	protocol/sendmsg.pb.h	/^  ::google::protobuf::uint32 userid_;$/;"	m	class:SendMsg
@@ -2428,6 +2516,7 @@ xatol	log/loghelper.h	/^inline unsigned xatol(const char * s, size_t len, const 
 ~CDBPool	mysql/db_pool.cpp	/^CDBPool<T>::~CDBPool()$/;"	f	class:CDBPool
 ~CDatabase	mysql/mysqldatabase.cpp	/^CDatabase::~CDatabase()$/;"	f	class:CDatabase
 ~CMasterDBGuard	mysql/db_pool.h	/^	~CMasterDBGuard()$/;"	f	class:CMasterDBGuard
+~ChatMsg	protocol/chatmsg.pb.cc	/^ChatMsg::~ChatMsg() {$/;"	f	class:ChatMsg
 ~CircularBuffer	buffer/circularbuffer.cpp	/^CircularBuffer::~CircularBuffer()$/;"	f	class:CircularBuffer
 ~Client	client/client.cpp	/^Client::~Client()$/;"	f	class:Client
 ~Connection	client/connection.cpp	/^Connection::~Connection()$/;"	f	class:Connection

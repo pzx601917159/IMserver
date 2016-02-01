@@ -342,6 +342,7 @@ void Connection::HandleLoginRes(LoginRes* res)
         //登陆成功
         log::log(Info,"login success,userid:",res->userid());
     
+        //发送测试的聊天消息
         SendMsg msg;
         msg.set_msg("hello,my name is 007");
         msg.set_userid(res->userid());
