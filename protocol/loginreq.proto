@@ -1,8 +1,0 @@
-//注册用户请求
-message LoginReq
-{
-    //用户名
-    required string name = 1;
-    //密码
-    required string password = 2;
-}

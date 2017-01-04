@@ -1,8 +1,0 @@
-//发送消息请求
-message SendMsg
-{
-    //用户ID
-    required  uint32 userid = 1;
-    //密码
-    required string msg = 2;
-}

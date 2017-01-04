@@ -1,8 +1,0 @@
-//注册用户请求
-message RegServerRes
-{
-    //服务器id
-    required uint32 serverid = 1;
-    //端口，没有2字节的，就先用4字节的吧
-    required uint32 port = 2;
-}

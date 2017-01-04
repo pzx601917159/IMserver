@@ -1,6 +1,0 @@
-//用户上线消息
-message Online
-{
-    required uint32 id = 1;
-    required string name = 2;
-}
