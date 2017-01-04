@@ -1,0 +1,77 @@
+syntax="proto2";
+//登录请求
+message LoginReq
+{
+    required string name = 1;
+    required string password = 2;
+}
+//登录响应
+message LoginRes
+{
+    //用户名
+    required uint32 rescode = 1;
+    //userid
+    required uint32 userid = 2;
+}
+
+//登出请求
+message LogoutReq
+{
+    required uint32 userid = 1;
+}
+
+//用户离线消息
+message Offline
+{
+    //用户名
+    required uint32 id = 1;
+}
+
+//用户上线消息
+message Online
+{
+    required uint32 id = 1;
+    required string name = 2;
+}
+
+//注册服务器请求
+message RegServerReq
+{
+    //服务器类型
+    required uint32 type = 1;
+}
+//注册服务器响应
+message RegServerRes
+{
+    //服务器id
+    required uint32 serverid = 1;
+    //端口，没有2字节的，就先用4字节的吧
+    required uint32 port = 2;
+}
+
+//注册用户请求
+message RegUserReq
+{
+    //用户名
+    required string name = 1;
+    //密码
+    required string password = 2;
+}
+//注册用户响应
+message RegUserRes
+{
+    //返回码
+    required int32 rescode = 1;
+}
+
+//发送消息请求
+message SendMsg
+{
+    //用户ID
+    required  uint32 userid = 1;
+    //密码
+    required string msg = 2;
+}
+
+
+
