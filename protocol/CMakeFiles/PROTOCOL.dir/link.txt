@@ -1,2 +1,0 @@
-/usr/bin/ar cr libPROTOCOL.a  CMakeFiles/PROTOCOL.dir/reguserreq.pb.cc.o CMakeFiles/PROTOCOL.dir/reguserres.pb.cc.o CMakeFiles/PROTOCOL.dir/sendmsg.pb.cc.o
-/usr/bin/ranlib libPROTOCOL.a

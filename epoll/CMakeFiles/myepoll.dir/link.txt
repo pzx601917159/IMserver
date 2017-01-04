@@ -1,2 +1,0 @@
-/usr/bin/ar cr libmyepoll.a  CMakeFiles/myepoll.dir/epollselector.cpp.o
-/usr/bin/ranlib libmyepoll.a

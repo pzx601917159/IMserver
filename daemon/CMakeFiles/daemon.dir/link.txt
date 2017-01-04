@@ -1,2 +1,0 @@
-/usr/bin/ar cr libdaemon.a  CMakeFiles/daemon.dir/daemon.cpp.o
-/usr/bin/ranlib libdaemon.a
