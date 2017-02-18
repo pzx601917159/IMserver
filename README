@@ -13,7 +13,8 @@
 运行平台:ubuntu12.04,centos尚未测试,后续会加上
 
 运行步骤:
-    mkdir bin
+    ./init.sh  生成protobuf文件
+    mkdir bin  创建bin目录
     cd bin
     这里可以选择debug/release版本：
     cmake -DCMAKE_BUILD_TYPE=Debug/Release ..
@@ -22,8 +23,4 @@
 
 
 
-实现了基本的框架，目前只实现了十分简单的业务逻辑
-
-
-2016-01-18：代码中加入了c++11新规范中的线程等内容
 
