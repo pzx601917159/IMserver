@@ -1,6 +1,7 @@
 #ifndef _DB_MASTER_POOL_H
 #define _DB_MASTER_POOL_H
-#include "vostypes.h"
+#include "pthread.h"
+#include <vector>
 class Peng_Lock
 {
 public:

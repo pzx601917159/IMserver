@@ -2,6 +2,7 @@
 #include "dbstruct.h"
 #include "mysqldatabase.h"
 #include "readconfig.h"
+#include <stdlib.h>
 CDatabase::CDatabase()
 {
     mysql=(MYSQL *) new MYSQL;
@@ -67,14 +68,14 @@ int CDatabase::InsertRecord(Data_Param *para)
         strcpy(error_str,OutErrors());
         if(strstr(error_str,"Duplicate")==NULL)
         {
-            return FALSE;
+            return 0;
         }
         else
         {
             return DUP;
         }
     }
-    return TRUE;
+    return 1;
 }
 bool CDatabase::SelectRecord(Data_Param *para)
 {
@@ -183,9 +184,9 @@ int CDatabase::DropDB(char *db)
 {
 	return 0;
 }
-BOOL CDatabase::IsEnd()
+bool CDatabase::IsEnd()
 {
-	BOOL rec;
+	bool rec;
 	rec=mysql_eof(query);
 
 	return rec;
@@ -271,13 +272,13 @@ bool CDatabase::Connect()
 
 	if(ConnectDB(m_pdb_param))
 	{
-		STRNCPY(err_sql,"数据库连接成功！",DBFETCH_SQL_LEN);
+		strncpy(err_sql,"数据库连接成功！",DBFETCH_SQL_LEN);
         Data_Param dataParam;
 		strcpy(dataParam.db_name,m_pdb_param->db);
 		SelectDB(&dataParam);
 		return true;
 	}
-	STRNCPY(err_sql,"数据库连接不成功！",DBFETCH_SQL_LEN);
+	strncpy(err_sql,"数据库连接不成功！",DBFETCH_SQL_LEN);
 	return false;
 }
 bool CDatabase::ReConnect()

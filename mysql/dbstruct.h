@@ -1,6 +1,7 @@
 #ifndef __DB_STRUCT_H__
 #define __DB_STRUCT_H__
-#include "vostypes.h"
+#define MAX_STRING_LEN 1024
+#include <string.h>
 struct Data_Param   
 {
     char db_name[MAX_STRING_LEN];

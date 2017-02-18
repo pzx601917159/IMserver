@@ -1,7 +1,6 @@
 #include "mysqldatabase.h"
 #include "db_pool.cpp"
 #include "readconfig.h"
-#include "vostypes.h"
 
 int main()
 {

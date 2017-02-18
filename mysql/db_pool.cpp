@@ -10,6 +10,7 @@ CDBPool<T>* CDBPool<T>::Instance()
     }
     return singleDBConnectPool;
 }
+
 template<class T>
 void CDBPool<T>::Destroy()
 {

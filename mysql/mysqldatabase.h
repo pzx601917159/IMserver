@@ -26,7 +26,7 @@ public:
     char* GetHostInfo();	
     char * GetClientInfo();			
     char* GetFieldName(int FieldNum);	
-    BOOL IsEnd();				
+    bool IsEnd();				
     int DropDB(char *db);			
     void SeekData(int offset);	
     int CreateDB(char *db);			
@@ -65,7 +65,7 @@ public:
     Database_param *m_pdb_param;
     bool FindSave(const char *str);
     bool Succ;
-    BOOL GetExeSqlState() {return Succ;};
+    bool GetExeSqlState() {return Succ;};
 
     bool IsAvail();
 public:

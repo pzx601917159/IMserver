@@ -46,6 +46,7 @@ bool EPollSelector::Init()
     if(m_epollfd == -1)
     {
         signal(SIGPIPE,SIG_IGN);
+        //参数已废弃
         m_epollfd = epoll_create(MAX_SHORT);
     }
     return m_epollfd != -1;
