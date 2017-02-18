@@ -9,14 +9,14 @@
 #include <unistd.h>
 #include <string.h>
 #include <map>
+#include <errno.h>
+#include <sys/types.h>
 
 #include "connection.h"
 #include "logger.h"
 #include "singleton.h"
 #include "server.h"
 #include "request.h"
-#include "reguserreq.pb.h"
-#include "reguserres.pb.h"
 
 //mysql
 #include "mysqldatabase.h"
@@ -24,12 +24,6 @@
 #include "readconfig.h"
 #include "circularbuffer.h"
 #include "epollselector.h"
-
-#include "loginreq.pb.h"
-#include "loginres.pb.h"
-#include "sendmsg.pb.h"
-#include "offline.pb.h"
-#include "online.pb.h"
 
 
 const uint32_t BUFFER_LEN=4096;
@@ -107,9 +101,10 @@ size_t Connection::RecvData()
         HandleReq((ReqType)type,len);
 
     }
-    log::log(Info,"ret:",ret);
-    if(ret == 0)
+    if(((ret == -1)&&(errno != EAGAIN && errno != EINTR && errno != 0)) 
+        || ret == 0)
     {
+        log::log(Info,"onclose");
         OnClose();
     }
     return ret;
@@ -267,6 +262,7 @@ void Connection::HandleRegReq(RegUserReq* req)
 //登陆请求，同一个用户不能登陆两次
 void Connection::HandleLoginReq(LoginReq* req)
 {
+    log::log(Info,"handle login req");
     //返回userid把
     LoginRes res;
     res.set_rescode(FAILED);
@@ -277,6 +273,7 @@ void Connection::HandleLoginReq(LoginReq* req)
         char sql[1024];
         memset(sql,0,sizeof(sql));
         snprintf(sql,sizeof(sql),"select * from tab_user where username='%s'",req->name().c_str());
+        log::log(Info,"sql:",sql);
         if(pdb->SelectBySql(sql))
         {
             if(pdb->GetRecord())
@@ -290,11 +287,19 @@ void Connection::HandleLoginReq(LoginReq* req)
                     //查找到了
                     res.set_userid(atoi(pdb->row[0]));
                 }
+                else
+                {
+                    log::log(Info,"passwd error");
+                }
             }
             //释放结果集
             pdb->FreeRecord();
         }
         CDBPool<CDatabase>::Instance()->Release(pdb);
+    }
+    else
+    {
+        log::log(Info,"connect db error");
     }
     SendRequest(&res,LOGIN_RES);
     Online msg;

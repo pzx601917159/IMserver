@@ -3,7 +3,6 @@
 #include "connection.h"
 #include "epollselector.h"
 
-#include "sendmsg.pb.h"
 
 Server::Server(uint16_t port)
 {

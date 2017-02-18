@@ -15,8 +15,6 @@
 #include "singleton.h"
 #include "client.h"
 #include "request.h"
-#include "reguserreq.pb.h"
-#include "reguserres.pb.h"
 
 //mysql
 #include "mysqldatabase.h"
@@ -27,11 +25,6 @@
 #include "timertask.h"
 #include "timer.h"
 
-#include "loginreq.pb.h"
-#include "loginres.pb.h"
-#include "sendmsg.pb.h"
-#include "online.pb.h"
-#include "offline.pb.h"
 
 const uint32_t BUFFER_LEN=4096;
 const uint32_t MAX_REQ_LEN=1024;

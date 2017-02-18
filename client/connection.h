@@ -15,7 +15,7 @@
 #include <string>
 
 #include "request.h"
-#include "reguserreq.h"
+#include "protocol.pb.h"
 #include "task.h"
 #include "timertask.h"
 #include "iconnection.h"

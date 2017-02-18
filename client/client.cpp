@@ -5,7 +5,6 @@
 #include "wheeltimer.h"
 #include "singleton.h"
 
-#include "sendmsg.pb.h"
 
 const uint16_t      SERVER_PORT = 2222;
 const char*   SERVER_IP   = "127.0.0.1";

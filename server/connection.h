@@ -15,8 +15,10 @@
 #include <string>
 
 #include "request.h"
-#include "reguserreq.h"
 #include "iconnection.h"
+
+#include "protocol.pb.h"
+
 class LoginReq;
 class SendMsg;
 
