@@ -3,4 +3,4 @@ gerrit pzx
 gerrit 14-03
 gerrit 14-26 modify
 update gerrit 14-32
-wrong commit test
+false commit test
