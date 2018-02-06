@@ -6,3 +6,4 @@ update gerrit 14-32
 true commit test
 commit test 3
 commit by user test
+commit bu user gerrit
